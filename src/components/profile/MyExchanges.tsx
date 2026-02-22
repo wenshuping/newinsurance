@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronLeft, Calendar, Ticket, CheckCircle2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import ExchangeDetail from './ExchangeDetail';
+import { api } from '../../lib/api';
 
 interface Props {
   onClose: () => void;
@@ -10,36 +11,30 @@ interface Props {
 export default function MyExchanges({ onClose }: Props) {
   const [activeTab, setActiveTab] = useState('all');
   const [selectedExchange, setSelectedExchange] = useState<any>(null);
+  const [exchanges, setExchanges] = useState<any[]>([]);
 
-  const exchanges = [
-    {
-      id: 'EX123456789',
-      name: '美的智能电饭煲',
-      date: '2023-10-25',
-      image: 'https://picsum.photos/seed/cooker/400/300',
-      points: 1000,
-      status: '待核销',
-      code: '8829 4012',
-      qrCode: 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=EX123456789'
-    },
-    {
-      id: 'EX987654321',
-      name: '东北五常大米 5kg',
-      date: '2023-10-10',
-      image: 'https://picsum.photos/seed/rice2/400/300',
-      points: 500,
-      status: '已完成',
-      completedDate: '2023-10-12'
-    },
-    {
-      id: 'EX456789123',
-      name: '年度基础体检套餐',
-      date: '2023-08-15',
-      image: 'https://picsum.photos/seed/health2/400/300',
-      points: 3000,
-      status: '已过期'
-    }
-  ];
+  const loadExchanges = async () => {
+    const res = await api.redemptions();
+    setExchanges(
+      res.list.map((x: any) => ({
+        id: x.id,
+        orderNo: `EX${x.id}`,
+        name: x.itemName,
+        date: (x.createdAt || '').slice(0, 10),
+        image: `https://picsum.photos/seed/redeem${x.id}/400/300`,
+        points: x.pointsCost,
+        status: x.status === 'written_off' ? '已完成' : new Date(x.expiresAt).getTime() < Date.now() ? '已过期' : '待核销',
+        code: x.writeoffToken,
+        qrCode: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${x.writeoffToken}`,
+        completedDate: x.writtenOffAt ? String(x.writtenOffAt).slice(0, 10) : undefined,
+        rawId: x.id,
+      }))
+    );
+  };
+
+  useEffect(() => {
+    loadExchanges().catch(() => undefined);
+  }, []);
 
   const filteredExchanges = exchanges.filter(ex => {
     if (activeTab === 'all') return true;
@@ -166,7 +161,10 @@ export default function MyExchanges({ onClose }: Props) {
         {selectedExchange && (
           <ExchangeDetail 
             exchange={selectedExchange} 
-            onClose={() => setSelectedExchange(null)} 
+            onClose={() => {
+              setSelectedExchange(null);
+              loadExchanges().catch(() => undefined);
+            }}
           />
         )}
       </AnimatePresence>

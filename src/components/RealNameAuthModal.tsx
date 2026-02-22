@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ShieldCheck, Loader2 } from 'lucide-react';
+import { api, User } from '../lib/api';
 
 interface Props {
   onClose: () => void;
-  onSuccess: () => void;
+  onSuccess: (payload: { token: string; user: User }) => void;
 }
 
 export default function RealNameAuthModal({ onClose, onSuccess }: Props) {
@@ -17,13 +18,17 @@ export default function RealNameAuthModal({ onClose, onSuccess }: Props) {
   const [error, setError] = useState('');
 
   const handleSendCode = () => {
+    if (!/^[\u4e00-\u9fa5·]{2,20}$/.test(name)) {
+      setError('请输入2-20位中文姓名');
+      return;
+    }
     if (!/^1[3-9]\d{9}$/.test(phone)) {
       setError('请输入正确的手机号码');
       return;
     }
     setError('');
     setIsSending(true);
-    setTimeout(() => {
+    api.sendCode(phone).then(() => {
       setIsSending(false);
       setCountdown(60);
       const timer = setInterval(() => {
@@ -32,13 +37,37 @@ export default function RealNameAuthModal({ onClose, onSuccess }: Props) {
           return prev - 1;
         });
       }, 1000);
-    }, 1000);
+    }).catch((e) => {
+      setIsSending(false);
+      setError(e.message || '验证码发送失败');
+    });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // 直接当做认证成功，进行下一步操作
-    onSuccess();
+    if (!/^[\u4e00-\u9fa5·]{2,20}$/.test(name)) {
+      setError('请输入2-20位中文姓名');
+      return;
+    }
+    if (!/^1[3-9]\d{9}$/.test(phone)) {
+      setError('请输入正确的手机号码');
+      return;
+    }
+    if (!/^\d{6}$/.test(code)) {
+      setError('请输入6位验证码');
+      return;
+    }
+
+    setError('');
+    setIsSubmitting(true);
+    try {
+      const result = await api.verifyBasic(name, phone, code);
+      onSuccess(result);
+    } catch (e: any) {
+      setError(e?.message || '认证失败，请稍后重试');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { Settings, Camera, ShieldCheck, Edit3, Coins, ShoppingBag, ChevronRight, BookOpen, Heart, Users, FileText, Calendar, Headset, Phone } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import MyExchanges from '../components/profile/MyExchanges';
+import { User } from '../lib/api';
 
 interface Props {
   requireAuth: (action: () => void) => void;
   isAuthenticated: boolean;
+  user: User | null;
+  pointsBalance: number;
   onOpenMall: () => void;
 }
 
-export default function Profile({ requireAuth, isAuthenticated, onOpenMall }: Props) {
+export default function Profile({ requireAuth, isAuthenticated, user, pointsBalance, onOpenMall }: Props) {
   const [showMyExchanges, setShowMyExchanges] = useState(false);
 
   return (
@@ -36,7 +39,7 @@ export default function Profile({ requireAuth, isAuthenticated, onOpenMall }: Pr
             </button>
           </div>
           <div className="flex-1">
-            <h2 className="text-2xl font-bold mb-2">微信昵称</h2>
+            <h2 className="text-2xl font-bold mb-2">{user?.name || '微信昵称'}</h2>
             {!isAuthenticated ? (
               <button 
                 onClick={() => requireAuth(() => {})}
@@ -70,7 +73,7 @@ export default function Profile({ requireAuth, isAuthenticated, onOpenMall }: Pr
               </div>
               <div>
                 <p className="text-slate-500 text-sm mb-0.5 font-medium">我的积分</p>
-                <p className="text-3xl font-bold text-slate-900">1250</p>
+                <p className="text-3xl font-bold text-slate-900">{pointsBalance}</p>
               </div>
             </div>
             <button 

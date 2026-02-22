@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, QrCode, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { api } from '../../lib/api';
 
 interface Props {
   exchange: any;
@@ -9,6 +10,7 @@ interface Props {
 
 export default function ExchangeDetail({ exchange, onClose }: Props) {
   const [showQR, setShowQR] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   return (
     <motion.div 
@@ -100,17 +102,26 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
                 <img src={exchange.qrCode} alt="QR Code" className="w-full h-full" referrerPolicy="no-referrer" />
               </div>
               
-              <p className="text-xs text-slate-400 font-mono tracking-widest">{exchange.id}</p>
+              <p className="text-xs text-slate-400 font-mono tracking-widest">{exchange.orderNo || exchange.id}</p>
               
               <button 
                 onClick={() => {
-                  setShowQR(false);
-                  alert('核销成功！');
-                  onClose();
+                  setSubmitting(true);
+                  api.writeoff(exchange.rawId || exchange.id, exchange.code)
+                    .then(() => {
+                      setShowQR(false);
+                      alert('核销成功！');
+                      onClose();
+                    })
+                    .catch((e: any) => {
+                      alert(e?.message || '核销失败');
+                    })
+                    .finally(() => setSubmitting(false));
                 }}
-                className="mt-8 w-full bg-slate-100 text-slate-700 font-bold py-3 rounded-xl active:bg-slate-200 transition-colors"
+                className="mt-8 w-full bg-slate-100 text-slate-700 font-bold py-3 rounded-xl active:bg-slate-200 transition-colors disabled:opacity-50"
+                disabled={submitting}
               >
-                关闭
+                {submitting ? '核销中...' : '确认核销'}
               </button>
             </motion.div>
           </div>

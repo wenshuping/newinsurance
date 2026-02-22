@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HelpCircle, ShoppingBag, CheckCircle2, BookOpen, Share2, Shield, Users } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import ActivityDetail from '../components/activities/ActivityDetail';
+import { api } from '../lib/api';
 
 interface Props {
   requireAuth: (action: () => void) => void;
@@ -9,9 +10,15 @@ interface Props {
 }
 
 export default function Activities({ requireAuth, onOpenMall }: Props) {
-  const [points, setPoints] = useState(1250);
+  const [points, setPoints] = useState(0);
   const [tasksCompleted, setTasksCompleted] = useState(2);
   const [selectedActivity, setSelectedActivity] = useState<any>(null);
+
+  useEffect(() => {
+    api.pointsSummary()
+      .then((res) => setPoints(res.balance))
+      .catch(() => undefined);
+  }, []);
 
   const handleActivityClick = (activity: any) => {
     setSelectedActivity(activity);
@@ -49,7 +56,17 @@ export default function Activities({ requireAuth, onOpenMall }: Props) {
               </div>
               
               <button 
-                onClick={() => requireAuth(() => alert('签到成功！'))}
+                onClick={() =>
+                  requireAuth(async () => {
+                    try {
+                      const res = await api.signIn();
+                      setPoints(res.balance);
+                      alert(`签到成功，获得${res.reward}积分！`);
+                    } catch (e: any) {
+                      alert(e?.message || '签到失败');
+                    }
+                  })
+                }
                 className="w-full bg-white text-red-500 py-3.5 rounded-xl font-bold text-lg shadow-md active:scale-95 transition-transform"
               >
                 立即签到领奖

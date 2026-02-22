@@ -18,3 +18,28 @@ View your app in AI Studio: https://ai.studio/apps/c4d46c6c-1217-4d90-b074-78399
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Backend API (local)
+
+This repo now includes a local Express + SQLite API:
+
+1. Copy env template:
+   `cp .env.example .env.local`
+2. Start API server:
+   `npm run dev:api`
+3. API health check:
+   `http://localhost:4000/api/health`
+
+Core endpoints implemented:
+
+- `POST /api/auth/send-code`
+- `POST /api/auth/verify-basic`
+- `GET /api/me`
+- `GET /api/activities`
+- `POST /api/sign-in`
+- `GET /api/points/summary`
+- `GET /api/points/transactions`
+- `GET /api/mall/items`
+- `POST /api/mall/redeem`
+- `GET /api/redemptions`
+- `POST /api/redemptions/:id/writeoff`

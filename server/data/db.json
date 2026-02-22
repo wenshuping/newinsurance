@@ -1,0 +1,125 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "张三",
+      "mobile": "13800000000",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-22T15:18:13.014Z",
+      "createdAt": "2026-02-22T15:18:13.014Z"
+    }
+  ],
+  "smsCodes": [
+    {
+      "id": 1,
+      "mobile": "13800000000",
+      "code": "123456",
+      "expiresAt": "2026-02-22T15:22:44.057Z",
+      "used": false,
+      "createdAt": "2026-02-22T15:17:44.057Z"
+    },
+    {
+      "id": 2,
+      "mobile": "13800000000",
+      "code": "123456",
+      "expiresAt": "2026-02-22T15:23:13.002Z",
+      "used": true,
+      "createdAt": "2026-02-22T15:18:13.002Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "e487c16d-ebdc-4190-86ab-20b4a53772c6",
+      "userId": 1,
+      "expiresAt": "2026-03-24T15:18:13.015Z",
+      "createdAt": "2026-02-22T15:18:13.015Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "title": "连续签到7天领鸡蛋",
+      "category": "sign",
+      "rewardPoints": 10,
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "title": "保险知识王者赛",
+      "category": "competition",
+      "rewardPoints": 50,
+      "sortOrder": 2
+    },
+    {
+      "id": 3,
+      "title": "完善保障信息",
+      "category": "task",
+      "rewardPoints": 100,
+      "sortOrder": 3
+    },
+    {
+      "id": 4,
+      "title": "推荐好友加入",
+      "category": "invite",
+      "rewardPoints": 500,
+      "sortOrder": 4
+    }
+  ],
+  "signIns": [
+    {
+      "id": 1,
+      "userId": 1,
+      "signDate": "2026-02-22",
+      "pointsAwarded": 10,
+      "createdAt": "2026-02-22T15:18:24.829Z"
+    }
+  ],
+  "pointTransactions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "1",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-22T15:18:13.014Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-22",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-22T15:18:24.829Z"
+    }
+  ],
+  "mallItems": [
+    {
+      "id": 1,
+      "name": "智能低糖电饭煲",
+      "pointsCost": 1200,
+      "stock": 50,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "家庭体检套餐",
+      "pointsCost": 800,
+      "stock": 80,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "健康管理咨询券",
+      "pointsCost": 300,
+      "stock": 999,
+      "isActive": true
+    }
+  ],
+  "redemptions": []
+}
