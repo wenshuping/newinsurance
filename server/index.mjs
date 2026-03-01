@@ -13,10 +13,20 @@ const HOST = process.env.API_HOST || '127.0.0.1';
 const dataDir = path.resolve(process.cwd(), 'server', 'data');
 const dbPath = path.join(dataDir, 'db.json');
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+const corsAllowList = String(process.env.CORS_ORIGIN || '')
+  .split(',')
+  .map((x) => x.trim())
+  .filter(Boolean);
 
 app.use(express.json());
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', process.env.CORS_ORIGIN || '*');
+  const origin = String(req.headers.origin || '').trim();
+  if (!origin) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  } else if (corsAllowList.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(204).end();
