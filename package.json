@@ -7,6 +7,7 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "dev:api": "node server/index.mjs",
     "dev:full": "node server/index.mjs & vite --port=3000 --host=0.0.0.0",
+    "contracts:freeze:check": "node scripts/check-v1-contract-freeze.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",

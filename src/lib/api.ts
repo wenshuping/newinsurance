@@ -1,13 +1,23 @@
+import type {
+  ActivitiesResponse,
+  HealthResponse,
+  MallItemsResponse,
+  MeResponse,
+  PointsSummaryResponse,
+  PointsTransactionsResponse,
+  RedeemResponse,
+  RedemptionsResponse,
+  SendCodeResponse,
+  SignInResponse,
+  UserContract,
+  VerifyBasicResponse,
+  WriteoffResponse,
+} from '../types/contracts';
+
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:4000';
 const TOKEN_KEY = 'insurance_token';
 
-export type User = {
-  id: number;
-  name: string;
-  mobile: string;
-  is_verified_basic: boolean;
-  verified_at?: string | null;
-};
+export type User = UserContract;
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const token = getToken();
@@ -44,42 +54,42 @@ export function clearToken() {
 }
 
 export const api = {
-  health: () => request<{ ok: boolean; service: string }>('/api/health'),
+  health: () => request<HealthResponse>('/api/health'),
 
   sendCode: (mobile: string) =>
-    request<{ ok: boolean; message: string; dev_code?: string }>('/api/auth/send-code', {
+    request<SendCodeResponse>('/api/auth/send-code', {
       method: 'POST',
       body: JSON.stringify({ mobile }),
     }),
 
   verifyBasic: (name: string, mobile: string, code: string) =>
-    request<{ token: string; user: User }>('/api/auth/verify-basic', {
+    request<VerifyBasicResponse>('/api/auth/verify-basic', {
       method: 'POST',
       body: JSON.stringify({ name, mobile, code }),
     }),
 
-  me: () => request<{ user: User; balance: number }>('/api/me'),
+  me: () => request<MeResponse>('/api/me'),
 
-  activities: () => request<{ activities: any[]; balance: number }>('/api/activities'),
+  activities: () => request<ActivitiesResponse>('/api/activities'),
 
-  signIn: () => request<{ ok: boolean; reward: number; balance: number }>('/api/sign-in', { method: 'POST' }),
+  signIn: () => request<SignInResponse>('/api/sign-in', { method: 'POST' }),
 
-  pointsSummary: () => request<{ balance: number }>('/api/points/summary'),
+  pointsSummary: () => request<PointsSummaryResponse>('/api/points/summary'),
 
-  pointsTransactions: () => request<{ list: any[] }>('/api/points/transactions'),
+  pointsTransactions: () => request<PointsTransactionsResponse>('/api/points/transactions'),
 
-  mallItems: () => request<{ items: any[] }>('/api/mall/items'),
+  mallItems: () => request<MallItemsResponse>('/api/mall/items'),
 
   redeem: (itemId: number) =>
-    request<{ ok: boolean; token: string; balance: number }>('/api/mall/redeem', {
+    request<RedeemResponse>('/api/mall/redeem', {
       method: 'POST',
       body: JSON.stringify({ itemId }),
     }),
 
-  redemptions: () => request<{ list: any[] }>('/api/redemptions'),
+  redemptions: () => request<RedemptionsResponse>('/api/redemptions'),
 
   writeoff: (id: number, token?: string) =>
-    request<{ ok: boolean }>(`/api/redemptions/${id}/writeoff`, {
+    request<WriteoffResponse>(`/api/redemptions/${id}/writeoff`, {
       method: 'POST',
       body: JSON.stringify({ token }),
     }),

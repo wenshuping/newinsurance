@@ -1,0 +1,27 @@
+{
+  "version": "v1.0.0",
+  "frozenAt": "2026-03-01",
+  "scope": "C-end API contracts",
+  "files": [
+    "shared-contracts/index.ts",
+    "shared-contracts/common.ts",
+    "shared-contracts/c-endpoint.ts",
+    "shared-contracts/error-codes.ts",
+    "docs/api-v1-contract-freeze-checklist-2026-03-01.md"
+  ],
+  "endpoints": [
+    { "method": "GET", "path": "/api/health" },
+    { "method": "POST", "path": "/api/auth/send-code" },
+    { "method": "POST", "path": "/api/auth/verify-basic" },
+    { "method": "GET", "path": "/api/me" },
+    { "method": "GET", "path": "/api/activities" },
+    { "method": "POST", "path": "/api/sign-in" },
+    { "method": "GET", "path": "/api/points/summary" },
+    { "method": "GET", "path": "/api/points/transactions" },
+    { "method": "GET", "path": "/api/mall/items" },
+    { "method": "POST", "path": "/api/mall/redeem" },
+    { "method": "GET", "path": "/api/redemptions" },
+    { "method": "POST", "path": "/api/redemptions/:id/writeoff" }
+  ]
+}
+
