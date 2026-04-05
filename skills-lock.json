@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "skills": {
+    "api-security-best-practices": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "f99942bacaa99665d0c5197d2d1891d800cc15f13e354e8190a87be154bc9380"
+    },
+    "organization-best-practices": {
+      "source": "better-auth/skills",
+      "sourceType": "github",
+      "computedHash": "ec7bfca730d9263a357bfb059448035e62339ee58eb6191dfe9029088ed5bdf2"
+    },
+    "prd": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "1f3e1f005fc40fda85d250ae906c8ee4f7e8e833e23adfeca6542c19609fd7cd"
+    },
+    "prioritizing-roadmap": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "computedHash": "24ced83ff6c0ca0e0f15a37a6e87d2d47a492237f1ef5b966a1670e9c8c00306"
+    },
+    "product-manager-toolkit": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "d616a0dfa3aab5507bc5021637c494fa1474ecd8788a2977971ec123abbda675"
+    },
+    "requirements-analysis": {
+      "source": "jwynia/agent-skills",
+      "sourceType": "github",
+      "computedHash": "7f84e4803f4f94264c8019c2343e83ef78e8ea6c66eabca21305c817a704ef33"
+    },
+    "roadmap-management": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "computedHash": "3543363f4103f8815443483265241dcb65dd887d7e6ed304257a94a099f81490"
+    },
+    "technical-roadmaps": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "computedHash": "beda6704866862e5dd9fc5ec144d53b6b229ba8f98a4ad9bb1bf240006a837b5"
+    },
+    "user-story-writing": {
+      "source": "aj-geddes/useful-ai-prompts",
+      "sourceType": "github",
+      "computedHash": "5a5b68e6c547a0bbb14a64a538246bec24b9933e2f470985cec253d22b7d8da1"
+    },
+    "writing-prds": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "computedHash": "59f77c05d2e2fb9478b017f9cdd29951d1ceb53c6a6da93f27d2c9996e6403ca"
+    }
+  }
+}

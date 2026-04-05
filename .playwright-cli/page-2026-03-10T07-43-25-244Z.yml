@@ -1,0 +1,33 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - img [ref=e7] [cursor=pointer]
+    - heading "保险经纪人办公中心" [level=2] [ref=e9]
+  - generic [ref=e10]:
+    - heading "欢迎登录" [level=1] [ref=e11]
+    - paragraph [ref=e12]: 专业、高效的经纪人移动展业平台
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - paragraph [ref=e15]: 员工账号
+      - generic [ref=e16]:
+        - img [ref=e17]
+        - textbox "请输入员工账号(邮箱/手机号)" [ref=e19]
+    - generic [ref=e20]:
+      - paragraph [ref=e21]: 密码
+      - generic [ref=e23]:
+        - img [ref=e24]
+        - textbox "请输入密码" [ref=e26]
+    - button "登 录" [ref=e28] [cursor=pointer]
+    - generic [ref=e29]:
+      - button "员工账号登录" [ref=e30]
+      - button "请先在P端创建员工" [ref=e31]
+  - generic [ref=e32]:
+    - generic [ref=e33] [cursor=pointer]:
+      - checkbox "我已阅读并同意 《用户服务协议》 、 《隐私政策》 以及 《保险代理合同》" [checked] [ref=e34]
+      - generic [ref=e35]:
+        - text: 我已阅读并同意
+        - button "《用户服务协议》" [ref=e36]
+        - text: 、
+        - button "《隐私政策》" [ref=e37]
+        - text: 以及
+        - button "《保险代理合同》" [ref=e38]
+    - generic [ref=e39]: Powered by Insurance WorkCenter v3.4.0

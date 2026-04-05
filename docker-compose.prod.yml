@@ -1,0 +1,83 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: insurance-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: insurance
+      POSTGRES_PASSWORD: insurance
+      POSTGRES_DB: insurance_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - insurance_pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: insurance-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  api:
+    build:
+      context: ./insurance_code/insurance_code_full
+      dockerfile: Dockerfile.dev
+    container_name: insurance-api
+    restart: unless-stopped
+    command: sh -c "rm -f .runtime/api-4000.lock && npm run dev:api:skeleton"
+    environment:
+      API_HOST: 0.0.0.0
+      API_PORT: 4000
+      STORAGE_BACKEND: postgres
+      DATABASE_URL: postgresql://insurance:insurance@postgres:5432/insurance_dev
+      CSRF_PROTECTION: "true"
+      REQUIRE_SENSITIVE_CONFIRM: "true"
+      CORS_ORIGIN: "http://localhost:3003,http://127.0.0.1:3003,http://localhost:3004,http://127.0.0.1:3004,http://localhost:3005,http://127.0.0.1:3005"
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+      - redis
+
+  c-web:
+    build:
+      context: ./insurance_code
+      dockerfile: Dockerfile.prod
+      args:
+        VITE_API_BASE: http://127.0.0.1:4000
+    container_name: insurance-c-web
+    restart: unless-stopped
+    ports:
+      - "3003:80"
+    depends_on:
+      - api
+
+  b-web:
+    build:
+      context: ./insurance_code_B
+      dockerfile: Dockerfile.prod
+      args:
+        VITE_API_BASE_URL: http://127.0.0.1:4000
+    container_name: insurance-b-web
+    restart: unless-stopped
+    ports:
+      - "3004:80"
+    depends_on:
+      - api
+
+  p-web:
+    build:
+      context: ./insurance_code_P
+      dockerfile: Dockerfile.prod
+      args:
+        VITE_API_BASE_URL: http://127.0.0.1:4000
+    container_name: insurance-p-web
+    restart: unless-stopped
+    ports:
+      - "3005:80"
+    depends_on:
+      - api
+
+volumes:
+  insurance_pgdata:

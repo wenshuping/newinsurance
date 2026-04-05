@@ -1,0 +1,997 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: "实时数据: 客户 0 · 订单 0"
+    - generic [ref=e7]: 连接异常
+  - generic [ref=e166]:
+    - banner [ref=e167]:
+      - heading "获客工具" [level=1] [ref=e169]
+      - generic [ref=e170]:
+        - button "知识学习" [ref=e171]
+        - button "活动中心" [ref=e172]
+        - button "积分商城" [ref=e173]
+      - generic [ref=e175]:
+        - generic [ref=e176]: "状态:"
+        - button "全部" [ref=e177]
+        - button "进行中" [ref=e178]
+        - button "草稿" [ref=e179]
+        - button "已下架" [ref=e180]
+    - main [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e184]: 进行中
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - heading "链路活动_1772764102921" [level=3] [ref=e187]
+            - generic [ref=e188]: 进行中
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - img [ref=e192]
+                - generic [ref=e197]: 0 参与
+              - button "0 分享" [ref=e198]:
+                - img [ref=e199]
+                - generic [ref=e205]: 0 分享
+            - generic [ref=e206]:
+              - button "查看" [ref=e207]:
+                - img [ref=e208]
+                - text: 查看
+              - generic [ref=e211]:
+                - generic [ref=e212]: "排序:"
+                - spinbutton [ref=e213]: "1"
+              - button "编辑" [ref=e214]:
+                - img [ref=e215]
+                - text: 编辑
+      - generic [ref=e218]:
+        - generic [ref=e220]: 进行中
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - heading "链路活动_1772764137287" [level=3] [ref=e223]
+            - generic [ref=e224]: 进行中
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - img [ref=e228]
+                - generic [ref=e233]: 0 参与
+              - button "0 分享" [ref=e234]:
+                - img [ref=e235]
+                - generic [ref=e241]: 0 分享
+            - generic [ref=e242]:
+              - button "查看" [ref=e243]:
+                - img [ref=e244]
+                - text: 查看
+              - generic [ref=e247]:
+                - generic [ref=e248]: "排序:"
+                - spinbutton [ref=e249]: "1"
+              - button "编辑" [ref=e250]:
+                - img [ref=e251]
+                - text: 编辑
+      - generic [ref=e254]:
+        - generic [ref=e256]: 进行中
+        - generic [ref=e257]:
+          - generic [ref=e258]:
+            - heading "链路活动_1772764831657" [level=3] [ref=e259]
+            - generic [ref=e260]: 进行中
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - img [ref=e264]
+                - generic [ref=e269]: 0 参与
+              - button "0 分享" [ref=e270]:
+                - img [ref=e271]
+                - generic [ref=e277]: 0 分享
+            - generic [ref=e278]:
+              - button "查看" [ref=e279]:
+                - img [ref=e280]
+                - text: 查看
+              - generic [ref=e283]:
+                - generic [ref=e284]: "排序:"
+                - spinbutton [ref=e285]: "1"
+              - button "编辑" [ref=e286]:
+                - img [ref=e287]
+                - text: 编辑
+      - generic [ref=e290]:
+        - generic [ref=e292]: 进行中
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - heading "链路活动_1772764912256" [level=3] [ref=e295]
+            - generic [ref=e296]: 进行中
+          - generic [ref=e297]:
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - img [ref=e300]
+                - generic [ref=e305]: 0 参与
+              - button "0 分享" [ref=e306]:
+                - img [ref=e307]
+                - generic [ref=e313]: 0 分享
+            - generic [ref=e314]:
+              - button "查看" [ref=e315]:
+                - img [ref=e316]
+                - text: 查看
+              - generic [ref=e319]:
+                - generic [ref=e320]: "排序:"
+                - spinbutton [ref=e321]: "1"
+              - button "编辑" [ref=e322]:
+                - img [ref=e323]
+                - text: 编辑
+      - generic [ref=e326]:
+        - generic [ref=e328]: 进行中
+        - generic [ref=e329]:
+          - generic [ref=e330]:
+            - heading "链路活动_1772766324219" [level=3] [ref=e331]
+            - generic [ref=e332]: 进行中
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - generic [ref=e335]:
+                - img [ref=e336]
+                - generic [ref=e341]: 0 参与
+              - button "0 分享" [ref=e342]:
+                - img [ref=e343]
+                - generic [ref=e349]: 0 分享
+            - generic [ref=e350]:
+              - button "查看" [ref=e351]:
+                - img [ref=e352]
+                - text: 查看
+              - generic [ref=e355]:
+                - generic [ref=e356]: "排序:"
+                - spinbutton [ref=e357]: "1"
+              - button "编辑" [ref=e358]:
+                - img [ref=e359]
+                - text: 编辑
+      - generic [ref=e362]:
+        - generic [ref=e364]: 进行中
+        - generic [ref=e365]:
+          - generic [ref=e366]:
+            - heading "链路活动_1772766454688" [level=3] [ref=e367]
+            - generic [ref=e368]: 进行中
+          - generic [ref=e369]:
+            - generic [ref=e370]:
+              - generic [ref=e371]:
+                - img [ref=e372]
+                - generic [ref=e377]: 0 参与
+              - button "0 分享" [ref=e378]:
+                - img [ref=e379]
+                - generic [ref=e385]: 0 分享
+            - generic [ref=e386]:
+              - button "查看" [ref=e387]:
+                - img [ref=e388]
+                - text: 查看
+              - generic [ref=e391]:
+                - generic [ref=e392]: "排序:"
+                - spinbutton [ref=e393]: "1"
+              - button "编辑" [ref=e394]:
+                - img [ref=e395]
+                - text: 编辑
+      - generic [ref=e398]:
+        - generic [ref=e400]: 进行中
+        - generic [ref=e401]:
+          - generic [ref=e402]:
+            - heading "链路活动_1772766538876" [level=3] [ref=e403]
+            - generic [ref=e404]: 进行中
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - img [ref=e408]
+                - generic [ref=e413]: 0 参与
+              - button "0 分享" [ref=e414]:
+                - img [ref=e415]
+                - generic [ref=e421]: 0 分享
+            - generic [ref=e422]:
+              - button "查看" [ref=e423]:
+                - img [ref=e424]
+                - text: 查看
+              - generic [ref=e427]:
+                - generic [ref=e428]: "排序:"
+                - spinbutton [ref=e429]: "1"
+              - button "编辑" [ref=e430]:
+                - img [ref=e431]
+                - text: 编辑
+      - generic [ref=e434]:
+        - generic [ref=e436]: 进行中
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - heading "链路活动_1772767188067" [level=3] [ref=e439]
+            - generic [ref=e440]: 进行中
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - generic [ref=e443]:
+                - img [ref=e444]
+                - generic [ref=e449]: 0 参与
+              - button "0 分享" [ref=e450]:
+                - img [ref=e451]
+                - generic [ref=e457]: 0 分享
+            - generic [ref=e458]:
+              - button "查看" [ref=e459]:
+                - img [ref=e460]
+                - text: 查看
+              - generic [ref=e463]:
+                - generic [ref=e464]: "排序:"
+                - spinbutton [ref=e465]: "1"
+              - button "编辑" [ref=e466]:
+                - img [ref=e467]
+                - text: 编辑
+      - generic [ref=e470]:
+        - generic [ref=e472]: 进行中
+        - generic [ref=e473]:
+          - generic [ref=e474]:
+            - heading "链路活动_1772767228979" [level=3] [ref=e475]
+            - generic [ref=e476]: 进行中
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - generic [ref=e479]:
+                - img [ref=e480]
+                - generic [ref=e485]: 0 参与
+              - button "0 分享" [ref=e486]:
+                - img [ref=e487]
+                - generic [ref=e493]: 0 分享
+            - generic [ref=e494]:
+              - button "查看" [ref=e495]:
+                - img [ref=e496]
+                - text: 查看
+              - generic [ref=e499]:
+                - generic [ref=e500]: "排序:"
+                - spinbutton [ref=e501]: "1"
+              - button "编辑" [ref=e502]:
+                - img [ref=e503]
+                - text: 编辑
+      - generic [ref=e506]:
+        - generic [ref=e508]: 进行中
+        - generic [ref=e509]:
+          - generic [ref=e510]:
+            - heading "链路活动_1772768404613" [level=3] [ref=e511]
+            - generic [ref=e512]: 进行中
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - generic [ref=e515]:
+                - img [ref=e516]
+                - generic [ref=e521]: 0 参与
+              - button "0 分享" [ref=e522]:
+                - img [ref=e523]
+                - generic [ref=e529]: 0 分享
+            - generic [ref=e530]:
+              - button "查看" [ref=e531]:
+                - img [ref=e532]
+                - text: 查看
+              - generic [ref=e535]:
+                - generic [ref=e536]: "排序:"
+                - spinbutton [ref=e537]: "1"
+              - button "编辑" [ref=e538]:
+                - img [ref=e539]
+                - text: 编辑
+      - generic [ref=e542]:
+        - generic [ref=e544]: 进行中
+        - generic [ref=e545]:
+          - generic [ref=e546]:
+            - heading "链路活动_1772768915083" [level=3] [ref=e547]
+            - generic [ref=e548]: 进行中
+          - generic [ref=e549]:
+            - generic [ref=e550]:
+              - generic [ref=e551]:
+                - img [ref=e552]
+                - generic [ref=e557]: 0 参与
+              - button "0 分享" [ref=e558]:
+                - img [ref=e559]
+                - generic [ref=e565]: 0 分享
+            - generic [ref=e566]:
+              - button "查看" [ref=e567]:
+                - img [ref=e568]
+                - text: 查看
+              - generic [ref=e571]:
+                - generic [ref=e572]: "排序:"
+                - spinbutton [ref=e573]: "1"
+              - button "编辑" [ref=e574]:
+                - img [ref=e575]
+                - text: 编辑
+      - generic [ref=e578]:
+        - generic [ref=e580]: 进行中
+        - generic [ref=e581]:
+          - generic [ref=e582]:
+            - heading "链路活动_1772769549955" [level=3] [ref=e583]
+            - generic [ref=e584]: 进行中
+          - generic [ref=e585]:
+            - generic [ref=e586]:
+              - generic [ref=e587]:
+                - img [ref=e588]
+                - generic [ref=e593]: 0 参与
+              - button "0 分享" [ref=e594]:
+                - img [ref=e595]
+                - generic [ref=e601]: 0 分享
+            - generic [ref=e602]:
+              - button "查看" [ref=e603]:
+                - img [ref=e604]
+                - text: 查看
+              - generic [ref=e607]:
+                - generic [ref=e608]: "排序:"
+                - spinbutton [ref=e609]: "1"
+              - button "编辑" [ref=e610]:
+                - img [ref=e611]
+                - text: 编辑
+      - generic [ref=e614]:
+        - generic [ref=e616]: 进行中
+        - generic [ref=e617]:
+          - generic [ref=e618]:
+            - heading "链路活动_1772769610183" [level=3] [ref=e619]
+            - generic [ref=e620]: 进行中
+          - generic [ref=e621]:
+            - generic [ref=e622]:
+              - generic [ref=e623]:
+                - img [ref=e624]
+                - generic [ref=e629]: 0 参与
+              - button "0 分享" [ref=e630]:
+                - img [ref=e631]
+                - generic [ref=e637]: 0 分享
+            - generic [ref=e638]:
+              - button "查看" [ref=e639]:
+                - img [ref=e640]
+                - text: 查看
+              - generic [ref=e643]:
+                - generic [ref=e644]: "排序:"
+                - spinbutton [ref=e645]: "1"
+              - button "编辑" [ref=e646]:
+                - img [ref=e647]
+                - text: 编辑
+      - generic [ref=e650]:
+        - generic [ref=e652]: 进行中
+        - generic [ref=e653]:
+          - generic [ref=e654]:
+            - heading "链路活动_1772773375022" [level=3] [ref=e655]
+            - generic [ref=e656]: 进行中
+          - generic [ref=e657]:
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - img [ref=e660]
+                - generic [ref=e665]: 0 参与
+              - button "0 分享" [ref=e666]:
+                - img [ref=e667]
+                - generic [ref=e673]: 0 分享
+            - generic [ref=e674]:
+              - button "查看" [ref=e675]:
+                - img [ref=e676]
+                - text: 查看
+              - generic [ref=e679]:
+                - generic [ref=e680]: "排序:"
+                - spinbutton [ref=e681]: "1"
+              - button "编辑" [ref=e682]:
+                - img [ref=e683]
+                - text: 编辑
+      - generic [ref=e686]:
+        - generic [ref=e688]: 进行中
+        - generic [ref=e689]:
+          - generic [ref=e690]:
+            - heading "链路活动_1772773383616" [level=3] [ref=e691]
+            - generic [ref=e692]: 进行中
+          - generic [ref=e693]:
+            - generic [ref=e694]:
+              - generic [ref=e695]:
+                - img [ref=e696]
+                - generic [ref=e701]: 0 参与
+              - button "0 分享" [ref=e702]:
+                - img [ref=e703]
+                - generic [ref=e709]: 0 分享
+            - generic [ref=e710]:
+              - button "查看" [ref=e711]:
+                - img [ref=e712]
+                - text: 查看
+              - generic [ref=e715]:
+                - generic [ref=e716]: "排序:"
+                - spinbutton [ref=e717]: "1"
+              - button "编辑" [ref=e718]:
+                - img [ref=e719]
+                - text: 编辑
+      - generic [ref=e722]:
+        - generic [ref=e724]: 进行中
+        - generic [ref=e725]:
+          - generic [ref=e726]:
+            - heading "链路活动_1772774548743" [level=3] [ref=e727]
+            - generic [ref=e728]: 进行中
+          - generic [ref=e729]:
+            - generic [ref=e730]:
+              - generic [ref=e731]:
+                - img [ref=e732]
+                - generic [ref=e737]: 0 参与
+              - button "0 分享" [ref=e738]:
+                - img [ref=e739]
+                - generic [ref=e745]: 0 分享
+            - generic [ref=e746]:
+              - button "查看" [ref=e747]:
+                - img [ref=e748]
+                - text: 查看
+              - generic [ref=e751]:
+                - generic [ref=e752]: "排序:"
+                - spinbutton [ref=e753]: "1"
+              - button "编辑" [ref=e754]:
+                - img [ref=e755]
+                - text: 编辑
+      - generic [ref=e758]:
+        - generic [ref=e760]: 进行中
+        - generic [ref=e761]:
+          - generic [ref=e762]:
+            - heading "链路活动_1772776041119" [level=3] [ref=e763]
+            - generic [ref=e764]: 进行中
+          - generic [ref=e765]:
+            - generic [ref=e766]:
+              - generic [ref=e767]:
+                - img [ref=e768]
+                - generic [ref=e773]: 0 参与
+              - button "0 分享" [ref=e774]:
+                - img [ref=e775]
+                - generic [ref=e781]: 0 分享
+            - generic [ref=e782]:
+              - button "查看" [ref=e783]:
+                - img [ref=e784]
+                - text: 查看
+              - generic [ref=e787]:
+                - generic [ref=e788]: "排序:"
+                - spinbutton [ref=e789]: "1"
+              - button "编辑" [ref=e790]:
+                - img [ref=e791]
+                - text: 编辑
+      - generic [ref=e794]:
+        - generic [ref=e796]: 进行中
+        - generic [ref=e797]:
+          - generic [ref=e798]:
+            - heading "链路活动_1772776049767" [level=3] [ref=e799]
+            - generic [ref=e800]: 进行中
+          - generic [ref=e801]:
+            - generic [ref=e802]:
+              - generic [ref=e803]:
+                - img [ref=e804]
+                - generic [ref=e809]: 0 参与
+              - button "0 分享" [ref=e810]:
+                - img [ref=e811]
+                - generic [ref=e817]: 0 分享
+            - generic [ref=e818]:
+              - button "查看" [ref=e819]:
+                - img [ref=e820]
+                - text: 查看
+              - generic [ref=e823]:
+                - generic [ref=e824]: "排序:"
+                - spinbutton [ref=e825]: "1"
+              - button "编辑" [ref=e826]:
+                - img [ref=e827]
+                - text: 编辑
+      - generic [ref=e830]:
+        - generic [ref=e832]: 进行中
+        - generic [ref=e833]:
+          - generic [ref=e834]:
+            - heading "链路活动_1772776130080" [level=3] [ref=e835]
+            - generic [ref=e836]: 进行中
+          - generic [ref=e837]:
+            - generic [ref=e838]:
+              - generic [ref=e839]:
+                - img [ref=e840]
+                - generic [ref=e845]: 0 参与
+              - button "0 分享" [ref=e846]:
+                - img [ref=e847]
+                - generic [ref=e853]: 0 分享
+            - generic [ref=e854]:
+              - button "查看" [ref=e855]:
+                - img [ref=e856]
+                - text: 查看
+              - generic [ref=e859]:
+                - generic [ref=e860]: "排序:"
+                - spinbutton [ref=e861]: "1"
+              - button "编辑" [ref=e862]:
+                - img [ref=e863]
+                - text: 编辑
+      - generic [ref=e866]:
+        - generic [ref=e868]: 进行中
+        - generic [ref=e869]:
+          - generic [ref=e870]:
+            - heading "链路活动_1772776138092" [level=3] [ref=e871]
+            - generic [ref=e872]: 进行中
+          - generic [ref=e873]:
+            - generic [ref=e874]:
+              - generic [ref=e875]:
+                - img [ref=e876]
+                - generic [ref=e881]: 0 参与
+              - button "0 分享" [ref=e882]:
+                - img [ref=e883]
+                - generic [ref=e889]: 0 分享
+            - generic [ref=e890]:
+              - button "查看" [ref=e891]:
+                - img [ref=e892]
+                - text: 查看
+              - generic [ref=e895]:
+                - generic [ref=e896]: "排序:"
+                - spinbutton [ref=e897]: "1"
+              - button "编辑" [ref=e898]:
+                - img [ref=e899]
+                - text: 编辑
+      - generic [ref=e902]:
+        - generic [ref=e904]: 进行中
+        - generic [ref=e905]:
+          - generic [ref=e906]:
+            - heading "链路活动_1772776435777" [level=3] [ref=e907]
+            - generic [ref=e908]: 进行中
+          - generic [ref=e909]:
+            - generic [ref=e910]:
+              - generic [ref=e911]:
+                - img [ref=e912]
+                - generic [ref=e917]: 0 参与
+              - button "0 分享" [ref=e918]:
+                - img [ref=e919]
+                - generic [ref=e925]: 0 分享
+            - generic [ref=e926]:
+              - button "查看" [ref=e927]:
+                - img [ref=e928]
+                - text: 查看
+              - generic [ref=e931]:
+                - generic [ref=e932]: "排序:"
+                - spinbutton [ref=e933]: "1"
+              - button "编辑" [ref=e934]:
+                - img [ref=e935]
+                - text: 编辑
+      - generic [ref=e938]:
+        - generic [ref=e940]: 进行中
+        - generic [ref=e941]:
+          - generic [ref=e942]:
+            - heading "链路活动_1772776443528" [level=3] [ref=e943]
+            - generic [ref=e944]: 进行中
+          - generic [ref=e945]:
+            - generic [ref=e946]:
+              - generic [ref=e947]:
+                - img [ref=e948]
+                - generic [ref=e953]: 0 参与
+              - button "0 分享" [ref=e954]:
+                - img [ref=e955]
+                - generic [ref=e961]: 0 分享
+            - generic [ref=e962]:
+              - button "查看" [ref=e963]:
+                - img [ref=e964]
+                - text: 查看
+              - generic [ref=e967]:
+                - generic [ref=e968]: "排序:"
+                - spinbutton [ref=e969]: "1"
+              - button "编辑" [ref=e970]:
+                - img [ref=e971]
+                - text: 编辑
+      - generic [ref=e974]:
+        - generic [ref=e976]: 进行中
+        - generic [ref=e977]:
+          - generic [ref=e978]:
+            - heading "链路活动_1772777678852" [level=3] [ref=e979]
+            - generic [ref=e980]: 进行中
+          - generic [ref=e981]:
+            - generic [ref=e982]:
+              - generic [ref=e983]:
+                - img [ref=e984]
+                - generic [ref=e989]: 0 参与
+              - button "0 分享" [ref=e990]:
+                - img [ref=e991]
+                - generic [ref=e997]: 0 分享
+            - generic [ref=e998]:
+              - button "查看" [ref=e999]:
+                - img [ref=e1000]
+                - text: 查看
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: "排序:"
+                - spinbutton [ref=e1005]: "1"
+              - button "编辑" [ref=e1006]:
+                - img [ref=e1007]
+                - text: 编辑
+      - generic [ref=e1010]:
+        - generic [ref=e1012]: 进行中
+        - generic [ref=e1013]:
+          - generic [ref=e1014]:
+            - heading "链路活动_1772777689081" [level=3] [ref=e1015]
+            - generic [ref=e1016]: 进行中
+          - generic [ref=e1017]:
+            - generic [ref=e1018]:
+              - generic [ref=e1019]:
+                - img [ref=e1020]
+                - generic [ref=e1025]: 0 参与
+              - button "0 分享" [ref=e1026]:
+                - img [ref=e1027]
+                - generic [ref=e1033]: 0 分享
+            - generic [ref=e1034]:
+              - button "查看" [ref=e1035]:
+                - img [ref=e1036]
+                - text: 查看
+              - generic [ref=e1039]:
+                - generic [ref=e1040]: "排序:"
+                - spinbutton [ref=e1041]: "1"
+              - button "编辑" [ref=e1042]:
+                - img [ref=e1043]
+                - text: 编辑
+      - generic [ref=e1046]:
+        - generic [ref=e1048]: 进行中
+        - generic [ref=e1049]:
+          - generic [ref=e1050]:
+            - heading "链路活动_1772790494517" [level=3] [ref=e1051]
+            - generic [ref=e1052]: 进行中
+          - generic [ref=e1053]:
+            - generic [ref=e1054]:
+              - generic [ref=e1055]:
+                - img [ref=e1056]
+                - generic [ref=e1061]: 0 参与
+              - button "0 分享" [ref=e1062]:
+                - img [ref=e1063]
+                - generic [ref=e1069]: 0 分享
+            - generic [ref=e1070]:
+              - button "查看" [ref=e1071]:
+                - img [ref=e1072]
+                - text: 查看
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: "排序:"
+                - spinbutton [ref=e1077]: "1"
+              - button "编辑" [ref=e1078]:
+                - img [ref=e1079]
+                - text: 编辑
+      - generic [ref=e1082]:
+        - generic [ref=e1084]: 进行中
+        - generic [ref=e1085]:
+          - generic [ref=e1086]:
+            - heading "链路活动_1772790682162" [level=3] [ref=e1087]
+            - generic [ref=e1088]: 进行中
+          - generic [ref=e1089]:
+            - generic [ref=e1090]:
+              - generic [ref=e1091]:
+                - img [ref=e1092]
+                - generic [ref=e1097]: 0 参与
+              - button "0 分享" [ref=e1098]:
+                - img [ref=e1099]
+                - generic [ref=e1105]: 0 分享
+            - generic [ref=e1106]:
+              - button "查看" [ref=e1107]:
+                - img [ref=e1108]
+                - text: 查看
+              - generic [ref=e1111]:
+                - generic [ref=e1112]: "排序:"
+                - spinbutton [ref=e1113]: "1"
+              - button "编辑" [ref=e1114]:
+                - img [ref=e1115]
+                - text: 编辑
+      - generic [ref=e1118]:
+        - generic [ref=e1120]: 进行中
+        - generic [ref=e1121]:
+          - generic [ref=e1122]:
+            - heading "链路活动_1772790730854" [level=3] [ref=e1123]
+            - generic [ref=e1124]: 进行中
+          - generic [ref=e1125]:
+            - generic [ref=e1126]:
+              - generic [ref=e1127]:
+                - img [ref=e1128]
+                - generic [ref=e1133]: 0 参与
+              - button "0 分享" [ref=e1134]:
+                - img [ref=e1135]
+                - generic [ref=e1141]: 0 分享
+            - generic [ref=e1142]:
+              - button "查看" [ref=e1143]:
+                - img [ref=e1144]
+                - text: 查看
+              - generic [ref=e1147]:
+                - generic [ref=e1148]: "排序:"
+                - spinbutton [ref=e1149]: "1"
+              - button "编辑" [ref=e1150]:
+                - img [ref=e1151]
+                - text: 编辑
+      - generic [ref=e1154]:
+        - generic [ref=e1156]: 进行中
+        - generic [ref=e1157]:
+          - generic [ref=e1158]:
+            - heading "链路活动_1772790744027" [level=3] [ref=e1159]
+            - generic [ref=e1160]: 进行中
+          - generic [ref=e1161]:
+            - generic [ref=e1162]:
+              - generic [ref=e1163]:
+                - img [ref=e1164]
+                - generic [ref=e1169]: 0 参与
+              - button "0 分享" [ref=e1170]:
+                - img [ref=e1171]
+                - generic [ref=e1177]: 0 分享
+            - generic [ref=e1178]:
+              - button "查看" [ref=e1179]:
+                - img [ref=e1180]
+                - text: 查看
+              - generic [ref=e1183]:
+                - generic [ref=e1184]: "排序:"
+                - spinbutton [ref=e1185]: "1"
+              - button "编辑" [ref=e1186]:
+                - img [ref=e1187]
+                - text: 编辑
+      - generic [ref=e1190]:
+        - generic [ref=e1192]: 进行中
+        - generic [ref=e1193]:
+          - generic [ref=e1194]:
+            - heading "链路活动_1772791347874" [level=3] [ref=e1195]
+            - generic [ref=e1196]: 进行中
+          - generic [ref=e1197]:
+            - generic [ref=e1198]:
+              - generic [ref=e1199]:
+                - img [ref=e1200]
+                - generic [ref=e1205]: 0 参与
+              - button "0 分享" [ref=e1206]:
+                - img [ref=e1207]
+                - generic [ref=e1213]: 0 分享
+            - generic [ref=e1214]:
+              - button "查看" [ref=e1215]:
+                - img [ref=e1216]
+                - text: 查看
+              - generic [ref=e1219]:
+                - generic [ref=e1220]: "排序:"
+                - spinbutton [ref=e1221]: "1"
+              - button "编辑" [ref=e1222]:
+                - img [ref=e1223]
+                - text: 编辑
+      - generic [ref=e1226]:
+        - generic [ref=e1228]: 进行中
+        - generic [ref=e1229]:
+          - generic [ref=e1230]:
+            - heading "链路活动_1772791358515" [level=3] [ref=e1231]
+            - generic [ref=e1232]: 进行中
+          - generic [ref=e1233]:
+            - generic [ref=e1234]:
+              - generic [ref=e1235]:
+                - img [ref=e1236]
+                - generic [ref=e1241]: 0 参与
+              - button "0 分享" [ref=e1242]:
+                - img [ref=e1243]
+                - generic [ref=e1249]: 0 分享
+            - generic [ref=e1250]:
+              - button "查看" [ref=e1251]:
+                - img [ref=e1252]
+                - text: 查看
+              - generic [ref=e1255]:
+                - generic [ref=e1256]: "排序:"
+                - spinbutton [ref=e1257]: "1"
+              - button "编辑" [ref=e1258]:
+                - img [ref=e1259]
+                - text: 编辑
+      - generic [ref=e1262]:
+        - generic [ref=e1264]: 进行中
+        - generic [ref=e1265]:
+          - generic [ref=e1266]:
+            - heading "链路活动_1772791788519" [level=3] [ref=e1267]
+            - generic [ref=e1268]: 进行中
+          - generic [ref=e1269]:
+            - generic [ref=e1270]:
+              - generic [ref=e1271]:
+                - img [ref=e1272]
+                - generic [ref=e1277]: 0 参与
+              - button "0 分享" [ref=e1278]:
+                - img [ref=e1279]
+                - generic [ref=e1285]: 0 分享
+            - generic [ref=e1286]:
+              - button "查看" [ref=e1287]:
+                - img [ref=e1288]
+                - text: 查看
+              - generic [ref=e1291]:
+                - generic [ref=e1292]: "排序:"
+                - spinbutton [ref=e1293]: "1"
+              - button "编辑" [ref=e1294]:
+                - img [ref=e1295]
+                - text: 编辑
+      - generic [ref=e1298]:
+        - generic [ref=e1300]: 进行中
+        - generic [ref=e1301]:
+          - generic [ref=e1302]:
+            - heading "链路活动_1772792641237" [level=3] [ref=e1303]
+            - generic [ref=e1304]: 进行中
+          - generic [ref=e1305]:
+            - generic [ref=e1306]:
+              - generic [ref=e1307]:
+                - img [ref=e1308]
+                - generic [ref=e1313]: 0 参与
+              - button "0 分享" [ref=e1314]:
+                - img [ref=e1315]
+                - generic [ref=e1321]: 0 分享
+            - generic [ref=e1322]:
+              - button "查看" [ref=e1323]:
+                - img [ref=e1324]
+                - text: 查看
+              - generic [ref=e1327]:
+                - generic [ref=e1328]: "排序:"
+                - spinbutton [ref=e1329]: "1"
+              - button "编辑" [ref=e1330]:
+                - img [ref=e1331]
+                - text: 编辑
+      - generic [ref=e1334]:
+        - generic [ref=e1336]: 进行中
+        - generic [ref=e1337]:
+          - generic [ref=e1338]:
+            - heading "链路活动_1772795794030" [level=3] [ref=e1339]
+            - generic [ref=e1340]: 进行中
+          - generic [ref=e1341]:
+            - generic [ref=e1342]:
+              - generic [ref=e1343]:
+                - img [ref=e1344]
+                - generic [ref=e1349]: 0 参与
+              - button "0 分享" [ref=e1350]:
+                - img [ref=e1351]
+                - generic [ref=e1357]: 0 分享
+            - generic [ref=e1358]:
+              - button "查看" [ref=e1359]:
+                - img [ref=e1360]
+                - text: 查看
+              - generic [ref=e1363]:
+                - generic [ref=e1364]: "排序:"
+                - spinbutton [ref=e1365]: "1"
+              - button "编辑" [ref=e1366]:
+                - img [ref=e1367]
+                - text: 编辑
+      - generic [ref=e1370]:
+        - generic [ref=e1372]: 进行中
+        - generic [ref=e1373]:
+          - generic [ref=e1374]:
+            - heading "链路活动_1772795958614" [level=3] [ref=e1375]
+            - generic [ref=e1376]: 进行中
+          - generic [ref=e1377]:
+            - generic [ref=e1378]:
+              - generic [ref=e1379]:
+                - img [ref=e1380]
+                - generic [ref=e1385]: 0 参与
+              - button "0 分享" [ref=e1386]:
+                - img [ref=e1387]
+                - generic [ref=e1393]: 0 分享
+            - generic [ref=e1394]:
+              - button "查看" [ref=e1395]:
+                - img [ref=e1396]
+                - text: 查看
+              - generic [ref=e1399]:
+                - generic [ref=e1400]: "排序:"
+                - spinbutton [ref=e1401]: "1"
+              - button "编辑" [ref=e1402]:
+                - img [ref=e1403]
+                - text: 编辑
+      - generic [ref=e1406]:
+        - generic [ref=e1408]: 进行中
+        - generic [ref=e1409]:
+          - generic [ref=e1410]:
+            - heading "链路活动_1772860073162" [level=3] [ref=e1411]
+            - generic [ref=e1412]: 进行中
+          - generic [ref=e1413]:
+            - generic [ref=e1414]:
+              - generic [ref=e1415]:
+                - img [ref=e1416]
+                - generic [ref=e1421]: 0 参与
+              - button "0 分享" [ref=e1422]:
+                - img [ref=e1423]
+                - generic [ref=e1429]: 0 分享
+            - generic [ref=e1430]:
+              - button "查看" [ref=e1431]:
+                - img [ref=e1432]
+                - text: 查看
+              - generic [ref=e1435]:
+                - generic [ref=e1436]: "排序:"
+                - spinbutton [ref=e1437]: "1"
+              - button "编辑" [ref=e1438]:
+                - img [ref=e1439]
+                - text: 编辑
+      - generic [ref=e1442]:
+        - generic [ref=e1444]: 进行中
+        - generic [ref=e1445]:
+          - generic [ref=e1446]:
+            - heading "链路活动_1772860143407" [level=3] [ref=e1447]
+            - generic [ref=e1448]: 进行中
+          - generic [ref=e1449]:
+            - generic [ref=e1450]:
+              - generic [ref=e1451]:
+                - img [ref=e1452]
+                - generic [ref=e1457]: 0 参与
+              - button "0 分享" [ref=e1458]:
+                - img [ref=e1459]
+                - generic [ref=e1465]: 0 分享
+            - generic [ref=e1466]:
+              - button "查看" [ref=e1467]:
+                - img [ref=e1468]
+                - text: 查看
+              - generic [ref=e1471]:
+                - generic [ref=e1472]: "排序:"
+                - spinbutton [ref=e1473]: "1"
+              - button "编辑" [ref=e1474]:
+                - img [ref=e1475]
+                - text: 编辑
+      - generic [ref=e1478]:
+        - generic [ref=e1480]: 进行中
+        - generic [ref=e1481]:
+          - generic [ref=e1482]:
+            - heading "浏览器链路活动_1772888972580" [level=3] [ref=e1483]
+            - generic [ref=e1484]: 进行中
+          - generic [ref=e1485]:
+            - generic [ref=e1486]:
+              - generic [ref=e1487]:
+                - img [ref=e1488]
+                - generic [ref=e1493]: 0 参与
+              - button "0 分享" [ref=e1494]:
+                - img [ref=e1495]
+                - generic [ref=e1501]: 0 分享
+            - generic [ref=e1502]:
+              - button "查看" [ref=e1503]:
+                - img [ref=e1504]
+                - text: 查看
+              - generic [ref=e1507]:
+                - generic [ref=e1508]: "排序:"
+                - spinbutton [ref=e1509]: "1"
+              - button "编辑" [ref=e1510]:
+                - img [ref=e1511]
+                - text: 编辑
+      - generic [ref=e1514]:
+        - generic [ref=e1516]: 进行中
+        - generic [ref=e1517]:
+          - generic [ref=e1518]:
+            - heading "链路活动_1772889064705" [level=3] [ref=e1519]
+            - generic [ref=e1520]: 进行中
+          - generic [ref=e1521]:
+            - generic [ref=e1522]:
+              - generic [ref=e1523]:
+                - img [ref=e1524]
+                - generic [ref=e1529]: 0 参与
+              - button "0 分享" [ref=e1530]:
+                - img [ref=e1531]
+                - generic [ref=e1537]: 0 分享
+            - generic [ref=e1538]:
+              - button "查看" [ref=e1539]:
+                - img [ref=e1540]
+                - text: 查看
+              - generic [ref=e1543]:
+                - generic [ref=e1544]: "排序:"
+                - spinbutton [ref=e1545]: "1"
+              - button "编辑" [ref=e1546]:
+                - img [ref=e1547]
+                - text: 编辑
+      - generic [ref=e1550]:
+        - generic [ref=e1552]: 进行中
+        - generic [ref=e1553]:
+          - generic [ref=e1554]:
+            - heading "浏览器链路活动_1772889161143" [level=3] [ref=e1555]
+            - generic [ref=e1556]: 进行中
+          - generic [ref=e1557]:
+            - generic [ref=e1558]:
+              - generic [ref=e1559]:
+                - img [ref=e1560]
+                - generic [ref=e1565]: 0 参与
+              - button "0 分享" [ref=e1566]:
+                - img [ref=e1567]
+                - generic [ref=e1573]: 0 分享
+            - generic [ref=e1574]:
+              - button "查看" [ref=e1575]:
+                - img [ref=e1576]
+                - text: 查看
+              - generic [ref=e1579]:
+                - generic [ref=e1580]: "排序:"
+                - spinbutton [ref=e1581]: "1"
+              - button "编辑" [ref=e1582]:
+                - img [ref=e1583]
+                - text: 编辑
+      - generic [ref=e1586]:
+        - generic [ref=e1588]: 进行中
+        - generic [ref=e1589]:
+          - generic [ref=e1590]:
+            - heading "浏览器链路活动_1772889180535" [level=3] [ref=e1591]
+            - generic [ref=e1592]: 进行中
+          - generic [ref=e1593]:
+            - generic [ref=e1594]:
+              - generic [ref=e1595]:
+                - img [ref=e1596]
+                - generic [ref=e1601]: 0 参与
+              - button "0 分享" [ref=e1602]:
+                - img [ref=e1603]
+                - generic [ref=e1609]: 0 分享
+            - generic [ref=e1610]:
+              - button "查看" [ref=e1611]:
+                - img [ref=e1612]
+                - text: 查看
+              - generic [ref=e1615]:
+                - generic [ref=e1616]: "排序:"
+                - spinbutton [ref=e1617]: "1"
+              - button "编辑" [ref=e1618]:
+                - img [ref=e1619]
+                - text: 编辑
+    - button [ref=e1622]:
+      - img [ref=e1623]
+  - navigation [ref=e138]:
+    - button "工作台" [ref=e139]:
+      - img [ref=e140]
+      - generic [ref=e143]: 工作台
+    - button "客户库" [ref=e144]:
+      - img [ref=e145]
+      - generic [ref=e150]: 客户库
+    - button "获客工具" [active] [ref=e151]:
+      - img [ref=e152]
+      - generic [ref=e154]: 获客工具
+    - button "决策" [ref=e155]:
+      - img [ref=e156]
+      - generic [ref=e159]: 决策
+    - button "我的" [ref=e160]:
+      - img [ref=e161]
+      - generic [ref=e164]: 我的
+  - button "退出" [ref=e165]

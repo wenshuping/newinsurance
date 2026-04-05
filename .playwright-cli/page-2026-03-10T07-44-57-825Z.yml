@@ -1,0 +1,510 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: "实时数据: 客户 0 · 订单 0"
+    - generic [ref=e7]: 连接异常
+  - generic [ref=e166]:
+    - banner [ref=e167]:
+      - heading "获客工具" [level=1] [ref=e169]
+      - generic [ref=e170]:
+        - button "知识学习" [ref=e171]
+        - button "活动中心" [ref=e172]
+        - button "积分商城" [ref=e173]
+      - generic [ref=e175]:
+        - generic [ref=e176]: "状态:"
+        - button "全部" [ref=e177]
+        - button "已发布" [ref=e1624]
+        - button "草稿" [ref=e179]
+        - button "失效" [ref=e1625]
+    - main [ref=e181]:
+      - generic [ref=e1627]:
+        - generic [ref=e1628]:
+          - generic [ref=e1629]:
+            - img [ref=e1630]
+            - text: 视频
+          - generic [ref=e1633]: 03:00
+        - generic [ref=e1634]:
+          - generic [ref=e1635]:
+            - generic [ref=e1636]:
+              - heading "放放放" [level=3] [ref=e1637]
+              - generic [ref=e1638]: 已发布
+            - generic [ref=e1639]:
+              - generic [ref=e1640]:
+                - img [ref=e1641]
+                - text: "0"
+              - button "1" [ref=e2287]:
+                - img [ref=e1645]
+                - text: "1"
+          - generic [ref=e1651]:
+            - generic [ref=e1652]:
+              - generic [ref=e1653]: "排序:"
+              - spinbutton [ref=e1654]: "1"
+            - generic [ref=e1655]:
+              - button "查看" [ref=e1656]
+              - button "编辑" [ref=e1657]
+              - button [ref=e1658]:
+                - img [ref=e1659]
+      - generic [ref=e1664]:
+        - generic [ref=e1665]:
+          - generic [ref=e1666]:
+            - img [ref=e1667]
+            - text: 视频
+          - generic [ref=e1670]: 03:00
+        - generic [ref=e1671]:
+          - generic [ref=e1672]:
+            - generic [ref=e1673]:
+              - heading "测试" [level=3] [ref=e1674]
+              - generic [ref=e1675]: 已发布
+            - generic [ref=e1676]:
+              - generic [ref=e1677]:
+                - img [ref=e1678]
+                - text: "0"
+              - button "0" [ref=e1681]:
+                - img [ref=e1682]
+                - text: "0"
+          - generic [ref=e1688]:
+            - generic [ref=e1689]:
+              - generic [ref=e1690]: "排序:"
+              - spinbutton [ref=e1691]: "2"
+            - generic [ref=e1692]:
+              - button "查看" [ref=e1693]
+              - button "编辑" [ref=e1694]
+              - button [ref=e1695]:
+                - img [ref=e1696]
+      - generic [ref=e1701]:
+        - generic [ref=e1702]:
+          - generic [ref=e1703]:
+            - img [ref=e1704]
+            - text: 视频
+          - generic [ref=e1707]: 03:00
+        - generic [ref=e1708]:
+          - generic [ref=e1709]:
+            - generic [ref=e1710]:
+              - heading "B端测试" [level=3] [ref=e1711]
+              - generic [ref=e1712]: 已发布
+            - generic [ref=e1713]:
+              - generic [ref=e1714]:
+                - img [ref=e1715]
+                - text: "0"
+              - button "0" [ref=e1718]:
+                - img [ref=e1719]
+                - text: "0"
+          - generic [ref=e1725]:
+            - generic [ref=e1726]:
+              - generic [ref=e1727]: "排序:"
+              - spinbutton [ref=e1728]: "3"
+            - generic [ref=e1729]:
+              - button "查看" [ref=e1730]
+              - button "编辑" [ref=e1731]
+              - button [ref=e1732]:
+                - img [ref=e1733]
+      - generic [ref=e1738]:
+        - generic [ref=e1740]: 已发布
+        - generic [ref=e1741]:
+          - generic [ref=e1742]:
+            - generic [ref=e1743]:
+              - heading "链路课程_1772790494517" [level=3] [ref=e1744]
+              - generic [ref=e1745]: 已发布
+            - generic [ref=e1746]:
+              - generic [ref=e1747]:
+                - img [ref=e1748]
+                - text: "0"
+              - button "0" [ref=e1751]:
+                - img [ref=e1752]
+                - text: "0"
+          - generic [ref=e1758]:
+            - generic [ref=e1759]:
+              - generic [ref=e1760]: "排序:"
+              - spinbutton [ref=e1761]: "4"
+            - generic [ref=e1762]:
+              - button "查看" [ref=e1763]
+              - button "编辑" [ref=e1764]
+              - button [ref=e1765]:
+                - img [ref=e1766]
+      - generic [ref=e1771]:
+        - generic [ref=e1773]: 已发布
+        - generic [ref=e1774]:
+          - generic [ref=e1775]:
+            - generic [ref=e1776]:
+              - heading "链路课程_1772790682162" [level=3] [ref=e1777]
+              - generic [ref=e1778]: 已发布
+            - generic [ref=e1779]:
+              - generic [ref=e1780]:
+                - img [ref=e1781]
+                - text: "0"
+              - button "0" [ref=e1784]:
+                - img [ref=e1785]
+                - text: "0"
+          - generic [ref=e1791]:
+            - generic [ref=e1792]:
+              - generic [ref=e1793]: "排序:"
+              - spinbutton [ref=e1794]: "5"
+            - generic [ref=e1795]:
+              - button "查看" [ref=e1796]
+              - button "编辑" [ref=e1797]
+              - button [ref=e1798]:
+                - img [ref=e1799]
+      - generic [ref=e1804]:
+        - generic [ref=e1806]: 已发布
+        - generic [ref=e1807]:
+          - generic [ref=e1808]:
+            - generic [ref=e1809]:
+              - heading "链路课程_1772790730854" [level=3] [ref=e1810]
+              - generic [ref=e1811]: 已发布
+            - generic [ref=e1812]:
+              - generic [ref=e1813]:
+                - img [ref=e1814]
+                - text: "0"
+              - button "0" [ref=e1817]:
+                - img [ref=e1818]
+                - text: "0"
+          - generic [ref=e1824]:
+            - generic [ref=e1825]:
+              - generic [ref=e1826]: "排序:"
+              - spinbutton [ref=e1827]: "6"
+            - generic [ref=e1828]:
+              - button "查看" [ref=e1829]
+              - button "编辑" [ref=e1830]
+              - button [ref=e1831]:
+                - img [ref=e1832]
+      - generic [ref=e1837]:
+        - generic [ref=e1839]: 已发布
+        - generic [ref=e1840]:
+          - generic [ref=e1841]:
+            - generic [ref=e1842]:
+              - heading "链路课程_1772790744027" [level=3] [ref=e1843]
+              - generic [ref=e1844]: 已发布
+            - generic [ref=e1845]:
+              - generic [ref=e1846]:
+                - img [ref=e1847]
+                - text: "0"
+              - button "0" [ref=e1850]:
+                - img [ref=e1851]
+                - text: "0"
+          - generic [ref=e1857]:
+            - generic [ref=e1858]:
+              - generic [ref=e1859]: "排序:"
+              - spinbutton [ref=e1860]: "7"
+            - generic [ref=e1861]:
+              - button "查看" [ref=e1862]
+              - button "编辑" [ref=e1863]
+              - button [ref=e1864]:
+                - img [ref=e1865]
+      - generic [ref=e1870]:
+        - generic [ref=e1872]: 已发布
+        - generic [ref=e1873]:
+          - generic [ref=e1874]:
+            - generic [ref=e1875]:
+              - heading "链路课程_1772791347874" [level=3] [ref=e1876]
+              - generic [ref=e1877]: 已发布
+            - generic [ref=e1878]:
+              - generic [ref=e1879]:
+                - img [ref=e1880]
+                - text: "0"
+              - button "0" [ref=e1883]:
+                - img [ref=e1884]
+                - text: "0"
+          - generic [ref=e1890]:
+            - generic [ref=e1891]:
+              - generic [ref=e1892]: "排序:"
+              - spinbutton [ref=e1893]: "8"
+            - generic [ref=e1894]:
+              - button "查看" [ref=e1895]
+              - button "编辑" [ref=e1896]
+              - button [ref=e1897]:
+                - img [ref=e1898]
+      - generic [ref=e1903]:
+        - generic [ref=e1905]: 已发布
+        - generic [ref=e1906]:
+          - generic [ref=e1907]:
+            - generic [ref=e1908]:
+              - heading "链路课程_1772791358515" [level=3] [ref=e1909]
+              - generic [ref=e1910]: 已发布
+            - generic [ref=e1911]:
+              - generic [ref=e1912]:
+                - img [ref=e1913]
+                - text: "0"
+              - button "0" [ref=e1916]:
+                - img [ref=e1917]
+                - text: "0"
+          - generic [ref=e1923]:
+            - generic [ref=e1924]:
+              - generic [ref=e1925]: "排序:"
+              - spinbutton [ref=e1926]: "9"
+            - generic [ref=e1927]:
+              - button "查看" [ref=e1928]
+              - button "编辑" [ref=e1929]
+              - button [ref=e1930]:
+                - img [ref=e1931]
+      - generic [ref=e1936]:
+        - generic [ref=e1938]: 已发布
+        - generic [ref=e1939]:
+          - generic [ref=e1940]:
+            - generic [ref=e1941]:
+              - heading "链路课程_1772791788519" [level=3] [ref=e1942]
+              - generic [ref=e1943]: 已发布
+            - generic [ref=e1944]:
+              - generic [ref=e1945]:
+                - img [ref=e1946]
+                - text: "0"
+              - button "0" [ref=e1949]:
+                - img [ref=e1950]
+                - text: "0"
+          - generic [ref=e1956]:
+            - generic [ref=e1957]:
+              - generic [ref=e1958]: "排序:"
+              - spinbutton [ref=e1959]: "10"
+            - generic [ref=e1960]:
+              - button "查看" [ref=e1961]
+              - button "编辑" [ref=e1962]
+              - button [ref=e1963]:
+                - img [ref=e1964]
+      - generic [ref=e1969]:
+        - generic [ref=e1971]: 已发布
+        - generic [ref=e1972]:
+          - generic [ref=e1973]:
+            - generic [ref=e1974]:
+              - heading "链路课程_1772792641237" [level=3] [ref=e1975]
+              - generic [ref=e1976]: 已发布
+            - generic [ref=e1977]:
+              - generic [ref=e1978]:
+                - img [ref=e1979]
+                - text: "0"
+              - button "0" [ref=e1982]:
+                - img [ref=e1983]
+                - text: "0"
+          - generic [ref=e1989]:
+            - generic [ref=e1990]:
+              - generic [ref=e1991]: "排序:"
+              - spinbutton [ref=e1992]: "11"
+            - generic [ref=e1993]:
+              - button "查看" [ref=e1994]
+              - button "编辑" [ref=e1995]
+              - button [ref=e1996]:
+                - img [ref=e1997]
+      - generic [ref=e2002]:
+        - generic [ref=e2004]: 已发布
+        - generic [ref=e2005]:
+          - generic [ref=e2006]:
+            - generic [ref=e2007]:
+              - heading "链路课程_1772795794030" [level=3] [ref=e2008]
+              - generic [ref=e2009]: 已发布
+            - generic [ref=e2010]:
+              - generic [ref=e2011]:
+                - img [ref=e2012]
+                - text: "0"
+              - button "0" [ref=e2015]:
+                - img [ref=e2016]
+                - text: "0"
+          - generic [ref=e2022]:
+            - generic [ref=e2023]:
+              - generic [ref=e2024]: "排序:"
+              - spinbutton [ref=e2025]: "12"
+            - generic [ref=e2026]:
+              - button "查看" [ref=e2027]
+              - button "编辑" [ref=e2028]
+              - button [ref=e2029]:
+                - img [ref=e2030]
+      - generic [ref=e2035]:
+        - generic [ref=e2037]: 已发布
+        - generic [ref=e2038]:
+          - generic [ref=e2039]:
+            - generic [ref=e2040]:
+              - heading "链路课程_1772795958614" [level=3] [ref=e2041]
+              - generic [ref=e2042]: 已发布
+            - generic [ref=e2043]:
+              - generic [ref=e2044]:
+                - img [ref=e2045]
+                - text: "0"
+              - button "0" [ref=e2048]:
+                - img [ref=e2049]
+                - text: "0"
+          - generic [ref=e2055]:
+            - generic [ref=e2056]:
+              - generic [ref=e2057]: "排序:"
+              - spinbutton [ref=e2058]: "13"
+            - generic [ref=e2059]:
+              - button "查看" [ref=e2060]
+              - button "编辑" [ref=e2061]
+              - button [ref=e2062]:
+                - img [ref=e2063]
+      - generic [ref=e2068]:
+        - generic [ref=e2070]: 已发布
+        - generic [ref=e2071]:
+          - generic [ref=e2072]:
+            - generic [ref=e2073]:
+              - heading "链路课程_1772860073162" [level=3] [ref=e2074]
+              - generic [ref=e2075]: 已发布
+            - generic [ref=e2076]:
+              - generic [ref=e2077]:
+                - img [ref=e2078]
+                - text: "0"
+              - button "0" [ref=e2081]:
+                - img [ref=e2082]
+                - text: "0"
+          - generic [ref=e2088]:
+            - generic [ref=e2089]:
+              - generic [ref=e2090]: "排序:"
+              - spinbutton [ref=e2091]: "14"
+            - generic [ref=e2092]:
+              - button "查看" [ref=e2093]
+              - button "编辑" [ref=e2094]
+              - button [ref=e2095]:
+                - img [ref=e2096]
+      - generic [ref=e2101]:
+        - generic [ref=e2103]: 已发布
+        - generic [ref=e2104]:
+          - generic [ref=e2105]:
+            - generic [ref=e2106]:
+              - heading "链路课程_1772860143407" [level=3] [ref=e2107]
+              - generic [ref=e2108]: 已发布
+            - generic [ref=e2109]:
+              - generic [ref=e2110]:
+                - img [ref=e2111]
+                - text: "0"
+              - button "0" [ref=e2114]:
+                - img [ref=e2115]
+                - text: "0"
+          - generic [ref=e2121]:
+            - generic [ref=e2122]:
+              - generic [ref=e2123]: "排序:"
+              - spinbutton [ref=e2124]: "15"
+            - generic [ref=e2125]:
+              - button "查看" [ref=e2126]
+              - button "编辑" [ref=e2127]
+              - button [ref=e2128]:
+                - img [ref=e2129]
+      - generic [ref=e2134]:
+        - generic [ref=e2136]: 已发布
+        - generic [ref=e2137]:
+          - generic [ref=e2138]:
+            - generic [ref=e2139]:
+              - heading "浏览器链路课程_1772888972580" [level=3] [ref=e2140]
+              - generic [ref=e2141]: 已发布
+            - generic [ref=e2142]:
+              - generic [ref=e2143]:
+                - img [ref=e2144]
+                - text: "0"
+              - button "0" [ref=e2147]:
+                - img [ref=e2148]
+                - text: "0"
+          - generic [ref=e2154]:
+            - generic [ref=e2155]:
+              - generic [ref=e2156]: "排序:"
+              - spinbutton [ref=e2157]: "16"
+            - generic [ref=e2158]:
+              - button "查看" [ref=e2159]
+              - button "编辑" [ref=e2160]
+              - button [ref=e2161]:
+                - img [ref=e2162]
+      - generic [ref=e2167]:
+        - generic [ref=e2169]: 已发布
+        - generic [ref=e2170]:
+          - generic [ref=e2171]:
+            - generic [ref=e2172]:
+              - heading "链路课程_1772889064705" [level=3] [ref=e2173]
+              - generic [ref=e2174]: 已发布
+            - generic [ref=e2175]:
+              - generic [ref=e2176]:
+                - img [ref=e2177]
+                - text: "0"
+              - button "0" [ref=e2180]:
+                - img [ref=e2181]
+                - text: "0"
+          - generic [ref=e2187]:
+            - generic [ref=e2188]:
+              - generic [ref=e2189]: "排序:"
+              - spinbutton [ref=e2190]: "17"
+            - generic [ref=e2191]:
+              - button "查看" [ref=e2192]
+              - button "编辑" [ref=e2193]
+              - button [ref=e2194]:
+                - img [ref=e2195]
+      - generic [ref=e2200]:
+        - generic [ref=e2202]: 已发布
+        - generic [ref=e2203]:
+          - generic [ref=e2204]:
+            - generic [ref=e2205]:
+              - heading "浏览器链路课程_1772889161143" [level=3] [ref=e2206]
+              - generic [ref=e2207]: 已发布
+            - generic [ref=e2208]:
+              - generic [ref=e2209]:
+                - img [ref=e2210]
+                - text: "0"
+              - button "0" [ref=e2213]:
+                - img [ref=e2214]
+                - text: "0"
+          - generic [ref=e2220]:
+            - generic [ref=e2221]:
+              - generic [ref=e2222]: "排序:"
+              - spinbutton [ref=e2223]: "18"
+            - generic [ref=e2224]:
+              - button "查看" [ref=e2225]
+              - button "编辑" [ref=e2226]
+              - button [ref=e2227]:
+                - img [ref=e2228]
+      - generic [ref=e2233]:
+        - generic [ref=e2235]: 已发布
+        - generic [ref=e2236]:
+          - generic [ref=e2237]:
+            - generic [ref=e2238]:
+              - heading "浏览器链路课程_1772889180535" [level=3] [ref=e2239]
+              - generic [ref=e2240]: 已发布
+            - generic [ref=e2241]:
+              - generic [ref=e2242]:
+                - img [ref=e2243]
+                - text: "0"
+              - button "0" [ref=e2246]:
+                - img [ref=e2247]
+                - text: "0"
+          - generic [ref=e2253]:
+            - generic [ref=e2254]:
+              - generic [ref=e2255]: "排序:"
+              - spinbutton [ref=e2256]: "19"
+            - generic [ref=e2257]:
+              - button "查看" [ref=e2258]
+              - button "编辑" [ref=e2259]
+              - button [ref=e2260]:
+                - img [ref=e2261]
+    - generic [ref=e2266]:
+      - generic [ref=e2267]:
+        - heading "内容详情" [level=3] [ref=e2268]
+        - button [ref=e2269]:
+          - img [ref=e2270]
+      - generic [ref=e2273]:
+        - img "放放放" [ref=e2274]
+        - generic [ref=e2275]:
+          - generic [ref=e2276]:
+            - text: 标题
+            - paragraph [ref=e2277]: 放放放
+          - generic [ref=e2278]:
+            - text: 状态
+            - paragraph [ref=e2279]: 已发布
+          - generic [ref=e2280]:
+            - text: 类型
+            - paragraph [ref=e2281]: video
+          - generic [ref=e2282]:
+            - text: 奖励积分
+            - paragraph [ref=e2283]: "0"
+        - generic [ref=e2284]:
+          - text: 详情内容
+          - paragraph [ref=e2285]: 大幅度发
+        - button "分享内容（1）" [ref=e2288]
+    - button [ref=e1622]:
+      - img [ref=e1623]
+  - navigation [ref=e138]:
+    - button "工作台" [ref=e139]:
+      - img [ref=e140]
+      - generic [ref=e143]: 工作台
+    - button "客户库" [ref=e144]:
+      - img [ref=e145]
+      - generic [ref=e150]: 客户库
+    - button "获客工具" [ref=e151]:
+      - img [ref=e152]
+      - generic [ref=e154]: 获客工具
+    - button "决策" [ref=e155]:
+      - img [ref=e156]
+      - generic [ref=e159]: 决策
+    - button "我的" [ref=e160]:
+      - img [ref=e161]
+      - generic [ref=e164]: 我的
+  - button "退出" [ref=e165]

@@ -1,0 +1,22 @@
+[     916ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3001/favicon.ico:0
+[   21371ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   21524ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/b/customers:0
+[   21525ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   21534ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/b/orders:0
+[   30766ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   31440ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/b/mall/products:0
+[   44128ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   44132ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   44454ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/b/customers:0
+[   44515ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/b/orders:0
+[   51737ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[   92306ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[ 1131342ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1132347ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1133357ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1134358ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1135360ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1136364ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1137366ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:3001/@vite/client:1034
+[ 1140955ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0
+[ 1140960ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:4100/api/track/events:0

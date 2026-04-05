@@ -1,0 +1,267 @@
+{
+  "generatedAt": "2026-03-31T04:24:56.663Z",
+  "backend": "postgres",
+  "fkDropStats": {
+    "sessions": 0,
+    "orders": 0,
+    "redemptions": 0,
+    "signIns": 0,
+    "activityCompletions": 0,
+    "learningRecords": 0
+  },
+  "incrementalSyncStats": {
+    "c_customers": {
+      "table": "c_customers",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 920,
+      "nextCount": 920,
+      "inserted": 0,
+      "updatedByKey": 920,
+      "deleted": 0
+    },
+    "b_agents": {
+      "table": "b_agents",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 180,
+      "nextCount": 180,
+      "inserted": 0,
+      "updatedByKey": 180,
+      "deleted": 0
+    },
+    "p_products": {
+      "table": "p_products",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 413,
+      "nextCount": 413,
+      "inserted": 0,
+      "updatedByKey": 413,
+      "deleted": 0
+    },
+    "p_activities": {
+      "table": "p_activities",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 259,
+      "nextCount": 259,
+      "inserted": 0,
+      "updatedByKey": 259,
+      "deleted": 0
+    },
+    "p_learning_materials": {
+      "table": "p_learning_materials",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 41,
+      "nextCount": 41,
+      "inserted": 0,
+      "updatedByKey": 41,
+      "deleted": 0
+    },
+    "c_point_transactions": {
+      "table": "c_point_transactions",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 1708,
+      "nextCount": 1708,
+      "inserted": 0,
+      "updatedByKey": 1708,
+      "deleted": 0
+    },
+    "p_sessions": {
+      "table": "p_sessions",
+      "primaryKeys": [
+        "token"
+      ],
+      "existingCount": 1446,
+      "nextCount": 1446,
+      "inserted": 0,
+      "updatedByKey": 1446,
+      "deleted": 0
+    },
+    "p_orders": {
+      "table": "p_orders",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 311,
+      "nextCount": 311,
+      "inserted": 0,
+      "updatedByKey": 311,
+      "deleted": 0
+    },
+    "c_redeem_records": {
+      "table": "c_redeem_records",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 314,
+      "nextCount": 314,
+      "inserted": 0,
+      "updatedByKey": 314,
+      "deleted": 0
+    },
+    "c_sign_ins": {
+      "table": "c_sign_ins",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 94,
+      "nextCount": 94,
+      "inserted": 0,
+      "updatedByKey": 94,
+      "deleted": 0
+    },
+    "c_activity_completions": {
+      "table": "c_activity_completions",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 212,
+      "nextCount": 212,
+      "inserted": 0,
+      "updatedByKey": 212,
+      "deleted": 0
+    },
+    "c_learning_records": {
+      "table": "c_learning_records",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 17,
+      "nextCount": 17,
+      "inserted": 0,
+      "updatedByKey": 17,
+      "deleted": 0
+    },
+    "p_track_events": {
+      "table": "p_track_events",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 13078,
+      "nextCount": 13078,
+      "inserted": 0,
+      "updatedByKey": 13078,
+      "deleted": 0
+    },
+    "p_audit_logs": {
+      "table": "p_audit_logs",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 1812,
+      "nextCount": 1812,
+      "inserted": 0,
+      "updatedByKey": 1812,
+      "deleted": 0
+    },
+    "p_metric_uv_daily": {
+      "table": "p_metric_uv_daily",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 867,
+      "nextCount": 867,
+      "inserted": 0,
+      "updatedByKey": 867,
+      "deleted": 0
+    },
+    "p_metric_counter_daily": {
+      "table": "p_metric_counter_daily",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 169,
+      "nextCount": 169,
+      "inserted": 0,
+      "updatedByKey": 169,
+      "deleted": 0
+    },
+    "p_metric_counter_hourly": {
+      "table": "p_metric_counter_hourly",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 242,
+      "nextCount": 242,
+      "inserted": 0,
+      "updatedByKey": 242,
+      "deleted": 0
+    },
+    "p_event_definitions": {
+      "table": "p_event_definitions",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 27,
+      "nextCount": 27,
+      "inserted": 0,
+      "updatedByKey": 27,
+      "deleted": 0
+    },
+    "p_metric_rules": {
+      "table": "p_metric_rules",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 123,
+      "nextCount": 123,
+      "inserted": 0,
+      "updatedByKey": 123,
+      "deleted": 0
+    },
+    "p_points_rule_configs": {
+      "table": "p_points_rule_configs",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 2,
+      "nextCount": 2,
+      "inserted": 0,
+      "updatedByKey": 2,
+      "deleted": 0
+    },
+    "p_ops_jobs": {
+      "table": "p_ops_jobs",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 12,
+      "nextCount": 12,
+      "inserted": 0,
+      "updatedByKey": 12,
+      "deleted": 0
+    },
+    "p_ops_job_logs": {
+      "table": "p_ops_job_logs",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 46,
+      "nextCount": 46,
+      "inserted": 0,
+      "updatedByKey": 46,
+      "deleted": 0
+    },
+    "c_family_policy_reports": {
+      "table": "c_family_policy_reports",
+      "primaryKeys": [
+        "id"
+      ],
+      "existingCount": 3,
+      "nextCount": 3,
+      "inserted": 0,
+      "updatedByKey": 3,
+      "deleted": 0
+    }
+  }
+}

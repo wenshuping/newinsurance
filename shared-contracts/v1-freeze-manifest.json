@@ -1,0 +1,34 @@
+{
+  "version": "v1.0",
+  "frozenAt": "2026-02-28",
+  "scope": {
+    "cSide": [
+      "docs/openapi-c-v1.yaml",
+      "docs/api-contract-c-v1.md"
+    ],
+    "bpSide": [
+      "docs/api-contract-bp-v1.md"
+    ],
+    "tracking": [
+      "docs/tracking-events-v1.md",
+      "docs/tracking-events-v2.md"
+    ]
+  },
+  "sha256": {
+    "docs/openapi-c-v1.yaml": "8ef8612c25cbedb56d8653b77d147efa15739d8391fab8586554d9c405012f60",
+    "docs/api-contract-c-v1.md": "74117ecc71a238ea65e9e8a18ce08e14b800cde9f2ccc50be49725a84c676d9b",
+    "docs/api-contract-bp-v1.md": "1d12de14e52ff50b5b741c3028a40d79e607300cf8db34fc0d38f95f8b10eb2d",
+    "docs/tracking-events-v1.md": "d1e19dd415ad4c73224d199151e18ddd65b96b1d5914c54ffc5e8a4d71037052",
+    "docs/tracking-events-v2.md": "83a08a274497b060fd0c0c49ede064a4cc660898c1b76eabd7eae47dc3cf3f43"
+  },
+  "changePolicy": {
+    "breakingChange": "forbidden",
+    "additiveChange": "allowed_with_review",
+    "errorCodeChange": "append_only",
+    "requiredActions": [
+      "update-openapi",
+      "update-shared-contracts",
+      "update-regression-cases"
+    ]
+  }
+}

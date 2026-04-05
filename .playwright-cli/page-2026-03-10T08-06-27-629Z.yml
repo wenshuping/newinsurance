@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - button "返回首页" [ref=e6]:
+        - img [ref=e7]
+      - generic [ref=e9]:
+        - paragraph [ref=e10]: Insurance Assistant
+        - heading "知识学习分享" [level=1] [ref=e11]
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - img [ref=e17]
+          - generic [ref=e20]: 知识学习
+        - heading "放放放" [level=2] [ref=e21]
+        - paragraph [ref=e22]: 大幅度发
+      - generic [ref=e23]:
+        - img "放放放" [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - paragraph [ref=e29]: 内容类型
+              - paragraph [ref=e30]: video
+            - generic [ref=e31]:
+              - paragraph [ref=e32]: 当前状态
+              - paragraph [ref=e33]: published
+          - generic [ref=e34]:
+            - paragraph [ref=e35]: 详情介绍
+            - paragraph [ref=e36]: 大幅度发
+      - button "进入知识学习" [ref=e39]:
+        - img [ref=e40]
+        - generic [ref=e42]: 进入知识学习

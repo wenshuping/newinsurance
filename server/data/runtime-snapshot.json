@@ -1,0 +1,1110 @@
+{
+  "users": [],
+  "tenants": [
+    {
+      "id": 1,
+      "name": "平台租户",
+      "status": "active",
+      "type": "company",
+      "createdAt": "2026-03-20T09:09:53.293Z"
+    },
+    {
+      "id": 2,
+      "name": "隔离租户A",
+      "status": "active",
+      "type": "company",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 3,
+      "name": "隔离租户B",
+      "status": "active",
+      "type": "company",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 4,
+      "name": "隔离租户C",
+      "status": "active",
+      "type": "company",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    }
+  ],
+  "orgUnits": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "name": "平台机构",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 2,
+      "name": "租户A机构",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 3,
+      "name": "租户B机构",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 4,
+      "tenantId": 4,
+      "name": "租户C机构",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "orgId": 1,
+      "name": "平台团队",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 2,
+      "orgId": 2,
+      "name": "租户A团队",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 3,
+      "orgId": 3,
+      "name": "租户B团队",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 4,
+      "tenantId": 4,
+      "orgId": 4,
+      "name": "租户C团队",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": 8201,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "租户A管理员",
+      "status": "active",
+      "role": "manager",
+      "account": "tenanta_admin",
+      "email": "tenanta_admin@demo.local",
+      "mobile": "13810000001",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8202,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "租户A业务员1",
+      "status": "active",
+      "role": "agent",
+      "account": "tenanta_agent1",
+      "email": "tenanta_agent1@demo.local",
+      "mobile": "13810000002",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8203,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "新华保险管理员",
+      "status": "active",
+      "role": "manager",
+      "account": "xinhua_admin",
+      "email": "xinhua@126.com",
+      "mobile": "18610000001",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8204,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "方雨晴",
+      "status": "active",
+      "role": "support",
+      "account": "fangyuqing",
+      "email": "fangyuqing@126.com",
+      "mobile": "18610000002",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8205,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "小英",
+      "status": "active",
+      "role": "agent",
+      "account": "xiaoying",
+      "email": "xiaoying@126.com",
+      "mobile": "18610000003",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8301,
+      "tenantId": 3,
+      "orgId": 3,
+      "teamId": 3,
+      "name": "租户B管理员",
+      "status": "active",
+      "role": "manager",
+      "account": "tenantb_admin",
+      "email": "tenantb_admin@demo.local",
+      "mobile": "13820000001",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8302,
+      "tenantId": 3,
+      "orgId": 3,
+      "teamId": 3,
+      "name": "租户B业务员1",
+      "status": "active",
+      "role": "agent",
+      "account": "tenantb_agent1",
+      "email": "tenantb_agent1@demo.local",
+      "mobile": "13820000002",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8401,
+      "tenantId": 4,
+      "orgId": 4,
+      "teamId": 4,
+      "name": "租户C管理员",
+      "status": "active",
+      "role": "manager",
+      "account": "tenantc_admin",
+      "email": "tenantc_admin@demo.local",
+      "mobile": "13830000001",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    },
+    {
+      "id": 8402,
+      "tenantId": 4,
+      "orgId": 4,
+      "teamId": 4,
+      "name": "租户C业务员1",
+      "status": "active",
+      "role": "agent",
+      "account": "tenantc_agent1",
+      "email": "tenantc_agent1@demo.local",
+      "mobile": "13830000002",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-20T09:09:53.294Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "key": "platform_admin",
+      "name": "平台管理员"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "key": "company_admin",
+      "name": "公司管理员"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "key": "team_lead",
+      "name": "团队主管"
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "key": "agent",
+      "name": "业务员"
+    },
+    {
+      "id": 5,
+      "tenantId": 1,
+      "key": "customer",
+      "name": "客户"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "key": "tenant:read",
+      "name": "查看租户"
+    },
+    {
+      "id": 2,
+      "key": "tenant:write",
+      "name": "管理租户"
+    },
+    {
+      "id": 3,
+      "key": "customer:read",
+      "name": "查看客户"
+    },
+    {
+      "id": 4,
+      "key": "customer:write",
+      "name": "编辑客户"
+    },
+    {
+      "id": 5,
+      "key": "order:writeoff",
+      "name": "核销订单"
+    },
+    {
+      "id": 6,
+      "key": "order:refund",
+      "name": "退款订单"
+    },
+    {
+      "id": 7,
+      "key": "stats:read",
+      "name": "查看统计"
+    },
+    {
+      "id": 8,
+      "key": "approval:write",
+      "name": "审批处理"
+    },
+    {
+      "id": 9,
+      "key": "scope:tenant:all",
+      "name": "租户全量数据范围"
+    },
+    {
+      "id": 10,
+      "key": "scope:team:all",
+      "name": "团队数据范围"
+    }
+  ],
+  "rolePermissions": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 1
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 2
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 3
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 4
+    },
+    {
+      "id": 5,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 5
+    },
+    {
+      "id": 6,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 6
+    },
+    {
+      "id": 7,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 7
+    },
+    {
+      "id": 8,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 8
+    },
+    {
+      "id": 9,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 9
+    },
+    {
+      "id": 10,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 1
+    },
+    {
+      "id": 11,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 3
+    },
+    {
+      "id": 12,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 4
+    },
+    {
+      "id": 13,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 5
+    },
+    {
+      "id": 14,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 7
+    },
+    {
+      "id": 15,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 8
+    },
+    {
+      "id": 16,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 9
+    },
+    {
+      "id": 17,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 3
+    },
+    {
+      "id": 18,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 4
+    },
+    {
+      "id": 19,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 5
+    },
+    {
+      "id": 20,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 10
+    },
+    {
+      "id": 21,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 3
+    },
+    {
+      "id": 22,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 4
+    },
+    {
+      "id": 23,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 5
+    }
+  ],
+  "userRoles": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "userType": "employee",
+      "userId": 9001,
+      "roleId": 1
+    },
+    {
+      "id": 2,
+      "tenantId": 2,
+      "userType": "employee",
+      "userId": 8201,
+      "roleId": 2
+    },
+    {
+      "id": 3,
+      "tenantId": 2,
+      "userType": "agent",
+      "userId": 8202,
+      "roleId": 4
+    },
+    {
+      "id": 4,
+      "tenantId": 3,
+      "userType": "employee",
+      "userId": 8301,
+      "roleId": 2
+    },
+    {
+      "id": 5,
+      "tenantId": 3,
+      "userType": "agent",
+      "userId": 8302,
+      "roleId": 4
+    },
+    {
+      "id": 6,
+      "tenantId": 4,
+      "userType": "employee",
+      "userId": 8401,
+      "roleId": 2
+    },
+    {
+      "id": 7,
+      "tenantId": 4,
+      "userType": "agent",
+      "userId": 8402,
+      "roleId": 4
+    },
+    {
+      "id": 8,
+      "tenantId": 2,
+      "userType": "employee",
+      "userId": 8203,
+      "roleId": 2
+    },
+    {
+      "id": 9,
+      "tenantId": 2,
+      "userType": "employee",
+      "userId": 8204,
+      "roleId": 3
+    },
+    {
+      "id": 10,
+      "tenantId": 2,
+      "userType": "agent",
+      "userId": 8205,
+      "roleId": 4
+    }
+  ],
+  "companyAdminPagePermissions": [],
+  "employeeRolePagePermissions": [],
+  "approvals": [],
+  "auditLogs": [],
+  "trackEvents": [],
+  "metricDailyUv": [],
+  "metricDailyCounters": [],
+  "metricHourlyCounters": [],
+  "idempotencyRecords": [],
+  "domainEvents": [],
+  "outboxEvents": [],
+  "smsCodes": [],
+  "sessions": [],
+  "actorCsrfTokens": [],
+  "activities": [
+    {
+      "id": 1,
+      "title": "连续签到7天领鸡蛋",
+      "category": "sign",
+      "rewardPoints": 10,
+      "sortOrder": 1,
+      "participants": 18230
+    },
+    {
+      "id": 2,
+      "title": "保险知识王者赛",
+      "category": "competition",
+      "rewardPoints": 50,
+      "sortOrder": 2,
+      "participants": 10230
+    },
+    {
+      "id": 3,
+      "title": "完善保障信息",
+      "category": "task",
+      "rewardPoints": 100,
+      "sortOrder": 3,
+      "participants": 5980
+    },
+    {
+      "id": 4,
+      "title": "推荐好友加入",
+      "category": "invite",
+      "rewardPoints": 500,
+      "sortOrder": 4,
+      "participants": 4200
+    },
+    {
+      "id": 5,
+      "tenantId": 2,
+      "sourceDomain": "activity",
+      "title": "debug",
+      "category": "task",
+      "rewardPoints": 1,
+      "sortOrder": 5,
+      "participants": 0,
+      "content": "",
+      "media": [],
+      "status": "online",
+      "createdBy": 8202,
+      "creatorRole": "agent",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z",
+      "updatedAt": "2026-03-20T09:10:21.955Z"
+    }
+  ],
+  "activityCompletions": [],
+  "signIns": [],
+  "pointAccounts": [],
+  "pointTransactions": [],
+  "mallItems": [
+    {
+      "id": 1,
+      "name": "智能低糖电饭煲",
+      "pointsCost": 99,
+      "stock": 50,
+      "isActive": true,
+      "tenantId": 1,
+      "sourceProductId": 1
+    },
+    {
+      "id": 2,
+      "name": "家庭体检套餐",
+      "pointsCost": 79,
+      "stock": 80,
+      "isActive": true,
+      "tenantId": 1,
+      "sourceProductId": 2
+    },
+    {
+      "id": 3,
+      "name": "健康管理咨询券",
+      "pointsCost": 59,
+      "stock": 999,
+      "isActive": true,
+      "tenantId": 1,
+      "sourceProductId": 3
+    }
+  ],
+  "redemptions": [],
+  "orders": [],
+  "orderPayments": [],
+  "orderFulfillments": [],
+  "orderRefunds": [],
+  "bCustomerTags": [],
+  "bCustomerTagRels": [],
+  "bCustomerActivities": [],
+  "bWriteOffRecords": [],
+  "pLearningMaterials": [],
+  "pProducts": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "name": "智能低糖电饭煲",
+      "pointsCost": 99,
+      "stock": 50,
+      "shelfStatus": "on",
+      "status": "active",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "media": [],
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "name": "家庭体检套餐",
+      "pointsCost": 79,
+      "stock": 80,
+      "shelfStatus": "on",
+      "status": "active",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "media": [],
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "name": "健康管理咨询券",
+      "pointsCost": 59,
+      "stock": 999,
+      "shelfStatus": "on",
+      "status": "active",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "media": [],
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    }
+  ],
+  "pActivities": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "title": "连续签到7天领鸡蛋",
+      "category": "sign",
+      "rewardPoints": 10,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "title": "保险知识王者赛",
+      "category": "competition",
+      "rewardPoints": 50,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "title": "完善保障信息",
+      "category": "task",
+      "rewardPoints": 100,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "title": "推荐好友加入",
+      "category": "invite",
+      "rewardPoints": 500,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z"
+    },
+    {
+      "id": 5,
+      "tenantId": 2,
+      "sourceDomain": "activity",
+      "title": "debug",
+      "category": "task",
+      "rewardPoints": 1,
+      "sortOrder": 5,
+      "participants": 0,
+      "content": "",
+      "media": [],
+      "status": "online",
+      "createdBy": 8202,
+      "creatorRole": "agent",
+      "templateScope": "tenant",
+      "createdAt": "2026-03-20T09:10:21.955Z",
+      "updatedAt": "2026-03-20T09:10:21.955Z"
+    }
+  ],
+  "mallActivities": [],
+  "eventDefinitions": [],
+  "pTags": [],
+  "pTagRules": [],
+  "pTagRuleJobs": [],
+  "pTagRuleJobLogs": [],
+  "metricRules": [],
+  "pointsRuleConfigs": [],
+  "statsWarehouse": [],
+  "reconciliationReports": [],
+  "pOpsJobs": [],
+  "pOpsJobLogs": [],
+  "learningCourses": [],
+  "courseCompletions": [],
+  "learningGames": [],
+  "learningTools": [],
+  "insuranceSummary": {},
+  "familyMembers": [],
+  "insuranceReminders": [],
+  "policies": [],
+  "familyPolicyReports": [
+    {
+      "id": 1,
+      "tenantId": 2,
+      "customerId": 9,
+      "scopeKey": "customer_family",
+      "reportVersion": "family-policy-report-v4",
+      "fingerprint": "a6e6ee79eefe9cf99925a8c64312c693db62f598",
+      "policyCount": 3,
+      "memberCount": 2,
+      "reportMarkdown": "# 家庭保障体检报告\n\n> 对象：受测家庭\n\n### 已确认的情况\n- 当前按「客户库内已录入保单」口径，已录入 3 张保单，覆盖 2 位家庭成员、2 位投保人。\n- 已录入保单对应的年度保费合计约 ¥18,992，当前可识别保额合计约 22.00 万。\n- 从现有保单看，保障配置主要集中在医疗保障（3 张）。\n- 按当前录入信息做结构评分，健康这一层相对更完整，当前得分 44 分。\n- 家庭成员1当前名下已录入 2 张保单，可识别保额约 17.00 万。\n\n### 当前更值得确认的地方\n- 当前更值得优先确认的是养老（0 分）、财富（0 分）这几层需求是否已经被真正覆盖。\n- 现有保障类型比较集中，说明这个家已经开始配置，但还不能直接等同于保障结构完整。\n- 从投保人维度看，家庭成员1名下保单相对更集中，建议后续确认家庭责任是否也主要由这一位承担。\n\n### 建议先做的动作\n1. 先看养老：优先确认退休后的长期现金流目标，再决定是否补长期储备或年金安排。\n2. 先看财富：优先确认教育金、传承或长期储蓄目标，避免把所有保单都当成同一种资产工具。\n3. 再回到家庭成员维度确认：老人、孩子和主要收入者是否都已经有对应安排。\n\n### 口径说明\n- 这份书面整理基于当前已录入的家庭结构、投保人关系、保障分布和保单清单生成。\n- 它更适合拿来做家庭保障盘点和业务沟通，不直接替代正式核保、条款审核或理赔结论。\n- 不要输出真实姓名、手机号、身份证号等个人隐私。\n- 不要直接推荐具体产品名或销售话术。\n- 没有足够证据的地方必须明确标注为待确认。",
+      "sanitizedInput": {
+        "report_name": "家庭保障体检报告",
+        "report_date": "",
+        "generator_name": "",
+        "family_profile": {
+          "family_name": "受测家庭",
+          "scope_label": "客户库内已录入保单",
+          "member_count": 2,
+          "total_policy_count": 3,
+          "applicant_count": 2,
+          "notes": [
+            "请基于已录入保单和家庭已有信息总结结论。",
+            "如果信息不足，请把结论写成已确认、初步判断、待确认三层。",
+            "请补充家庭结构、投保人维度和保单明细表视角。"
+          ]
+        },
+        "score_summary": {
+          "active_policy_count": 3,
+          "annual_premium_total": 18992,
+          "coverage_total": 220000,
+          "protection_types": [
+            "医疗保障"
+          ]
+        },
+        "policy_facts": [
+          {
+            "policy_id": 8,
+            "company_name": "中国平安保险",
+            "policy_name": "享享人生（825）",
+            "policy_type": "保障",
+            "insured": "家庭成员1",
+            "insured_relation": "-",
+            "applicant": "家庭成员1",
+            "applicant_relation": "-",
+            "policy_status": "保障中",
+            "coverage_amount": 120000,
+            "annual_premium": 12000,
+            "payment_period": "-",
+            "coverage_period": "-",
+            "period_start": "2006-06-04",
+            "period_end": "2052-12-18T16:00:00.000Z",
+            "next_payment": "2006-06-04",
+            "responsibilities": [
+              {
+                "name": "家庭成员2",
+                "description": "住院及门急诊保障",
+                "limit": 120000
+              },
+              {
+                "name": "家庭成员3",
+                "description": "重大疾病医疗额外保障",
+                "limit": 240000
+              }
+            ]
+          },
+          {
+            "policy_id": 9,
+            "company_name": "新华保险",
+            "policy_name": "畅行万里臻享版两全保险 / 附加住院补贴A款医疗保险 / i她A款女性特定疾病保险",
+            "policy_type": "医疗",
+            "insured": "家庭成员1",
+            "insured_relation": "-",
+            "applicant": "家庭成员1",
+            "applicant_relation": "-",
+            "policy_status": "保障中",
+            "coverage_amount": 50000,
+            "annual_premium": 3496,
+            "payment_period": "-",
+            "coverage_period": "-",
+            "period_start": "2021-03-16",
+            "period_end": "2025-09-29T16:00:00.000Z",
+            "next_payment": "2021-03-16",
+            "responsibilities": [
+              {
+                "name": "家庭成员2",
+                "description": "住院及门急诊保障",
+                "limit": 50000
+              },
+              {
+                "name": "家庭成员3",
+                "description": "重大疾病医疗额外保障",
+                "limit": 100000
+              }
+            ]
+          },
+          {
+            "policy_id": 10,
+            "company_name": "新华保险",
+            "policy_name": "畅行万里臻享版两全保险 / 附加住院补贴A款医疗保险 / i她A款女性特定疾病保险",
+            "policy_type": "医疗",
+            "insured": "家庭成员4",
+            "insured_relation": "本人",
+            "applicant": "家庭成员4",
+            "applicant_relation": "本人",
+            "policy_status": "保障中",
+            "coverage_amount": 50000,
+            "annual_premium": 3496,
+            "payment_period": "-",
+            "coverage_period": "-",
+            "period_start": "2022-11-25",
+            "period_end": "2025-09-29T16:00:00.000Z",
+            "next_payment": "2022-11-25",
+            "responsibilities": [
+              {
+                "name": "家庭成员2",
+                "description": "住院及门急诊保障",
+                "limit": 50000
+              },
+              {
+                "name": "家庭成员3",
+                "description": "重大疾病医疗额外保障",
+                "limit": 100000
+              }
+            ]
+          }
+        ],
+        "analysis_facts": {
+          "summary": "当前共录入 3 张保单，覆盖 2 位家庭成员，涉及 2 位投保人。",
+          "priority": "请按家庭整体闭环、投保人维度和成员保障分布三条线输出，不要只逐张解释。",
+          "output_style": "先说这个家已经做对了什么，再说最值得优先补的地方，补充家庭结构、投保人维度、图表结论和保单明细表。"
+        },
+        "member_diagnosis": [
+          {
+            "member_name": "家庭成员1",
+            "role": "家庭成员",
+            "policy_count": 2,
+            "annual_premium": 15496,
+            "coverage_amount": 170000,
+            "confirmed_protection_types": [
+              "医疗保障"
+            ]
+          },
+          {
+            "member_name": "家庭成员4",
+            "role": "本人",
+            "policy_count": 1,
+            "annual_premium": 3496,
+            "coverage_amount": 50000,
+            "confirmed_protection_types": [
+              "医疗保障"
+            ]
+          }
+        ],
+        "recommendation_candidates": [],
+        "boundary_notes": [
+          "不要输出真实姓名、手机号、身份证号等个人隐私。",
+          "不要直接推荐具体产品名或销售话术。",
+          "没有足够证据的地方必须明确标注为待确认。"
+        ],
+        "ocr_text": "",
+        "policy_text": "",
+        "detail_mode": "auto",
+        "family_structure": {
+          "nodes": [
+            {
+              "name": "家庭成员1",
+              "role": "家庭成员",
+              "generation": 1,
+              "is_applicant": true,
+              "is_insured": true
+            },
+            {
+              "name": "家庭成员4",
+              "role": "本人",
+              "generation": 1,
+              "is_applicant": true,
+              "is_insured": true
+            }
+          ],
+          "links": []
+        },
+        "applicant_summary": [
+          {
+            "applicant_name": "家庭成员1",
+            "applicant_role": "家庭成员",
+            "policy_count": 2,
+            "annual_premium": 15496,
+            "coverage_amount": 170000,
+            "insured_members": [
+              "家庭成员1"
+            ],
+            "protection_types": [
+              "医疗保障"
+            ]
+          },
+          {
+            "applicant_name": "家庭成员4",
+            "applicant_role": "本人",
+            "policy_count": 1,
+            "annual_premium": 3496,
+            "coverage_amount": 50000,
+            "insured_members": [
+              "家庭成员4"
+            ],
+            "protection_types": [
+              "医疗保障"
+            ]
+          }
+        ],
+        "chart_facts": {
+          "protection_distribution": [
+            {
+              "type": "医疗保障",
+              "coverage_amount": 220000,
+              "annual_premium": 18992,
+              "policy_count": 3
+            }
+          ],
+          "insurance_need_axes": [
+            {
+              "dimension": "养老",
+              "score": 0,
+              "policy_count": 0,
+              "annual_premium": 0,
+              "coverage_amount": 0,
+              "guidance": "看长期现金流和退休储备是否成型"
+            },
+            {
+              "dimension": "财富",
+              "score": 0,
+              "policy_count": 0,
+              "annual_premium": 0,
+              "coverage_amount": 0,
+              "guidance": "看财富保全、教育金或传承安排是否成型"
+            },
+            {
+              "dimension": "意外",
+              "score": 0,
+              "policy_count": 0,
+              "annual_premium": 0,
+              "coverage_amount": 0,
+              "guidance": "看突发事故的短期冲击是否被覆盖"
+            },
+            {
+              "dimension": "健康",
+              "score": 44,
+              "policy_count": 3,
+              "annual_premium": 18992,
+              "coverage_amount": 220000,
+              "guidance": "看重疾与医疗的组合是不是足够完整"
+            },
+            {
+              "dimension": "人寿",
+              "score": 0,
+              "policy_count": 0,
+              "annual_premium": 0,
+              "coverage_amount": 0,
+              "guidance": "看家庭收入责任和长期责任承接是否充分"
+            }
+          ],
+          "premium_timeline": [
+            {
+              "period": "2006.06",
+              "annual_premium": 12000,
+              "policy_count": 1
+            },
+            {
+              "period": "2021.03",
+              "annual_premium": 3496,
+              "policy_count": 1
+            },
+            {
+              "period": "2022.11",
+              "annual_premium": 3496,
+              "policy_count": 1
+            }
+          ]
+        },
+        "policy_detail_table": [
+          {
+            "policy_id": 8,
+            "company_name": "中国平安保险",
+            "policy_name": "享享人生（825）",
+            "policy_type": "保障",
+            "policy_no": "PL1774093679044488",
+            "applicant": "家庭成员1",
+            "applicant_relation": "-",
+            "insured": "家庭成员1",
+            "insured_relation": "-",
+            "status": "保障中",
+            "coverage_period": "2006-06-04 至 2052-12-18T16:00:00.000Z",
+            "annual_premium": 12000,
+            "coverage_amount": 120000,
+            "responsibility_labels": "家庭成员2 / 家庭成员3"
+          },
+          {
+            "policy_id": 9,
+            "company_name": "新华保险",
+            "policy_name": "畅行万里臻享版两全保险 / 附加住院补贴A款医疗保险 / i她A款女性特定疾病保险",
+            "policy_type": "医疗",
+            "policy_no": "PL1774093828782444",
+            "applicant": "家庭成员1",
+            "applicant_relation": "-",
+            "insured": "家庭成员1",
+            "insured_relation": "-",
+            "status": "保障中",
+            "coverage_period": "2021-03-16 至 2025-09-29T16:00:00.000Z",
+            "annual_premium": 3496,
+            "coverage_amount": 50000,
+            "responsibility_labels": "家庭成员2 / 家庭成员3"
+          },
+          {
+            "policy_id": 10,
+            "company_name": "新华保险",
+            "policy_name": "畅行万里臻享版两全保险 / 附加住院补贴A款医疗保险 / i她A款女性特定疾病保险",
+            "policy_type": "医疗",
+            "policy_no": "PL1774226547162439",
+            "applicant": "家庭成员4",
+            "applicant_relation": "本人",
+            "insured": "家庭成员4",
+            "insured_relation": "本人",
+            "status": "保障中",
+            "coverage_period": "2022-11-25 至 2025-09-29T16:00:00.000Z",
+            "annual_premium": 3496,
+            "coverage_amount": 50000,
+            "responsibility_labels": "家庭成员2 / 家庭成员3"
+          }
+        ],
+        "_input_meta": {
+          "privacy_mode": "desensitized",
+          "policy_detail_level": "partial",
+          "policy_detail_reason": "检测到部分保单事实或保障提示，按部分信息模式处理"
+        }
+      },
+      "meta": {
+        "privacyMode": "desensitized",
+        "policyDetailLevel": "partial",
+        "policyDetailReason": "检测到部分保单事实或保障提示，按部分信息模式处理",
+        "model": "local-rule-report",
+        "generatedAt": "2026-03-24T08:10:17.825Z"
+      },
+      "generatedAt": "2026-03-24T08:10:17.825Z",
+      "createdAt": "2026-03-24T08:10:17.825Z",
+      "updatedAt": "2026-03-24T08:10:17.825Z"
+    }
+  ]
+}
