@@ -1,22 +1,24 @@
 import React from 'react';
 import { UserCircle, Bell } from 'lucide-react';
+import { ACTION_COPY } from '../lib/uiCopy';
 
-export default function Header() {
-  const hour = new Date().getHours();
-  let greeting = '你好';
-  if (hour < 12) greeting = '早上好';
-  else if (hour < 18) greeting = '下午好';
-  else greeting = '晚上好';
+interface HeaderProps {
+  userName?: string | null;
+}
+
+export default function Header({ userName }: HeaderProps) {
+  const displayName = String(userName || '').trim();
+  const greeting = displayName ? `${displayName}，您好呀` : '您好呀';
 
   return (
-    <header className="px-4 pt-6 pb-2 flex justify-between items-center bg-white sticky top-0 z-10 shadow-sm">
+    <header className="px-4 pt-6 pb-2 flex justify-between items-center bg-white shadow-sm">
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
           <UserCircle size={32} />
         </div>
         <div>
-          <h1 className="text-xl font-bold">张叔叔，{greeting}！</h1>
-          <p className="text-slate-500 text-sm">今天也要记得领鸡蛋哦</p>
+          <h1 className="text-xl font-bold">{greeting}</h1>
+          <p className="text-slate-500 text-sm">{ACTION_COPY.cHeaderWelcomeHint}</p>
         </div>
       </div>
       <button className="relative w-10 h-10 flex items-center justify-center rounded-full bg-slate-100">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, HeartPulse, Stethoscope } from 'lucide-react';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 interface Props {
   onSelectPolicy: (policy: any) => void;
@@ -9,37 +10,37 @@ export default function PolicyListTab({ onSelectPolicy }: Props) {
   const policies = [
     {
       id: 1,
-      company: '平安健康保险股份有限公司',
-      name: '尊享e生2024',
-      type: '医疗',
+      company: ACTION_COPY.cDemoPolicyCompany1,
+      name: ACTION_COPY.cDemoPolicyName1,
+      type: ACTION_COPY.cDemoPolicyType1,
       icon: Stethoscope,
-      amount: '300.00万',
+      amount: ACTION_COPY.cDemoPolicyAmount1,
       nextPayment: '2025-01-01',
-      status: '保障中',
+      status: ACTION_COPY.cPolicyStatusActive,
       color: 'text-blue-500',
       bg: 'bg-blue-50'
     },
     {
       id: 2,
-      company: '中国人寿保险',
-      name: '国寿福重疾险',
-      type: '重疾',
+      company: ACTION_COPY.cDemoPolicyCompany2,
+      name: ACTION_COPY.cDemoPolicyName2,
+      type: ACTION_COPY.cDemoPolicyType2,
       icon: HeartPulse,
-      amount: '50.00万',
+      amount: ACTION_COPY.cDemoPolicyAmount2,
       nextPayment: '2024-08-15',
-      status: '保障中',
+      status: ACTION_COPY.cPolicyStatusActive,
       color: 'text-red-500',
       bg: 'bg-red-50'
     },
     {
       id: 3,
-      company: '太平洋保险',
-      name: '太保意外伤害险',
-      type: '意外',
+      company: ACTION_COPY.cDemoPolicyCompany3,
+      name: ACTION_COPY.cDemoPolicyName3,
+      type: ACTION_COPY.cDemoPolicyType3,
       icon: Shield,
-      amount: '100.00万',
+      amount: ACTION_COPY.cDemoPolicyAmount3,
       nextPayment: '2024-11-20',
-      status: '保障中',
+      status: ACTION_COPY.cPolicyStatusActive,
       color: 'text-orange-500',
       bg: 'bg-orange-50'
     }
@@ -70,11 +71,11 @@ export default function PolicyListTab({ onSelectPolicy }: Props) {
           
           <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-50">
             <div>
-              <p className="text-xs text-slate-400 mb-1">保障额度</p>
+              <p className="text-xs text-slate-400 mb-1">{ACTION_COPY.cPolicyListAmount}</p>
               <p className="font-bold text-slate-900">{policy.amount}</p>
             </div>
             <div>
-              <p className="text-xs text-slate-400 mb-1">下次缴费日</p>
+              <p className="text-xs text-slate-400 mb-1">{ACTION_COPY.cPolicyListNextPayDate}</p>
               <p className="font-bold text-slate-900">{policy.nextPayment}</p>
             </div>
           </div>

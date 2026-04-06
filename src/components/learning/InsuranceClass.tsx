@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { PlayCircle, BookOpen, FileText, Heart } from 'lucide-react';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 export interface Course {
   id: number;
@@ -7,7 +8,7 @@ export interface Course {
   desc: string;
   type: 'video' | 'comic' | 'article';
   typeLabel: string;
-  icon: any;
+  icon?: any;
   progress: number;
   timeLeft: string;
   image: string;
@@ -16,66 +17,84 @@ export interface Course {
   btnColor: string;
   points: number;
   content: string;
+  category?: string;
+  videoUrl?: string;
 }
 
 interface Props {
+  categories?: string[];
+  courses?: Course[];
+  loading?: boolean;
+  error?: string;
   onSelectCourse: (course: Course) => void;
 }
 
-export default function InsuranceClass({ onSelectCourse }: Props) {
-  const [activeCategory, setActiveCategory] = useState('全部');
-  const categories = ['全部', '养老', '医疗', '少儿', '理财', '理赔'];
+export default function InsuranceClass({ categories: categoriesProp, courses: coursesProp, loading = false, error = '', onSelectCourse }: Props) {
+  const [activeCategory, setActiveCategory] = useState(ACTION_COPY.cCategoryAll);
+  const categories = (categoriesProp && categoriesProp.length ? categoriesProp : [ACTION_COPY.cCategoryAll, ACTION_COPY.cLearningCategorySenior, ACTION_COPY.cLearningCategoryMedical, ACTION_COPY.cLearningCategoryChild, ACTION_COPY.cLearningCategoryFinance, ACTION_COPY.cLearningCategoryClaim]).filter(Boolean);
 
-  const courses: Course[] = [
+  const fallbackCourses: Course[] = [
     {
       id: 1,
-      title: '如何使用手机申领医保报销',
-      desc: '手把手教您在手机上操作，简单又省时',
+      title: ACTION_COPY.cDemoCourse1Title,
+      desc: ACTION_COPY.cDemoCourse1Desc,
       type: 'video',
-      typeLabel: '视频课',
+      typeLabel: ACTION_COPY.cDemoCourse1TypeLabel,
       icon: PlayCircle,
       progress: 80,
-      timeLeft: '2 分钟',
+      timeLeft: ACTION_COPY.cDemoCourse1TimeLeft,
       image: 'https://picsum.photos/seed/course1/800/400',
-      action: '继续学习',
+      action: ACTION_COPY.cDemoCourse1Action,
       color: 'bg-black/60',
       btnColor: 'bg-blue-500 text-white',
       points: 50,
-      content: '本节课程将详细演示如何通过官方APP或微信小程序，在线提交医疗报销凭证。无需线下排队，只需准备好发票、病历等材料的照片，跟着视频一步步操作即可完成申领。'
+      content: ACTION_COPY.cDemoCourse1Content
     },
     {
       id: 2,
-      title: '三分钟看懂您的保单保障',
-      desc: '用通俗易懂的漫画带您理清保障范围',
+      title: ACTION_COPY.cDemoCourse2Title,
+      desc: ACTION_COPY.cDemoCourse2Desc,
       type: 'comic',
-      typeLabel: '趣味漫画',
+      typeLabel: ACTION_COPY.cDemoCourse2TypeLabel,
       icon: BookOpen,
       progress: 0,
-      timeLeft: '约 3 分钟',
+      timeLeft: ACTION_COPY.cDemoCourse2TimeLeft,
       image: 'https://picsum.photos/seed/course2/800/400',
-      action: '开始学习',
+      action: ACTION_COPY.cDemoCourse2Action,
       color: 'bg-blue-500',
       btnColor: 'bg-blue-50 text-blue-600',
       points: 30,
-      content: '买完保险却不知道保什么？这篇漫画用生动的场景和比喻，帮您快速看懂保单中的核心条款：重疾险保哪些病？医疗险怎么报销？意外险包含哪些意外？让您的保单不再是“天书”。'
+      content: ACTION_COPY.cDemoCourse2Content
     },
     {
       id: 3,
-      title: '2024养老金调整政策解读',
-      desc: '为您划重点，看看每月能多领多少钱',
+      title: ACTION_COPY.cDemoCourse3Title,
+      desc: ACTION_COPY.cDemoCourse3Desc,
       type: 'article',
-      typeLabel: '实用图文',
+      typeLabel: ACTION_COPY.cDemoCourse3TypeLabel,
       icon: FileText,
       progress: 45,
-      timeLeft: '剩 5 分钟',
+      timeLeft: ACTION_COPY.cDemoCourse3TimeLeft,
       image: 'https://picsum.photos/seed/course3/800/400',
-      action: '继续阅读',
+      action: ACTION_COPY.cDemoCourse3Action,
       color: 'bg-slate-800',
       btnColor: 'bg-blue-500 text-white',
       points: 20,
-      content: '2024年国家基本养老金上调政策正式发布！本次调整采取定额调整、挂钩调整与适当倾斜相结合的办法。本文将为您详细解读调整比例、计算方法以及高龄退休人员的特殊倾斜政策。'
+      content: ACTION_COPY.cDemoCourse3Content
     }
   ];
+
+  const courses = useMemo(() => {
+    const source = coursesProp && coursesProp.length ? coursesProp : fallbackCourses;
+    if (activeCategory === ACTION_COPY.cCategoryAll) return source;
+    return source.filter((course) => String(course.category || '').trim() === activeCategory);
+  }, [activeCategory, coursesProp]);
+
+  const iconByType: Record<string, any> = {
+    video: PlayCircle,
+    comic: BookOpen,
+    article: FileText,
+  };
 
   return (
     <div className="py-4">
@@ -100,10 +119,21 @@ export default function InsuranceClass({ onSelectCourse }: Props) {
       <div className="px-4 mt-4 space-y-5">
         <h2 className="text-lg font-bold flex items-center gap-2">
           <span className="w-1.5 h-5 bg-blue-500 rounded-full"></span>
-          我的课程进度
+          {ACTION_COPY.cLearningProgressTitle}
         </h2>
 
-        {courses.map(course => (
+        {loading ? (
+          <div className="bg-white rounded-2xl border border-slate-100 p-6 text-center text-slate-500">{ACTION_COPY.cLearningLoadingCourses}</div>
+        ) : null}
+        {!loading && error ? (
+          <div className="bg-white rounded-2xl border border-amber-100 p-6 text-center text-amber-700">{error}</div>
+        ) : null}
+        {!loading && !error && courses.length === 0 ? (
+          <div className="bg-white rounded-2xl border border-slate-100 p-6 text-center text-slate-500">{ACTION_COPY.cLearningNoCourses}</div>
+        ) : null}
+        {!loading && !error && courses.map(course => {
+          const Icon = iconByType[course.type] || FileText;
+          return (
           <div 
             key={course.id} 
             onClick={() => onSelectCourse(course)}
@@ -117,7 +147,7 @@ export default function InsuranceClass({ onSelectCourse }: Props) {
                 referrerPolicy="no-referrer"
               />
               <div className={`absolute top-3 left-3 ${course.color} backdrop-blur-sm text-white px-2.5 py-1 rounded-lg flex items-center gap-1 text-xs font-bold`}>
-                <course.icon size={14} />
+                <Icon size={14} />
                 {course.typeLabel}
               </div>
               <button 
@@ -133,7 +163,7 @@ export default function InsuranceClass({ onSelectCourse }: Props) {
               
               <div className="mb-4">
                 <div className={`flex justify-between items-center mb-1.5 text-xs font-bold ${course.progress > 0 ? 'text-blue-500' : 'text-slate-400'}`}>
-                  <span>学习进度 {course.progress}%</span>
+                  <span>{ACTION_COPY.cLearningProgressPrefix}{course.progress}%</span>
                   <span>{course.timeLeft}</span>
                 </div>
                 <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
@@ -149,7 +179,8 @@ export default function InsuranceClass({ onSelectCourse }: Props) {
               </button>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

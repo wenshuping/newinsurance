@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { ChevronLeft, QrCode, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { api } from '../../lib/api';
+import { ERROR_COPY } from '../../lib/errorCopy';
+import { NOTICE_COPY } from '../../lib/noticeCopy';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 interface Props {
   exchange: any;
@@ -24,7 +27,7 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
         <button onClick={onClose} className="p-2 -ml-2 text-slate-700 active:bg-slate-100 rounded-full transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold">兑换详情</h1>
+        <h1 className="text-lg font-bold">{ACTION_COPY.cExchangeDetailTitle}</h1>
         <div className="w-10"></div>
       </header>
 
@@ -36,20 +39,20 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
           </div>
           <h2 className="text-2xl font-bold text-center mb-2">{exchange.name}</h2>
           <div className="flex justify-center items-center gap-2 text-orange-500 font-bold text-lg mb-6">
-            <span>{exchange.points} 积分</span>
+            <span>{exchange.points}{ACTION_COPY.cExchangePointSuffix}</span>
           </div>
           
           <div className="space-y-3 border-t border-slate-100 pt-4">
             <div className="flex justify-between text-sm">
-              <span className="text-slate-500">订单编号</span>
+              <span className="text-slate-500">{ACTION_COPY.cExchangeOrderNo}</span>
               <span className="font-medium">{exchange.id}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-slate-500">兑换时间</span>
+              <span className="text-slate-500">{ACTION_COPY.cExchangeTime}</span>
               <span className="font-medium">{exchange.date}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-slate-500">状态</span>
+              <span className="text-slate-500">{ACTION_COPY.cExchangeStatus}</span>
               <span className="font-bold text-orange-500">{exchange.status}</span>
             </div>
           </div>
@@ -57,12 +60,12 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
 
         {/* Instructions */}
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-          <h3 className="font-bold text-base mb-3">使用说明</h3>
+          <h3 className="font-bold text-base mb-3">{ACTION_COPY.cExchangeUsageTitle}</h3>
           <ul className="space-y-2 text-sm text-slate-600 list-disc list-inside">
-            <li>请向门店工作人员出示核销二维码</li>
-            <li>二维码截图无效，请在现场打开此页面</li>
-            <li>商品一经核销，不可退换</li>
-            <li>有效期至：2024-12-31</li>
+            <li>{ACTION_COPY.cExchangeRule1}</li>
+            <li>{ACTION_COPY.cExchangeRule2}</li>
+            <li>{ACTION_COPY.cExchangeRule3}</li>
+            <li>{ACTION_COPY.cExchangeRule4}</li>
           </ul>
         </div>
       </main>
@@ -74,7 +77,7 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
           className="w-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold text-lg py-3.5 rounded-xl shadow-lg shadow-orange-200 active:scale-[0.98] transition-transform flex items-center justify-center gap-2"
         >
           <QrCode size={20} />
-          出示核销码
+          {ACTION_COPY.cExchangeShowWriteoffCode}
         </button>
       </div>
 
@@ -95,8 +98,8 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
               exit={{ scale: 0.9, opacity: 0 }}
               className="relative w-full max-w-xs bg-white rounded-3xl p-8 flex flex-col items-center shadow-2xl"
             >
-              <h3 className="text-xl font-bold mb-2">向店员出示此码</h3>
-              <p className="text-sm text-slate-500 mb-6">请勿将此码分享给他人</p>
+              <h3 className="text-xl font-bold mb-2">{ACTION_COPY.cExchangeShowToClerk}</h3>
+              <p className="text-sm text-slate-500 mb-6">{ACTION_COPY.cExchangeDontShareCode}</p>
               
               <div className="w-48 h-48 bg-slate-50 rounded-xl p-2 border-2 border-slate-100 mb-6">
                 <img src={exchange.qrCode} alt="QR Code" className="w-full h-full" referrerPolicy="no-referrer" />
@@ -110,18 +113,18 @@ export default function ExchangeDetail({ exchange, onClose }: Props) {
                   api.writeoff(exchange.rawId || exchange.id, exchange.code)
                     .then(() => {
                       setShowQR(false);
-                      alert('核销成功！');
+                      alert(NOTICE_COPY.cWriteoffSuccess);
                       onClose();
                     })
                     .catch((e: any) => {
-                      alert(e?.message || '核销失败');
+                      alert(e?.message || ERROR_COPY.writeoffFailed);
                     })
                     .finally(() => setSubmitting(false));
                 }}
                 className="mt-8 w-full bg-slate-100 text-slate-700 font-bold py-3 rounded-xl active:bg-slate-200 transition-colors disabled:opacity-50"
                 disabled={submitting}
               >
-                {submitting ? '核销中...' : '确认核销'}
+                {submitting ? ACTION_COPY.cExchangeWritingOff : ACTION_COPY.cExchangeConfirmWriteoff}
               </button>
             </motion.div>
           </div>

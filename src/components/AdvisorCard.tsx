@@ -1,7 +1,10 @@
 import React from 'react';
 import { Headset } from 'lucide-react';
+import { ACTION_COPY } from '../lib/uiCopy';
 
 export default function AdvisorCard() {
+  const serviceDays = 324;
+
   return (
     <div className="bg-white rounded-2xl p-4 shadow-sm border border-blue-50 flex items-center justify-between">
       <div className="flex items-center gap-4">
@@ -12,13 +15,13 @@ export default function AdvisorCard() {
           referrerPolicy="no-referrer"
         />
         <div>
-          <h3 className="font-bold text-lg">您的专属顾问：小王</h3>
-          <p className="text-sm text-slate-500 mt-0.5">已为您服务 324 天</p>
+          <h3 className="font-bold text-lg">{ACTION_COPY.cAdvisorTitle}</h3>
+          <p className="text-sm text-slate-500 mt-0.5">{ACTION_COPY.cAdvisorServiceDaysPrefix}{serviceDays}{ACTION_COPY.cAdvisorServiceDaysSuffix}</p>
         </div>
       </div>
       <button className="bg-blue-500 text-white px-4 py-2.5 rounded-full text-sm font-bold flex items-center gap-1.5 shadow-md shadow-blue-200 active:scale-95 transition-transform">
         <Headset size={18} />
-        联系顾问
+        {ACTION_COPY.cAdvisorContact}
       </button>
     </div>
   );

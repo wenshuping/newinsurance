@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, BookOpen, Calendar, ShieldCheck, User } from 'lucide-react';
+import { ACTION_COPY } from '../lib/uiCopy';
 
 interface Props {
   currentTab: string;
@@ -8,11 +9,11 @@ interface Props {
 
 export default function BottomNav({ currentTab, onChange }: Props) {
   const navItems = [
-    { id: 'home', name: '首页', icon: Home },
-    { id: 'learning', name: '知识学习', icon: BookOpen },
-    { id: 'activities', name: '活动中心', icon: Calendar },
-    { id: 'insurance', name: '保障管理', icon: ShieldCheck },
-    { id: 'profile', name: '我的', icon: User },
+    { id: 'home', name: ACTION_COPY.cNavHome, icon: Home },
+    { id: 'learning', name: ACTION_COPY.cNavLearning, icon: BookOpen },
+    { id: 'activities', name: ACTION_COPY.cNavActivities, icon: Calendar },
+    { id: 'insurance', name: ACTION_COPY.cNavInsurance, icon: ShieldCheck },
+    { id: 'profile', name: ACTION_COPY.cNavProfile, icon: User },
   ];
 
   return (

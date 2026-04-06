@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import { ChevronLeft, Share2, Award } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Course } from './InsuranceClass';
+import { NOTICE_COPY } from '../../lib/noticeCopy';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 interface Props {
   course: Course;
@@ -32,7 +34,7 @@ export default function CourseDetail({ course, onBack }: Props) {
         <button onClick={onBack} className="p-2 -ml-2 text-slate-700 active:bg-slate-100 rounded-full transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold">课程详情</h1>
+        <h1 className="text-lg font-bold">{ACTION_COPY.cCourseDetailTitle}</h1>
         <button className="p-2 -mr-2 text-slate-700 active:bg-slate-100 rounded-full transition-colors">
           <Share2 size={24} />
         </button>
@@ -44,7 +46,7 @@ export default function CourseDetail({ course, onBack }: Props) {
           <div className="w-full bg-black relative">
             <video 
               ref={videoRef}
-              src="https://www.w3schools.com/html/mov_bbb.mp4" 
+              src={course.videoUrl || 'https://www.w3schools.com/html/mov_bbb.mp4'} 
               controls 
               className="w-full aspect-video object-contain"
               poster={course.image}
@@ -53,7 +55,7 @@ export default function CourseDetail({ course, onBack }: Props) {
             {/* Custom Learning Progress Bar for Video */}
             <div className="bg-white px-5 pt-4 pb-2">
               <div className="flex justify-between text-xs text-slate-500 mb-1.5 font-medium">
-                <span>当前学习进度</span>
+                <span>{ACTION_COPY.cCourseCurrentProgress}</span>
                 <span className="text-blue-500">{Math.round(videoProgress)}%</span>
               </div>
               <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
@@ -78,23 +80,23 @@ export default function CourseDetail({ course, onBack }: Props) {
           
           <div className="flex items-center gap-2 text-orange-500 bg-orange-50 w-fit px-3 py-1.5 rounded-full">
             <Award size={18} />
-            <span className="text-sm font-bold">学习可得 {course.points} 积分</span>
+            <span className="text-sm font-bold">{ACTION_COPY.cCourseRewardPrefix}{course.points}{ACTION_COPY.cExchangePointSuffix}</span>
           </div>
 
           <div className="pt-5 border-t border-slate-100">
             <h3 className="font-bold text-lg mb-3 flex items-center gap-2">
               <span className="w-1 h-4 bg-blue-500 rounded-full"></span>
-              知识文案
+              {ACTION_COPY.cCourseContentTitle}
             </h3>
             <div className="text-slate-600 leading-relaxed space-y-4 text-sm">
               <p>{course.content}</p>
-              <p>本课程将为您详细解读相关政策与条款，帮助您更好地理解保险产品，为您的家庭提供更全面的保障。</p>
+              <p>{ACTION_COPY.cCourseExtraIntro}</p>
               <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 mt-4">
-                <h4 className="font-bold text-slate-800 mb-2">💡 学习建议：</h4>
+                <h4 className="font-bold text-slate-800 mb-2">{ACTION_COPY.cCourseTipsTitle}</h4>
                 <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>建议在安静的环境下观看</li>
-                  <li>结合自身实际情况进行思考</li>
-                  <li>如有疑问可随时联系您的专属顾问</li>
+                  <li>{ACTION_COPY.cCourseTip1}</li>
+                  <li>{ACTION_COPY.cCourseTip2}</li>
+                  <li>{ACTION_COPY.cCourseTip3}</li>
                 </ul>
               </div>
             </div>
@@ -106,12 +108,12 @@ export default function CourseDetail({ course, onBack }: Props) {
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-slate-100 pb-safe shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.05)]">
         <button 
           onClick={() => {
-            alert(`恭喜！完成学习，获得 ${course.points} 积分`);
+            alert(`${NOTICE_COPY.cCourseCompleteRewardPrefix}${course.points}${NOTICE_COPY.cCourseCompleteRewardSuffix}`);
             onBack();
           }}
           className="w-full bg-blue-500 text-white font-bold text-lg py-3.5 rounded-full shadow-lg shadow-blue-500/30 active:scale-[0.98] transition-transform"
         >
-          完成学习领积分
+          {ACTION_COPY.cCourseCompleteAction}
         </button>
       </div>
     </motion.div>

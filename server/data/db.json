@@ -7,6 +7,22 @@
       "isVerifiedBasic": true,
       "verifiedAt": "2026-02-22T15:18:13.014Z",
       "createdAt": "2026-02-22T15:18:13.014Z"
+    },
+    {
+      "id": 2,
+      "name": "张三",
+      "mobile": "13862915621",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-03-01T11:01:55.679Z",
+      "createdAt": "2026-03-01T11:01:55.679Z"
+    },
+    {
+      "id": 3,
+      "name": "张三",
+      "mobile": "13863336376",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-03-01T11:09:00.734Z",
+      "createdAt": "2026-03-01T11:09:00.734Z"
     }
   ],
   "smsCodes": [
@@ -25,6 +41,22 @@
       "expiresAt": "2026-02-22T15:23:13.002Z",
       "used": true,
       "createdAt": "2026-02-22T15:18:13.002Z"
+    },
+    {
+      "id": 3,
+      "mobile": "13862915621",
+      "code": "123456",
+      "expiresAt": "2026-03-01T11:06:55.668Z",
+      "used": true,
+      "createdAt": "2026-03-01T11:01:55.668Z"
+    },
+    {
+      "id": 4,
+      "mobile": "13863336376",
+      "code": "123456",
+      "expiresAt": "2026-03-01T11:14:00.676Z",
+      "used": true,
+      "createdAt": "2026-03-01T11:09:00.677Z"
     }
   ],
   "sessions": [
@@ -33,6 +65,18 @@
       "userId": 1,
       "expiresAt": "2026-03-24T15:18:13.015Z",
       "createdAt": "2026-02-22T15:18:13.015Z"
+    },
+    {
+      "token": "44b3adef-432a-482a-b759-ece55026cc8f",
+      "userId": 2,
+      "expiresAt": "2026-03-31T11:01:55.680Z",
+      "createdAt": "2026-03-01T11:01:55.680Z"
+    },
+    {
+      "token": "3f81ede9-2196-45d6-81f5-0524e5e24913",
+      "userId": 3,
+      "expiresAt": "2026-03-31T11:09:00.735Z",
+      "createdAt": "2026-03-01T11:09:00.735Z"
     }
   ],
   "activities": [
@@ -72,6 +116,20 @@
       "signDate": "2026-02-22",
       "pointsAwarded": 10,
       "createdAt": "2026-02-22T15:18:24.829Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "signDate": "2026-03-01",
+      "pointsAwarded": 10,
+      "createdAt": "2026-03-01T11:01:55.683Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "signDate": "2026-03-01",
+      "pointsAwarded": 10,
+      "createdAt": "2026-03-01T11:09:00.755Z"
     }
   ],
   "pointTransactions": [
@@ -96,6 +154,50 @@
       "balance": 210,
       "description": "每日签到奖励",
       "createdAt": "2026-02-22T15:18:24.829Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "2",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-03-01T11:01:55.680Z"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-03-01",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-03-01T11:01:55.683Z"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "3",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-03-01T11:09:00.735Z"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-03-01",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-03-01T11:09:00.755Z"
     }
   ],
   "mallItems": [

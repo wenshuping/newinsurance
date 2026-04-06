@@ -3,6 +3,7 @@ import { ChevronLeft, Calendar, Ticket, CheckCircle2, ArrowRight } from 'lucide-
 import { motion, AnimatePresence } from 'motion/react';
 import ExchangeDetail from './ExchangeDetail';
 import { api } from '../../lib/api';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 interface Props {
   onClose: () => void;
@@ -23,7 +24,7 @@ export default function MyExchanges({ onClose }: Props) {
         date: (x.createdAt || '').slice(0, 10),
         image: `https://picsum.photos/seed/redeem${x.id}/400/300`,
         points: x.pointsCost,
-        status: x.status === 'written_off' ? '已完成' : new Date(x.expiresAt).getTime() < Date.now() ? '已过期' : '待核销',
+        status: x.status === 'written_off' ? ACTION_COPY.cTabCompleted : new Date(x.expiresAt).getTime() < Date.now() ? ACTION_COPY.cStatusExpired : ACTION_COPY.cTabPendingWriteoff,
         code: x.writeoffToken,
         qrCode: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${x.writeoffToken}`,
         completedDate: x.writtenOffAt ? String(x.writtenOffAt).slice(0, 10) : undefined,
@@ -38,8 +39,8 @@ export default function MyExchanges({ onClose }: Props) {
 
   const filteredExchanges = exchanges.filter(ex => {
     if (activeTab === 'all') return true;
-    if (activeTab === 'pending') return ex.status === '待核销';
-    if (activeTab === 'completed') return ex.status === '已完成';
+    if (activeTab === 'pending') return ex.status === ACTION_COPY.cTabPendingWriteoff;
+    if (activeTab === 'completed') return ex.status === ACTION_COPY.cTabCompleted;
     return true;
   });
 
@@ -56,16 +57,16 @@ export default function MyExchanges({ onClose }: Props) {
         <button onClick={onClose} className="p-2 -ml-2 text-slate-700 active:bg-slate-100 rounded-full transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold">我的兑换</h1>
+        <h1 className="text-lg font-bold">{ACTION_COPY.cMyExchangesTitle}</h1>
         <div className="w-10"></div>
       </header>
 
       {/* Tabs */}
       <div className="bg-white sticky top-[61px] z-10 flex border-b border-slate-100">
         {[
-          { id: 'all', label: '全部' },
-          { id: 'pending', label: '待核销' },
-          { id: 'completed', label: '已完成' }
+          { id: 'all', label: ACTION_COPY.cTabAll },
+          { id: 'pending', label: ACTION_COPY.cTabPendingWriteoff },
+          { id: 'completed', label: ACTION_COPY.cTabCompleted }
         ].map(tab => (
           <button
             key={tab.id}
@@ -90,14 +91,14 @@ export default function MyExchanges({ onClose }: Props) {
         {filteredExchanges.map(exchange => (
           <div 
             key={exchange.id}
-            onClick={() => exchange.status === '待核销' && setSelectedExchange(exchange)}
+            onClick={() => exchange.status === ACTION_COPY.cTabPendingWriteoff && setSelectedExchange(exchange)}
             className={`bg-white rounded-2xl p-4 shadow-sm border border-slate-100 ${
-              exchange.status === '待核销' ? 'active:scale-[0.98] transition-transform cursor-pointer' : 'opacity-80'
+              exchange.status === ACTION_COPY.cTabPendingWriteoff ? 'active:scale-[0.98] transition-transform cursor-pointer' : 'opacity-80'
             }`}
           >
             <div className="flex flex-col sm:flex-row gap-4">
               <div className={`w-full sm:w-32 h-32 rounded-xl overflow-hidden shrink-0 bg-slate-50 ${
-                exchange.status !== '待核销' ? 'grayscale opacity-80' : ''
+                exchange.status !== ACTION_COPY.cTabPendingWriteoff ? 'grayscale opacity-80' : ''
               }`}>
                 <img src={exchange.image} alt={exchange.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
@@ -106,13 +107,13 @@ export default function MyExchanges({ onClose }: Props) {
                 <div>
                   <div className="flex justify-between items-start mb-2">
                     <h3 className={`text-lg font-bold leading-tight ${
-                      exchange.status !== '待核销' ? 'text-slate-600' : 'text-slate-900'
+                      exchange.status !== ACTION_COPY.cTabPendingWriteoff ? 'text-slate-600' : 'text-slate-900'
                     }`}>
                       {exchange.name}
                     </h3>
                     <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold shrink-0 ml-2 ${
-                      exchange.status === '待核销' ? 'bg-blue-50 text-blue-600' :
-                      exchange.status === '已完成' ? 'bg-slate-100 text-slate-500' :
+                      exchange.status === ACTION_COPY.cTabPendingWriteoff ? 'bg-blue-50 text-blue-600' :
+                      exchange.status === ACTION_COPY.cTabCompleted ? 'bg-slate-100 text-slate-500' :
                       'bg-slate-100 text-slate-400'
                     }`}>
                       {exchange.status}
@@ -121,33 +122,33 @@ export default function MyExchanges({ onClose }: Props) {
                   
                   <div className="flex items-center text-slate-500 text-xs mb-1">
                     <Calendar size={14} className="mr-1.5" />
-                    <span>兑换日期：{exchange.date}</span>
+                    <span>{ACTION_COPY.cExchangeDatePrefix}{exchange.date}</span>
                   </div>
                 </div>
 
-                {exchange.status === '待核销' && (
+                {exchange.status === ACTION_COPY.cTabPendingWriteoff && (
                   <div className="mt-4 flex items-center justify-between">
                     <div className="flex items-center text-slate-500 text-xs">
                       <Ticket size={14} className="mr-1.5" />
-                      <span>券码：{exchange.code}</span>
+                      <span>{ACTION_COPY.cCouponCodePrefix}{exchange.code}</span>
                     </div>
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-md shadow-blue-500/20 flex items-center gap-1">
-                      去核销
+                      {ACTION_COPY.cWriteoffNow}
                       <ArrowRight size={16} />
                     </button>
                   </div>
                 )}
 
-                {exchange.status === '已完成' && (
+                {exchange.status === ACTION_COPY.cTabCompleted && (
                   <div className="mt-4 flex items-center text-slate-500 text-xs">
                     <CheckCircle2 size={14} className="mr-1.5 text-green-500" />
-                    <span>已于 {exchange.completedDate} 完成核销</span>
+                    <span>{ACTION_COPY.cCompletedWriteoffPrefix}{exchange.completedDate}{ACTION_COPY.cCompletedWriteoffSuffix}</span>
                   </div>
                 )}
 
-                {exchange.status === '已过期' && (
+                {exchange.status === ACTION_COPY.cStatusExpired && (
                   <div className="mt-4 text-red-400 text-xs font-medium">
-                    有效期已过
+                    {ACTION_COPY.cExpiredHint}
                   </div>
                 )}
               </div>

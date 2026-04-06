@@ -1,28 +1,29 @@
 import React from 'react';
 import { Calculator, ShieldAlert, FileSearch, ArrowRight } from 'lucide-react';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 export default function PracticalTools() {
   const tools = [
     {
       id: 1,
-      title: '养老金计算器',
-      desc: '输入参数，可视化未来养老资金缺口',
+      title: ACTION_COPY.cToolPensionCalc,
+      desc: ACTION_COPY.cToolPensionCalcDesc,
       icon: Calculator,
       color: 'text-emerald-500',
       bg: 'bg-emerald-50'
     },
     {
       id: 2,
-      title: '保障缺口分析',
-      desc: '问答式引导，生成家庭风险矩阵报告',
+      title: ACTION_COPY.cToolCoverageGap,
+      desc: ACTION_COPY.cToolCoverageGapDesc,
       icon: ShieldAlert,
       color: 'text-blue-500',
       bg: 'bg-blue-50'
     },
     {
       id: 3,
-      title: '理赔进度查询',
-      desc: '关联已托管保单，实时查询理赔状态',
+      title: ACTION_COPY.cToolClaimProgress,
+      desc: ACTION_COPY.cToolClaimProgressDesc,
       icon: FileSearch,
       color: 'text-purple-500',
       bg: 'bg-purple-50'

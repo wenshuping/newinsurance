@@ -6,17 +6,19 @@ import Activities from '../components/Activities';
 import PointsBanner from '../components/PointsBanner';
 import LatestNews from '../components/LatestNews';
 import PopularGames from '../components/PopularGames';
+import type { User } from '../lib/api';
 
 interface Props {
   requireAuth: (action: () => void) => void;
   onOpenMall: () => void;
+  user?: User | null;
 }
 
-export default function Home({ requireAuth, onOpenMall }: Props) {
+export default function Home({ requireAuth, onOpenMall, user }: Props) {
   return (
-    <div className="flex-1 flex flex-col h-full">
-      <Header />
-      <div className="flex-1 overflow-y-auto px-4 space-y-6 pt-4 pb-24">
+    <div className="flex-1 overflow-y-auto pb-24">
+      <Header userName={user?.name} />
+      <div className="px-4 space-y-6 pt-4">
         <AdvisorCard />
         <CoreFeatures requireAuth={requireAuth} />
         <Activities requireAuth={requireAuth} />

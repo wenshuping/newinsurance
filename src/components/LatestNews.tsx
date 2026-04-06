@@ -1,12 +1,13 @@
 import React from 'react';
 import { Play } from 'lucide-react';
+import { ACTION_COPY } from '../lib/uiCopy';
 
 export default function LatestNews() {
   return (
     <section>
       <div className="flex justify-between items-end mb-3">
-        <h2 className="text-lg font-bold">最新资讯</h2>
-        <button className="text-xs text-slate-500 font-medium">换一批</button>
+        <h2 className="text-lg font-bold">{ACTION_COPY.cLatestNewsTitle}</h2>
+        <button className="text-xs text-slate-500 font-medium">{ACTION_COPY.cLatestNewsRefresh}</button>
       </div>
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
         <div className="relative aspect-video">
@@ -24,8 +25,8 @@ export default function LatestNews() {
           <span className="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded">03:45</span>
         </div>
         <div className="p-4">
-          <h3 className="font-bold text-base mb-1.5">2024年养老保险新政策解读</h3>
-          <p className="text-sm text-slate-500 line-clamp-2">详细了解最新推出的居家养老补助计划，帮助您更好地规划晚年生活，享受无忧的退休时光...</p>
+          <h3 className="font-bold text-base mb-1.5">{ACTION_COPY.cLatestNewsCardTitle}</h3>
+          <p className="text-sm text-slate-500 line-clamp-2">{ACTION_COPY.cLatestNewsCardDesc}</p>
         </div>
       </div>
     </section>

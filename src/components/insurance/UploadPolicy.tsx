@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronLeft, Camera, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
+import { NOTICE_COPY } from '../../lib/noticeCopy';
+import { ACTION_COPY } from '../../lib/uiCopy';
 
 interface Props {
   onClose: () => void;
@@ -13,24 +15,24 @@ export default function UploadPolicy({ onClose }: Props) {
     applicant: '',
     insured: '',
     date: '',
-    paymentPeriod: '20年交',
-    coveragePeriod: '终身',
+    paymentPeriod: ACTION_COPY.cUploadPayPeriod20Years,
+    coveragePeriod: ACTION_COPY.cUploadCoverageLifelong,
     amount: '',
     firstPremium: ''
   });
 
   const handleScan = () => {
     // Simulate OCR
-    alert('正在启动相机扫描...');
+    alert(NOTICE_COPY.cCameraScanStarting);
     setTimeout(() => {
       setFormData({
-        company: '中国平安保险',
-        name: '平安福21重疾险',
-        applicant: '张三',
-        insured: '张三',
+        company: ACTION_COPY.cUploadCompanyOptionPingan,
+        name: ACTION_COPY.cUploadDemoPolicyName,
+        applicant: ACTION_COPY.cUploadDemoApplicantName,
+        insured: ACTION_COPY.cUploadDemoInsuredName,
         date: '2024-02-20',
-        paymentPeriod: '20年交',
-        coveragePeriod: '终身',
+        paymentPeriod: ACTION_COPY.cUploadPayPeriod20Years,
+        coveragePeriod: ACTION_COPY.cUploadCoverageLifelong,
         amount: '500000',
         firstPremium: '12000'
       });
@@ -49,7 +51,7 @@ export default function UploadPolicy({ onClose }: Props) {
         <button onClick={onClose} className="p-2 -ml-2 text-slate-700 active:bg-slate-100 rounded-full">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold">上传保单</h1>
+        <h1 className="text-lg font-bold">{ACTION_COPY.cUploadPolicyTitle}</h1>
         <div className="w-10"></div>
       </header>
 
@@ -57,8 +59,8 @@ export default function UploadPolicy({ onClose }: Props) {
         {/* OCR Section */}
         <section className="p-4">
           <div className="mb-3">
-            <h2 className="text-lg font-bold">拍照自动识别</h2>
-            <p className="text-slate-500 text-xs mt-1">系统将自动提取保单关键信息，省时省力</p>
+            <h2 className="text-lg font-bold">{ACTION_COPY.cUploadOcrTitle}</h2>
+            <p className="text-slate-500 text-xs mt-1">{ACTION_COPY.cUploadOcrHint}</p>
           </div>
           <div 
             onClick={handleScan}
@@ -67,8 +69,8 @@ export default function UploadPolicy({ onClose }: Props) {
             <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
               <Camera size={28} />
             </div>
-            <span className="text-base font-bold text-blue-600">点击拍照上传</span>
-            <p className="text-xs text-blue-400">支持纸质保单拍照或相册图片</p>
+            <span className="text-base font-bold text-blue-600">{ACTION_COPY.cUploadClickPhoto}</span>
+            <p className="text-xs text-blue-400">{ACTION_COPY.cUploadPhotoHint}</p>
             
             {/* Corners */}
             <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-blue-500 rounded-tl"></div>
@@ -80,7 +82,7 @@ export default function UploadPolicy({ onClose }: Props) {
 
         <div className="flex items-center gap-4 px-4 py-2">
           <div className="h-px bg-slate-200 flex-1"></div>
-          <span className="text-slate-400 text-xs font-medium">或 手动输入详情</span>
+          <span className="text-slate-400 text-xs font-medium">{ACTION_COPY.cUploadOrManual}</span>
           <div className="h-px bg-slate-200 flex-1"></div>
         </div>
 
@@ -88,26 +90,26 @@ export default function UploadPolicy({ onClose }: Props) {
         <form className="p-4 space-y-4">
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">保险公司</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadCompanyLabel}</label>
               <select 
                 value={formData.company}
                 onChange={e => setFormData({...formData, company: e.target.value})}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               >
-                <option value="">请选择保险公司</option>
-                <option>中国平安保险</option>
-                <option>中国人寿保险</option>
-                <option>太平洋保险</option>
-                <option>友邦保险</option>
+                <option value="">{ACTION_COPY.cUploadCompanyPlaceholder}</option>
+                <option>{ACTION_COPY.cUploadCompanyOptionPingan}</option>
+                <option>{ACTION_COPY.cUploadCompanyOptionGuoshou}</option>
+                <option>{ACTION_COPY.cUploadCompanyOptionPacific}</option>
+                <option>{ACTION_COPY.cUploadCompanyOptionAia}</option>
               </select>
             </div>
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">保险名称</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadPolicyNameLabel}</label>
               <input 
                 type="text" 
                 value={formData.name}
                 onChange={e => setFormData({...formData, name: e.target.value})}
-                placeholder="输入保单上的险种全称"
+                placeholder={ACTION_COPY.cUploadPolicyNamePlaceholder}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
@@ -115,29 +117,29 @@ export default function UploadPolicy({ onClose }: Props) {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">投保人</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadApplicantLabel}</label>
               <input 
                 type="text" 
                 value={formData.applicant}
                 onChange={e => setFormData({...formData, applicant: e.target.value})}
-                placeholder="姓名"
+                placeholder={ACTION_COPY.cUploadNamePlaceholder}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">被保险人</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadInsuredLabel}</label>
               <input 
                 type="text" 
                 value={formData.insured}
                 onChange={e => setFormData({...formData, insured: e.target.value})}
-                placeholder="姓名"
+                placeholder={ACTION_COPY.cUploadNamePlaceholder}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-bold text-slate-700 mb-1.5">投保时间</label>
+            <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadDateLabel}</label>
             <input 
               type="date" 
               value={formData.date}
@@ -148,38 +150,38 @@ export default function UploadPolicy({ onClose }: Props) {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">缴费期间</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadPayPeriodLabel}</label>
               <select 
                 value={formData.paymentPeriod}
                 onChange={e => setFormData({...formData, paymentPeriod: e.target.value})}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               >
-                <option>趸交</option>
-                <option>5年交</option>
-                <option>10年交</option>
-                <option>20年交</option>
-                <option>30年交</option>
+                <option>{ACTION_COPY.cUploadPayPeriodSingle}</option>
+                <option>{ACTION_COPY.cUploadPayPeriod5Years}</option>
+                <option>{ACTION_COPY.cUploadPayPeriod10Years}</option>
+                <option>{ACTION_COPY.cUploadPayPeriod20Years}</option>
+                <option>{ACTION_COPY.cUploadPayPeriod30Years}</option>
               </select>
             </div>
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">保障期间</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadCoveragePeriodLabel}</label>
               <select 
                 value={formData.coveragePeriod}
                 onChange={e => setFormData({...formData, coveragePeriod: e.target.value})}
                 className="w-full rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500"
               >
-                <option>终身</option>
-                <option>20年</option>
-                <option>30年</option>
-                <option>至70岁</option>
-                <option>至80岁</option>
+                <option>{ACTION_COPY.cUploadCoverageLifelong}</option>
+                <option>{ACTION_COPY.cUploadCoverage20Years}</option>
+                <option>{ACTION_COPY.cUploadCoverage30Years}</option>
+                <option>{ACTION_COPY.cUploadCoverageTo70}</option>
+                <option>{ACTION_COPY.cUploadCoverageTo80}</option>
               </select>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">保额 (元)</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadAmountLabel}</label>
               <input 
                 type="number" 
                 value={formData.amount}
@@ -189,7 +191,7 @@ export default function UploadPolicy({ onClose }: Props) {
               />
             </div>
             <div>
-              <label className="block text-sm font-bold text-slate-700 mb-1.5">首期保费 (元)</label>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">{ACTION_COPY.cUploadFirstPremiumLabel}</label>
               <input 
                 type="number" 
                 value={formData.firstPremium}
@@ -205,13 +207,13 @@ export default function UploadPolicy({ onClose }: Props) {
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-slate-100 pb-safe shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.05)]">
         <button 
           onClick={() => {
-            alert('保单提交成功！');
+            alert(NOTICE_COPY.cPolicySubmitSuccess);
             onClose();
           }}
           className="w-full bg-blue-500 text-white font-bold text-lg py-3.5 rounded-xl shadow-lg shadow-blue-500/30 active:scale-[0.98] transition-transform flex items-center justify-center gap-2"
         >
           <CheckCircle2 size={20} />
-          确认并提交
+          {ACTION_COPY.cUploadSubmit}
         </button>
       </div>
     </motion.div>

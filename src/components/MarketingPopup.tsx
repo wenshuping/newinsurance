@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Gift } from 'lucide-react';
+import { ACTION_COPY } from '../lib/uiCopy';
 
 interface Props {
   onClose: () => void;
@@ -39,14 +40,14 @@ export default function MarketingPopup({ onClose, onAction }: Props) {
                 <Gift size={40} className="text-red-500" />
               </div>
               
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">每日签到好礼</h2>
-              <p className="text-slate-500 text-sm mb-6">今天签到可获得 <span className="text-red-500 font-bold">50</span> 积分<br/>连续签到奖励更丰富哦！</p>
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">{ACTION_COPY.cPopupSignInGiftTitle}</h2>
+              <p className="text-slate-500 text-sm mb-6">{ACTION_COPY.cPopupSignInGiftDescPrefix}<span className="text-red-500 font-bold">50</span>{ACTION_COPY.cPopupSignInGiftDescSuffix}<br/>{ACTION_COPY.cPopupSignInGiftDescTail}</p>
               
               <button 
                 onClick={onAction}
                 className="w-full bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold text-lg py-3.5 rounded-full shadow-lg shadow-red-500/30 active:scale-95 transition-transform"
               >
-                立即签到领积分
+                {ACTION_COPY.cPopupSignInAction}
               </button>
             </div>
           </div>
