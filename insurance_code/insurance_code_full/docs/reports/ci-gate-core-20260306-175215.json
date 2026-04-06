@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "cwd": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full",
+  "startedAt": "2026-03-06T09:52:15.003Z",
+  "finishedAt": "2026-03-06T09:52:28.176Z",
+  "result": {
+    "command": "npm",
+    "args": [
+      "run",
+      "ci:gate:core"
+    ],
+    "ok": true,
+    "code": 0,
+    "signal": "",
+    "durationMs": 13172
+  },
+  "jsonFile": "docs/reports/ci-gate-core-20260306-175215.json",
+  "markdownFile": "docs/reports/ci-gate-core-20260306-175215.md"
+}

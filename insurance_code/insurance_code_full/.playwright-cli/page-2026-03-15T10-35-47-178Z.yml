@@ -1,0 +1,910 @@
+- generic [ref=e3]:
+  - button "分享当前页面" [active] [ref=e4]:
+    - img [ref=e5]
+  - button "退出登录" [ref=e1384]
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - heading "活动中心" [level=1] [ref=e13]
+      - button [ref=e14]:
+        - img [ref=e15]
+    - main [ref=e18]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: 限时福利
+          - heading "连续签到7天\\n领30枚新鲜鸡蛋" [level=2] [ref=e23]
+          - paragraph [ref=e24]: 健康生活，好礼相送
+          - button "立即签到领奖" [ref=e25]
+        - generic [ref=e27]: 🥚
+      - generic [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: 我的积分
+            - generic [ref=e33]:
+              - generic [ref=e34]: "310"
+              - generic [ref=e35]: 分
+          - button "积分商城" [ref=e36]:
+            - img [ref=e37]
+            - generic [ref=e40]: 积分商城
+        - generic [ref=e42]:
+          - generic [ref=e43]: 今日任务进度
+          - generic [ref=e44]: 0/52 已完成
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e78]:
+                - paragraph [ref=e79]: 链路活动_1772764102921
+                - paragraph [ref=e80]: +12 积分
+            - button "去完成" [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - img [ref=e85]
+              - generic [ref=e87]:
+                - paragraph [ref=e88]: 链路活动_1772764137287
+                - paragraph [ref=e89]: +12 积分
+            - button "去完成" [ref=e90]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - img [ref=e94]
+              - generic [ref=e96]:
+                - paragraph [ref=e97]: 链路活动_1772764831657
+                - paragraph [ref=e98]: +12 积分
+            - button "去完成" [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - img [ref=e103]
+              - generic [ref=e105]:
+                - paragraph [ref=e106]: 链路活动_1772764912256
+                - paragraph [ref=e107]: +12 积分
+            - button "去完成" [ref=e108]
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - img [ref=e112]
+              - generic [ref=e114]:
+                - paragraph [ref=e115]: 链路活动_1772766324219
+                - paragraph [ref=e116]: +12 积分
+            - button "去完成" [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - img [ref=e121]
+              - generic [ref=e123]:
+                - paragraph [ref=e124]: 链路活动_1772766454688
+                - paragraph [ref=e125]: +12 积分
+            - button "去完成" [ref=e126]
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - img [ref=e130]
+              - generic [ref=e132]:
+                - paragraph [ref=e133]: 链路活动_1772766538876
+                - paragraph [ref=e134]: +12 积分
+            - button "去完成" [ref=e135]
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - img [ref=e139]
+              - generic [ref=e141]:
+                - paragraph [ref=e142]: 链路活动_1772767188067
+                - paragraph [ref=e143]: +12 积分
+            - button "去完成" [ref=e144]
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - img [ref=e148]
+              - generic [ref=e150]:
+                - paragraph [ref=e151]: 链路活动_1772767228979
+                - paragraph [ref=e152]: +12 积分
+            - button "去完成" [ref=e153]
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e157]
+              - generic [ref=e159]:
+                - paragraph [ref=e160]: 链路活动_1772768404613
+                - paragraph [ref=e161]: +12 积分
+            - button "去完成" [ref=e162]
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - img [ref=e166]
+              - generic [ref=e168]:
+                - paragraph [ref=e169]: 链路活动_1772768915083
+                - paragraph [ref=e170]: +12 积分
+            - button "去完成" [ref=e171]
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - generic [ref=e177]:
+                - paragraph [ref=e178]: 链路活动_1772769549955
+                - paragraph [ref=e179]: +12 积分
+            - button "去完成" [ref=e180]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - img [ref=e184]
+              - generic [ref=e186]:
+                - paragraph [ref=e187]: 链路活动_1772769610183
+                - paragraph [ref=e188]: +12 积分
+            - button "去完成" [ref=e189]
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - img [ref=e193]
+              - generic [ref=e195]:
+                - paragraph [ref=e196]: 链路活动_1772773375022
+                - paragraph [ref=e197]: +12 积分
+            - button "去完成" [ref=e198]
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - img [ref=e202]
+              - generic [ref=e204]:
+                - paragraph [ref=e205]: 链路活动_1772773383616
+                - paragraph [ref=e206]: +12 积分
+            - button "去完成" [ref=e207]
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - img [ref=e211]
+              - generic [ref=e213]:
+                - paragraph [ref=e214]: 链路活动_1772774548743
+                - paragraph [ref=e215]: +12 积分
+            - button "去完成" [ref=e216]
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - img [ref=e220]
+              - generic [ref=e222]:
+                - paragraph [ref=e223]: 链路活动_1772776041119
+                - paragraph [ref=e224]: +12 积分
+            - button "去完成" [ref=e225]
+          - generic [ref=e226]:
+            - generic [ref=e227]:
+              - img [ref=e229]
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: 链路活动_1772776049767
+                - paragraph [ref=e233]: +12 积分
+            - button "去完成" [ref=e234]
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - img [ref=e238]
+              - generic [ref=e240]:
+                - paragraph [ref=e241]: 链路活动_1772776130080
+                - paragraph [ref=e242]: +12 积分
+            - button "去完成" [ref=e243]
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - img [ref=e247]
+              - generic [ref=e249]:
+                - paragraph [ref=e250]: 链路活动_1772776138092
+                - paragraph [ref=e251]: +12 积分
+            - button "去完成" [ref=e252]
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - img [ref=e256]
+              - generic [ref=e258]:
+                - paragraph [ref=e259]: 链路活动_1772776435777
+                - paragraph [ref=e260]: +12 积分
+            - button "去完成" [ref=e261]
+          - generic [ref=e262]:
+            - generic [ref=e263]:
+              - img [ref=e265]
+              - generic [ref=e267]:
+                - paragraph [ref=e268]: 链路活动_1772776443528
+                - paragraph [ref=e269]: +12 积分
+            - button "去完成" [ref=e270]
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - img [ref=e274]
+              - generic [ref=e276]:
+                - paragraph [ref=e277]: 链路活动_1772777678852
+                - paragraph [ref=e278]: +12 积分
+            - button "去完成" [ref=e279]
+          - generic [ref=e280]:
+            - generic [ref=e281]:
+              - img [ref=e283]
+              - generic [ref=e285]:
+                - paragraph [ref=e286]: 链路活动_1772777689081
+                - paragraph [ref=e287]: +12 积分
+            - button "去完成" [ref=e288]
+          - generic [ref=e289]:
+            - generic [ref=e290]:
+              - img [ref=e292]
+              - generic [ref=e294]:
+                - paragraph [ref=e295]: 链路活动_1772790494517
+                - paragraph [ref=e296]: +12 积分
+            - button "去完成" [ref=e297]
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - img [ref=e301]
+              - generic [ref=e303]:
+                - paragraph [ref=e304]: 链路活动_1772790682162
+                - paragraph [ref=e305]: +12 积分
+            - button "去完成" [ref=e306]
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - img [ref=e310]
+              - generic [ref=e312]:
+                - paragraph [ref=e313]: 链路活动_1772790730854
+                - paragraph [ref=e314]: +12 积分
+            - button "去完成" [ref=e315]
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - img [ref=e319]
+              - generic [ref=e321]:
+                - paragraph [ref=e322]: 链路活动_1772790744027
+                - paragraph [ref=e323]: +12 积分
+            - button "去完成" [ref=e324]
+          - generic [ref=e325]:
+            - generic [ref=e326]:
+              - img [ref=e328]
+              - generic [ref=e330]:
+                - paragraph [ref=e331]: 链路活动_1772791347874
+                - paragraph [ref=e332]: +12 积分
+            - button "去完成" [ref=e333]
+          - generic [ref=e334]:
+            - generic [ref=e335]:
+              - img [ref=e337]
+              - generic [ref=e339]:
+                - paragraph [ref=e340]: 链路活动_1772791358515
+                - paragraph [ref=e341]: +12 积分
+            - button "去完成" [ref=e342]
+          - generic [ref=e343]:
+            - generic [ref=e344]:
+              - img [ref=e346]
+              - generic [ref=e348]:
+                - paragraph [ref=e349]: 链路活动_1772791788519
+                - paragraph [ref=e350]: +12 积分
+            - button "去完成" [ref=e351]
+          - generic [ref=e352]:
+            - generic [ref=e353]:
+              - img [ref=e355]
+              - generic [ref=e357]:
+                - paragraph [ref=e358]: 链路活动_1772792641237
+                - paragraph [ref=e359]: +12 积分
+            - button "去完成" [ref=e360]
+          - generic [ref=e361]:
+            - generic [ref=e362]:
+              - img [ref=e364]
+              - generic [ref=e366]:
+                - paragraph [ref=e367]: 链路活动_1772795794030
+                - paragraph [ref=e368]: +12 积分
+            - button "去完成" [ref=e369]
+          - generic [ref=e370]:
+            - generic [ref=e371]:
+              - img [ref=e373]
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: 链路活动_1772795958614
+                - paragraph [ref=e377]: +12 积分
+            - button "去完成" [ref=e378]
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - img [ref=e382]
+              - generic [ref=e384]:
+                - paragraph [ref=e385]: 链路活动_1772860073162
+                - paragraph [ref=e386]: +12 积分
+            - button "去完成" [ref=e387]
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - img [ref=e391]
+              - generic [ref=e393]:
+                - paragraph [ref=e394]: 链路活动_1772860143407
+                - paragraph [ref=e395]: +12 积分
+            - button "去完成" [ref=e396]
+          - generic [ref=e397]:
+            - generic [ref=e398]:
+              - img [ref=e400]
+              - generic [ref=e402]:
+                - paragraph [ref=e403]: 浏览器链路活动_1772888972580
+                - paragraph [ref=e404]: +12 积分
+            - button "去完成" [ref=e405]
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - img [ref=e409]
+              - generic [ref=e411]:
+                - paragraph [ref=e412]: 链路活动_1772889064705
+                - paragraph [ref=e413]: +12 积分
+            - button "去完成" [ref=e414]
+          - generic [ref=e415]:
+            - generic [ref=e416]:
+              - img [ref=e418]
+              - generic [ref=e420]:
+                - paragraph [ref=e421]: 浏览器链路活动_1772889161143
+                - paragraph [ref=e422]: +12 积分
+            - button "去完成" [ref=e423]
+          - generic [ref=e424]:
+            - generic [ref=e425]:
+              - img [ref=e427]
+              - generic [ref=e429]:
+                - paragraph [ref=e430]: 浏览器链路活动_1772889180535
+                - paragraph [ref=e431]: +12 积分
+            - button "去完成" [ref=e432]
+          - generic [ref=e433]:
+            - generic [ref=e434]:
+              - img [ref=e436]
+              - generic [ref=e438]:
+                - paragraph [ref=e439]: 自动验收活动_1773235017704
+                - paragraph [ref=e440]: +12 积分
+            - button "去完成" [ref=e441]
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - img [ref=e445]
+              - generic [ref=e447]:
+                - paragraph [ref=e448]: 自动验收活动_1773235068857
+                - paragraph [ref=e449]: +12 积分
+            - button "去完成" [ref=e450]
+          - generic [ref=e451]:
+            - generic [ref=e452]:
+              - img [ref=e454]
+              - generic [ref=e456]:
+                - paragraph [ref=e457]: 调试活动_1773235124170
+                - paragraph [ref=e458]: +10 积分
+            - button "去完成" [ref=e459]
+          - generic [ref=e460]:
+            - generic [ref=e461]:
+              - img [ref=e463]
+              - generic [ref=e465]:
+                - paragraph [ref=e466]: 实名调试_1773235381866
+                - paragraph [ref=e467]: +10 积分
+            - button "去完成" [ref=e468]
+          - generic [ref=e469]:
+            - generic [ref=e470]:
+              - img [ref=e472]
+              - generic [ref=e474]:
+                - paragraph [ref=e475]: 实名慢测_1773235485035
+                - paragraph [ref=e476]: +10 积分
+            - button "去完成" [ref=e477]
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - img [ref=e481]
+              - generic [ref=e483]:
+                - paragraph [ref=e484]: 实名慢测_1773235672706
+                - paragraph [ref=e485]: +10 积分
+            - button "去完成" [ref=e486]
+          - generic [ref=e487]:
+            - generic [ref=e488]:
+              - img [ref=e490]
+              - generic [ref=e492]:
+                - paragraph [ref=e493]: 状态调试_1773235715962
+                - paragraph [ref=e494]: +10 积分
+            - button "去完成" [ref=e495]
+          - generic [ref=e496]:
+            - generic [ref=e497]:
+              - img [ref=e499]
+              - generic [ref=e501]:
+                - paragraph [ref=e502]: 链路活动_1773486445372
+                - paragraph [ref=e503]: +12 积分
+            - button "去完成" [ref=e504]
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - img [ref=e508]
+              - generic [ref=e510]:
+                - paragraph [ref=e511]: owner_activity_1773486644882
+                - paragraph [ref=e512]: +11 积分
+            - button "去完成" [ref=e513]
+          - generic [ref=e514]:
+            - generic [ref=e515]:
+              - img [ref=e517]
+              - generic [ref=e519]:
+                - paragraph [ref=e520]: other_activity_1773486644882
+                - paragraph [ref=e521]: +11 积分
+            - button "去完成" [ref=e522]
+          - generic [ref=e523]:
+            - generic [ref=e524]:
+              - img [ref=e526]
+              - generic [ref=e528]:
+                - paragraph [ref=e529]: owner_1773486699514_activity
+                - paragraph [ref=e530]: +11 积分
+            - button "去完成" [ref=e531]
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - img [ref=e535]
+              - generic [ref=e537]:
+                - paragraph [ref=e538]: other_1773486699514_activity
+                - paragraph [ref=e539]: +11 积分
+            - button "去完成" [ref=e540]
+      - generic [ref=e46]:
+        - heading "热门活动" [level=3] [ref=e47]
+        - generic [ref=e541]:
+          - generic [ref=e542] [cursor=pointer]:
+            - generic [ref=e545]: 🎯
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - text: 资料完善
+                - heading "链路活动_1772764102921" [level=4] [ref=e548]
+                - paragraph [ref=e549]: 0人正在参与中
+              - button "查看详情 >" [ref=e555]
+          - generic [ref=e556] [cursor=pointer]:
+            - generic [ref=e559]: 🎯
+            - generic [ref=e560]:
+              - generic [ref=e561]:
+                - text: 资料完善
+                - heading "链路活动_1772764137287" [level=4] [ref=e562]
+                - paragraph [ref=e563]: 0人正在参与中
+              - button "查看详情 >" [ref=e569]
+          - generic [ref=e570] [cursor=pointer]:
+            - generic [ref=e573]: 🎯
+            - generic [ref=e574]:
+              - generic [ref=e575]:
+                - text: 资料完善
+                - heading "链路活动_1772764831657" [level=4] [ref=e576]
+                - paragraph [ref=e577]: 0人正在参与中
+              - button "查看详情 >" [ref=e583]
+          - generic [ref=e584] [cursor=pointer]:
+            - generic [ref=e587]: 🎯
+            - generic [ref=e588]:
+              - generic [ref=e589]:
+                - text: 资料完善
+                - heading "链路活动_1772764912256" [level=4] [ref=e590]
+                - paragraph [ref=e591]: 0人正在参与中
+              - button "查看详情 >" [ref=e597]
+          - generic [ref=e598] [cursor=pointer]:
+            - generic [ref=e601]: 🎯
+            - generic [ref=e602]:
+              - generic [ref=e603]:
+                - text: 资料完善
+                - heading "链路活动_1772766324219" [level=4] [ref=e604]
+                - paragraph [ref=e605]: 0人正在参与中
+              - button "查看详情 >" [ref=e611]
+          - generic [ref=e612] [cursor=pointer]:
+            - generic [ref=e615]: 🎯
+            - generic [ref=e616]:
+              - generic [ref=e617]:
+                - text: 资料完善
+                - heading "链路活动_1772766454688" [level=4] [ref=e618]
+                - paragraph [ref=e619]: 0人正在参与中
+              - button "查看详情 >" [ref=e625]
+          - generic [ref=e626] [cursor=pointer]:
+            - generic [ref=e629]: 🎯
+            - generic [ref=e630]:
+              - generic [ref=e631]:
+                - text: 资料完善
+                - heading "链路活动_1772766538876" [level=4] [ref=e632]
+                - paragraph [ref=e633]: 0人正在参与中
+              - button "查看详情 >" [ref=e639]
+          - generic [ref=e640] [cursor=pointer]:
+            - generic [ref=e643]: 🎯
+            - generic [ref=e644]:
+              - generic [ref=e645]:
+                - text: 资料完善
+                - heading "链路活动_1772767188067" [level=4] [ref=e646]
+                - paragraph [ref=e647]: 0人正在参与中
+              - button "查看详情 >" [ref=e653]
+          - generic [ref=e654] [cursor=pointer]:
+            - generic [ref=e657]: 🎯
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - text: 资料完善
+                - heading "链路活动_1772767228979" [level=4] [ref=e660]
+                - paragraph [ref=e661]: 0人正在参与中
+              - button "查看详情 >" [ref=e667]
+          - generic [ref=e668] [cursor=pointer]:
+            - generic [ref=e671]: 🎯
+            - generic [ref=e672]:
+              - generic [ref=e673]:
+                - text: 资料完善
+                - heading "链路活动_1772768404613" [level=4] [ref=e674]
+                - paragraph [ref=e675]: 0人正在参与中
+              - button "查看详情 >" [ref=e681]
+          - generic [ref=e682] [cursor=pointer]:
+            - generic [ref=e685]: 🎯
+            - generic [ref=e686]:
+              - generic [ref=e687]:
+                - text: 资料完善
+                - heading "链路活动_1772768915083" [level=4] [ref=e688]
+                - paragraph [ref=e689]: 0人正在参与中
+              - button "查看详情 >" [ref=e695]
+          - generic [ref=e696] [cursor=pointer]:
+            - generic [ref=e699]: 🎯
+            - generic [ref=e700]:
+              - generic [ref=e701]:
+                - text: 资料完善
+                - heading "链路活动_1772769549955" [level=4] [ref=e702]
+                - paragraph [ref=e703]: 0人正在参与中
+              - button "查看详情 >" [ref=e709]
+          - generic [ref=e710] [cursor=pointer]:
+            - generic [ref=e713]: 🎯
+            - generic [ref=e714]:
+              - generic [ref=e715]:
+                - text: 资料完善
+                - heading "链路活动_1772769610183" [level=4] [ref=e716]
+                - paragraph [ref=e717]: 0人正在参与中
+              - button "查看详情 >" [ref=e723]
+          - generic [ref=e724] [cursor=pointer]:
+            - generic [ref=e727]: 🎯
+            - generic [ref=e728]:
+              - generic [ref=e729]:
+                - text: 资料完善
+                - heading "链路活动_1772773375022" [level=4] [ref=e730]
+                - paragraph [ref=e731]: 0人正在参与中
+              - button "查看详情 >" [ref=e737]
+          - generic [ref=e738] [cursor=pointer]:
+            - generic [ref=e741]: 🎯
+            - generic [ref=e742]:
+              - generic [ref=e743]:
+                - text: 资料完善
+                - heading "链路活动_1772773383616" [level=4] [ref=e744]
+                - paragraph [ref=e745]: 0人正在参与中
+              - button "查看详情 >" [ref=e751]
+          - generic [ref=e752] [cursor=pointer]:
+            - generic [ref=e755]: 🎯
+            - generic [ref=e756]:
+              - generic [ref=e757]:
+                - text: 资料完善
+                - heading "链路活动_1772774548743" [level=4] [ref=e758]
+                - paragraph [ref=e759]: 0人正在参与中
+              - button "查看详情 >" [ref=e765]
+          - generic [ref=e766] [cursor=pointer]:
+            - generic [ref=e769]: 🎯
+            - generic [ref=e770]:
+              - generic [ref=e771]:
+                - text: 资料完善
+                - heading "链路活动_1772776041119" [level=4] [ref=e772]
+                - paragraph [ref=e773]: 0人正在参与中
+              - button "查看详情 >" [ref=e779]
+          - generic [ref=e780] [cursor=pointer]:
+            - generic [ref=e783]: 🎯
+            - generic [ref=e784]:
+              - generic [ref=e785]:
+                - text: 资料完善
+                - heading "链路活动_1772776049767" [level=4] [ref=e786]
+                - paragraph [ref=e787]: 0人正在参与中
+              - button "查看详情 >" [ref=e793]
+          - generic [ref=e794] [cursor=pointer]:
+            - generic [ref=e797]: 🎯
+            - generic [ref=e798]:
+              - generic [ref=e799]:
+                - text: 资料完善
+                - heading "链路活动_1772776130080" [level=4] [ref=e800]
+                - paragraph [ref=e801]: 0人正在参与中
+              - button "查看详情 >" [ref=e807]
+          - generic [ref=e808] [cursor=pointer]:
+            - generic [ref=e811]: 🎯
+            - generic [ref=e812]:
+              - generic [ref=e813]:
+                - text: 资料完善
+                - heading "链路活动_1772776138092" [level=4] [ref=e814]
+                - paragraph [ref=e815]: 0人正在参与中
+              - button "查看详情 >" [ref=e821]
+          - generic [ref=e822] [cursor=pointer]:
+            - generic [ref=e825]: 🎯
+            - generic [ref=e826]:
+              - generic [ref=e827]:
+                - text: 资料完善
+                - heading "链路活动_1772776435777" [level=4] [ref=e828]
+                - paragraph [ref=e829]: 0人正在参与中
+              - button "查看详情 >" [ref=e835]
+          - generic [ref=e836] [cursor=pointer]:
+            - generic [ref=e839]: 🎯
+            - generic [ref=e840]:
+              - generic [ref=e841]:
+                - text: 资料完善
+                - heading "链路活动_1772776443528" [level=4] [ref=e842]
+                - paragraph [ref=e843]: 0人正在参与中
+              - button "查看详情 >" [ref=e849]
+          - generic [ref=e850] [cursor=pointer]:
+            - generic [ref=e853]: 🎯
+            - generic [ref=e854]:
+              - generic [ref=e855]:
+                - text: 资料完善
+                - heading "链路活动_1772777678852" [level=4] [ref=e856]
+                - paragraph [ref=e857]: 0人正在参与中
+              - button "查看详情 >" [ref=e863]
+          - generic [ref=e864] [cursor=pointer]:
+            - generic [ref=e867]: 🎯
+            - generic [ref=e868]:
+              - generic [ref=e869]:
+                - text: 资料完善
+                - heading "链路活动_1772777689081" [level=4] [ref=e870]
+                - paragraph [ref=e871]: 0人正在参与中
+              - button "查看详情 >" [ref=e877]
+          - generic [ref=e878] [cursor=pointer]:
+            - generic [ref=e881]: 🎯
+            - generic [ref=e882]:
+              - generic [ref=e883]:
+                - text: 资料完善
+                - heading "链路活动_1772790494517" [level=4] [ref=e884]
+                - paragraph [ref=e885]: 0人正在参与中
+              - button "查看详情 >" [ref=e891]
+          - generic [ref=e892] [cursor=pointer]:
+            - generic [ref=e895]: 🎯
+            - generic [ref=e896]:
+              - generic [ref=e897]:
+                - text: 资料完善
+                - heading "链路活动_1772790682162" [level=4] [ref=e898]
+                - paragraph [ref=e899]: 0人正在参与中
+              - button "查看详情 >" [ref=e905]
+          - generic [ref=e906] [cursor=pointer]:
+            - generic [ref=e909]: 🎯
+            - generic [ref=e910]:
+              - generic [ref=e911]:
+                - text: 资料完善
+                - heading "链路活动_1772790730854" [level=4] [ref=e912]
+                - paragraph [ref=e913]: 0人正在参与中
+              - button "查看详情 >" [ref=e919]
+          - generic [ref=e920] [cursor=pointer]:
+            - generic [ref=e923]: 🎯
+            - generic [ref=e924]:
+              - generic [ref=e925]:
+                - text: 资料完善
+                - heading "链路活动_1772790744027" [level=4] [ref=e926]
+                - paragraph [ref=e927]: 0人正在参与中
+              - button "查看详情 >" [ref=e933]
+          - generic [ref=e934] [cursor=pointer]:
+            - generic [ref=e937]: 🎯
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - text: 资料完善
+                - heading "链路活动_1772791347874" [level=4] [ref=e940]
+                - paragraph [ref=e941]: 0人正在参与中
+              - button "查看详情 >" [ref=e947]
+          - generic [ref=e948] [cursor=pointer]:
+            - generic [ref=e951]: 🎯
+            - generic [ref=e952]:
+              - generic [ref=e953]:
+                - text: 资料完善
+                - heading "链路活动_1772791358515" [level=4] [ref=e954]
+                - paragraph [ref=e955]: 0人正在参与中
+              - button "查看详情 >" [ref=e961]
+          - generic [ref=e962] [cursor=pointer]:
+            - generic [ref=e965]: 🎯
+            - generic [ref=e966]:
+              - generic [ref=e967]:
+                - text: 资料完善
+                - heading "链路活动_1772791788519" [level=4] [ref=e968]
+                - paragraph [ref=e969]: 0人正在参与中
+              - button "查看详情 >" [ref=e975]
+          - generic [ref=e976] [cursor=pointer]:
+            - generic [ref=e979]: 🎯
+            - generic [ref=e980]:
+              - generic [ref=e981]:
+                - text: 资料完善
+                - heading "链路活动_1772792641237" [level=4] [ref=e982]
+                - paragraph [ref=e983]: 0人正在参与中
+              - button "查看详情 >" [ref=e989]
+          - generic [ref=e990] [cursor=pointer]:
+            - generic [ref=e993]: 🎯
+            - generic [ref=e994]:
+              - generic [ref=e995]:
+                - text: 资料完善
+                - heading "链路活动_1772795794030" [level=4] [ref=e996]
+                - paragraph [ref=e997]: 0人正在参与中
+              - button "查看详情 >" [ref=e1003]
+          - generic [ref=e1004] [cursor=pointer]:
+            - generic [ref=e1007]: 🎯
+            - generic [ref=e1008]:
+              - generic [ref=e1009]:
+                - text: 资料完善
+                - heading "链路活动_1772795958614" [level=4] [ref=e1010]
+                - paragraph [ref=e1011]: 0人正在参与中
+              - button "查看详情 >" [ref=e1017]
+          - generic [ref=e1018] [cursor=pointer]:
+            - generic [ref=e1021]: 🎯
+            - generic [ref=e1022]:
+              - generic [ref=e1023]:
+                - text: 资料完善
+                - heading "链路活动_1772860073162" [level=4] [ref=e1024]
+                - paragraph [ref=e1025]: 0人正在参与中
+              - button "查看详情 >" [ref=e1031]
+          - generic [ref=e1032] [cursor=pointer]:
+            - generic [ref=e1035]: 🎯
+            - generic [ref=e1036]:
+              - generic [ref=e1037]:
+                - text: 资料完善
+                - heading "链路活动_1772860143407" [level=4] [ref=e1038]
+                - paragraph [ref=e1039]: 0人正在参与中
+              - button "查看详情 >" [ref=e1045]
+          - generic [ref=e1046] [cursor=pointer]:
+            - generic [ref=e1049]: 🎯
+            - generic [ref=e1050]:
+              - generic [ref=e1051]:
+                - text: 资料完善
+                - heading "浏览器链路活动_1772888972580" [level=4] [ref=e1052]
+                - paragraph [ref=e1053]: 0人正在参与中
+              - button "查看详情 >" [ref=e1059]
+          - generic [ref=e1060] [cursor=pointer]:
+            - generic [ref=e1063]: 🎯
+            - generic [ref=e1064]:
+              - generic [ref=e1065]:
+                - text: 资料完善
+                - heading "链路活动_1772889064705" [level=4] [ref=e1066]
+                - paragraph [ref=e1067]: 0人正在参与中
+              - button "查看详情 >" [ref=e1073]
+          - generic [ref=e1074] [cursor=pointer]:
+            - generic [ref=e1077]: 🎯
+            - generic [ref=e1078]:
+              - generic [ref=e1079]:
+                - text: 资料完善
+                - heading "浏览器链路活动_1772889161143" [level=4] [ref=e1080]
+                - paragraph [ref=e1081]: 0人正在参与中
+              - button "查看详情 >" [ref=e1087]
+          - generic [ref=e1088] [cursor=pointer]:
+            - generic [ref=e1091]: 🎯
+            - generic [ref=e1092]:
+              - generic [ref=e1093]:
+                - text: 资料完善
+                - heading "浏览器链路活动_1772889180535" [level=4] [ref=e1094]
+                - paragraph [ref=e1095]: 0人正在参与中
+              - button "查看详情 >" [ref=e1101]
+          - generic [ref=e1102] [cursor=pointer]:
+            - generic [ref=e1105]: 🎯
+            - generic [ref=e1106]:
+              - generic [ref=e1107]:
+                - text: 资料完善
+                - heading "自动验收活动_1773235017704" [level=4] [ref=e1108]
+                - paragraph [ref=e1109]: 0人正在参与中
+              - button "查看详情 >" [ref=e1115]
+          - generic [ref=e1116] [cursor=pointer]:
+            - generic [ref=e1119]: 🎯
+            - generic [ref=e1120]:
+              - generic [ref=e1121]:
+                - text: 资料完善
+                - heading "自动验收活动_1773235068857" [level=4] [ref=e1122]
+                - paragraph [ref=e1123]: 0人正在参与中
+              - button "查看详情 >" [ref=e1129]
+          - generic [ref=e1130] [cursor=pointer]:
+            - generic [ref=e1133]: 🎯
+            - generic [ref=e1134]:
+              - generic [ref=e1135]:
+                - text: 资料完善
+                - heading "调试活动_1773235124170" [level=4] [ref=e1136]
+                - paragraph [ref=e1137]: 0人正在参与中
+              - button "查看详情 >" [ref=e1143]
+          - generic [ref=e1144] [cursor=pointer]:
+            - generic [ref=e1147]: 🎯
+            - generic [ref=e1148]:
+              - generic [ref=e1149]:
+                - text: 资料完善
+                - heading "实名调试_1773235381866" [level=4] [ref=e1150]
+                - paragraph [ref=e1151]: 0人正在参与中
+              - button "查看详情 >" [ref=e1157]
+          - generic [ref=e1158] [cursor=pointer]:
+            - generic [ref=e1161]: 🎯
+            - generic [ref=e1162]:
+              - generic [ref=e1163]:
+                - text: 资料完善
+                - heading "实名慢测_1773235485035" [level=4] [ref=e1164]
+                - paragraph [ref=e1165]: 0人正在参与中
+              - button "查看详情 >" [ref=e1171]
+          - generic [ref=e1172] [cursor=pointer]:
+            - generic [ref=e1175]: 🎯
+            - generic [ref=e1176]:
+              - generic [ref=e1177]:
+                - text: 资料完善
+                - heading "实名慢测_1773235672706" [level=4] [ref=e1178]
+                - paragraph [ref=e1179]: 0人正在参与中
+              - button "查看详情 >" [ref=e1185]
+          - generic [ref=e1186] [cursor=pointer]:
+            - generic [ref=e1189]: 🎯
+            - generic [ref=e1190]:
+              - generic [ref=e1191]:
+                - text: 资料完善
+                - heading "状态调试_1773235715962" [level=4] [ref=e1192]
+                - paragraph [ref=e1193]: 0人正在参与中
+              - button "查看详情 >" [ref=e1199]
+          - generic [ref=e1200] [cursor=pointer]:
+            - generic [ref=e1203]: 🎯
+            - generic [ref=e1204]:
+              - generic [ref=e1205]:
+                - text: 资料完善
+                - heading "链路活动_1773486445372" [level=4] [ref=e1206]
+                - paragraph [ref=e1207]: 0人正在参与中
+              - button "查看详情 >" [ref=e1213]
+          - generic [ref=e1214] [cursor=pointer]:
+            - generic [ref=e1217]: 🎯
+            - generic [ref=e1218]:
+              - generic [ref=e1219]:
+                - text: 资料完善
+                - heading "owner_activity_1773486644882" [level=4] [ref=e1220]
+                - paragraph [ref=e1221]: 0人正在参与中
+              - button "查看详情 >" [ref=e1227]
+          - generic [ref=e1228] [cursor=pointer]:
+            - generic [ref=e1231]: 🎯
+            - generic [ref=e1232]:
+              - generic [ref=e1233]:
+                - text: 资料完善
+                - heading "other_activity_1773486644882" [level=4] [ref=e1234]
+                - paragraph [ref=e1235]: 0人正在参与中
+              - button "查看详情 >" [ref=e1241]
+          - generic [ref=e1242] [cursor=pointer]:
+            - generic [ref=e1245]: 🎯
+            - generic [ref=e1246]:
+              - generic [ref=e1247]:
+                - text: 资料完善
+                - heading "owner_1773486699514_activity" [level=4] [ref=e1248]
+                - paragraph [ref=e1249]: 0人正在参与中
+              - button "查看详情 >" [ref=e1255]
+          - generic [ref=e1256] [cursor=pointer]:
+            - generic [ref=e1259]: 🎯
+            - generic [ref=e1260]:
+              - generic [ref=e1261]:
+                - text: 资料完善
+                - heading "other_1773486699514_activity" [level=4] [ref=e1262]
+                - paragraph [ref=e1263]: 0人正在参与中
+              - button "查看详情 >" [ref=e1269]
+    - generic [ref=e1270]:
+      - generic [ref=e1272]:
+        - button [ref=e1273]:
+          - img [ref=e1274]
+        - heading "活动详情" [level=2] [ref=e1276]
+        - button [ref=e1277]:
+          - img [ref=e1278]
+      - main [ref=e1284]:
+        - generic [ref=e1290]: 进行中
+        - generic [ref=e1291]:
+          - generic [ref=e1292]:
+            - generic [ref=e1293]: 热门活动
+            - generic [ref=e1294]: 保险知识
+            - generic [ref=e1295]: 高额奖励
+          - heading "链路活动_1772764831657" [level=1] [ref=e1296]
+          - generic [ref=e1297]:
+            - generic [ref=e1298]:
+              - img [ref=e1300]
+              - generic [ref=e1302]:
+                - paragraph [ref=e1303]: 报名所需积分
+                - paragraph [ref=e1304]: 12 积分
+            - generic [ref=e1305]:
+              - paragraph [ref=e1306]: 当前剩余名额
+              - paragraph [ref=e1307]: 0 位
+        - generic [ref=e1309]:
+          - generic [ref=e1310]:
+            - heading "活动简介" [level=3] [ref=e1311]: 活动简介
+            - paragraph [ref=e1314]: 链路活动详情
+          - generic [ref=e1315]:
+            - generic [ref=e1316]:
+              - img [ref=e1318]
+              - generic [ref=e1321]:
+                - heading "趣味答题" [level=4] [ref=e1322]
+                - paragraph [ref=e1323]: 完成每日保险知识闯关，解锁高级保险技能点。
+            - generic [ref=e1324]:
+              - img [ref=e1326]
+              - generic [ref=e1330]:
+                - heading "丰厚奖励" [level=4] [ref=e1331]
+                - paragraph [ref=e1332]: 通过挑战即可赢取高达 500 积分奖励及电子荣誉证书。
+          - generic [ref=e1333]:
+            - heading "活动规则" [level=3] [ref=e1334]: 活动规则
+            - list [ref=e1336]:
+              - listitem [ref=e1337]:
+                - generic [ref=e1338]: "1"
+                - generic [ref=e1339]: 活动有效期：2024年1月1日至2024年12月31日。
+              - listitem [ref=e1340]:
+                - generic [ref=e1341]: "2"
+                - generic [ref=e1342]: 报名成功后，需在7个工作日内开启首项任务，否则名额将自动失效。
+              - listitem [ref=e1343]:
+                - generic [ref=e1344]: "3"
+                - generic [ref=e1345]: 每个账号仅限参与一次，积分奖励将在挑战完成后即时到账。
+        - paragraph [ref=e1347]: —— 保险让生活更美好 ——
+      - generic [ref=e1349]:
+        - generic [ref=e1350]:
+          - generic [ref=e1351]: 合计
+          - generic [ref=e1352]: 12 积分
+        - button "立即兑换活动" [ref=e1353]:
+          - generic [ref=e1354]: 立即兑换活动
+          - img [ref=e1355]
+  - navigation [ref=e48]:
+    - button "首页" [ref=e49]:
+      - img [ref=e50]
+      - generic [ref=e53]: 首页
+    - button "知识学习" [ref=e54]:
+      - img [ref=e55]
+      - generic [ref=e57]: 知识学习
+    - button "活动中心" [ref=e58]:
+      - img [ref=e59]
+      - generic [ref=e61]: 活动中心
+    - button "保障管理" [ref=e62]:
+      - img [ref=e63]
+      - generic [ref=e66]: 保障管理
+    - button "我的" [ref=e67]:
+      - img [ref=e68]
+      - generic [ref=e71]: 我的
+  - generic [ref=e1359]:
+    - generic [ref=e1360]:
+      - generic [ref=e1361]:
+        - img [ref=e1362]
+        - heading "基础身份确认" [level=2] [ref=e1365]
+      - button [ref=e1366]:
+        - img [ref=e1367]
+    - paragraph [ref=e1370]: 为保障您的奖励正常发放，并用于服务联系，请确认本人身份信息。
+    - generic [ref=e1371]:
+      - generic [ref=e1372]:
+        - generic [ref=e1373]: 真实姓名
+        - textbox "请输入您的真实姓名" [ref=e1374]
+      - generic [ref=e1375]:
+        - generic [ref=e1376]: 手机号码
+        - textbox "请输入您的手机号码" [ref=e1377]
+      - generic [ref=e1378]:
+        - generic [ref=e1379]: 验证码
+        - generic [ref=e1380]:
+          - textbox "请输入验证码" [ref=e1381]
+          - button "获取验证码" [disabled] [ref=e1382]
+      - button "提交认证" [ref=e1383]

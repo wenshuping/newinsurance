@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">WECHAT CHANNELS</view>
+    <view class="title">视频号跳转承接</view>
+    <view class="desc">当前内容不在 H5 内直接播放，而是由小程序承接页调用微信原生能力打开对应视频号内容。</view>
+  </view>
+
+  <view class="card">
+    <view class="meta-row">
+      <view class="meta-label">视频号ID</view>
+      <view class="meta-value">{{finderUserName || '-'}}</view>
+    </view>
+    <view class="meta-row">
+      <view class="meta-label">feedId</view>
+      <view class="meta-value">{{feedId || '-'}}</view>
+    </view>
+    <view class="meta-row">
+      <view class="meta-label">nonceId</view>
+      <view class="meta-value">{{nonceId || '未填写，将按兼容模式试跳'}}</view>
+    </view>
+
+    <button class="open-btn" bindtap="handleOpen" loading="{{pending}}">
+      {{pending ? '正在打开...' : '去视频号观看'}}
+    </button>
+
+    <view wx:if="{{errorText}}" class="error-box">
+      <view class="error-title">当前无法直接打开</view>
+      <view class="error-desc">{{errorText}}</view>
+    </view>
+
+    <view class="helper-box">
+      <view class="helper-title">兼容说明</view>
+      <view class="helper-desc">官方文档仍把 nonceId 标为必填。当前页面在 nonceId 为空时会先试跳，若失败，需要补齐 nonceId 再重试。</view>
+    </view>
+  </view>
+</view>

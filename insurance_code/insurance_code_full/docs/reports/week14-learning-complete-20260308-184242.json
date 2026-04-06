@@ -1,0 +1,156 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-08T10:42:42.276Z",
+  "gatewayBase": "http://127.0.0.1:65168",
+  "learningServiceBase": "http://127.0.0.1:65167",
+  "userServiceBase": "http://127.0.0.1:65165",
+  "pointsServiceBase": "http://127.0.0.1:65166",
+  "checks": [
+    {
+      "name": "learning.routes.registered.week14",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "cfb22563-a24f-427f-8693-59cc9714ff3c",
+      "routeCount": 5
+    },
+    {
+      "name": "learning.default.read.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-default-read-v1"
+    },
+    {
+      "name": "learning.cutover.read.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-cutover-read-v2"
+    },
+    {
+      "name": "learning.customer.list.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-user-list",
+      "visibleCourseCount": 13,
+      "courseId": 65
+    },
+    {
+      "name": "learning.customer.detail.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-user-detail",
+      "courseId": 65
+    },
+    {
+      "name": "learning.complete.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-v2",
+      "courseId": 65
+    },
+    {
+      "name": "learning.reward.points-summary-updated",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week14-learning-points-after",
+      "rewardDelta": 12
+    },
+    {
+      "name": "learning.reward.points-observability",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1772966561775_1b8812d8-1c5b-491e-90a2-34f8ed81d535",
+      "learningRewardSuccess": 1
+    },
+    {
+      "name": "learning.complete.gateway-metrics.v2",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "68678514-41b6-4966-b113-2c2b9d3873c7",
+      "fallbackCount": 0
+    },
+    {
+      "name": "learning.complete.force-v1.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-complete-force-v1",
+      "courseId": 66
+    },
+    {
+      "name": "learning.complete.back-to-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-back-v2",
+      "courseId": 67
+    },
+    {
+      "name": "learning.read.fallback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-read-fallback"
+    },
+    {
+      "name": "learning.complete.no-auto-fallback",
+      "ok": true,
+      "status": 502,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-no-auto-fallback",
+      "courseId": 68
+    },
+    {
+      "name": "learning.complete.manual-rollback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-complete-manual-rollback",
+      "courseId": 68
+    },
+    {
+      "name": "learning.complete.gateway-metrics.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "081b9513-c41c-4e25-839a-51dcae7d8720",
+      "readFallbackCount": 1,
+      "manualRollbackTarget": "v1-monolith"
+    }
+  ],
+  "criteria": {
+    "defaultLearningTrafficOnV1": true,
+    "completeCutoverToV2": true,
+    "completeRewardChainWorks": true,
+    "forceV1RollbackWorks": true,
+    "backToV2Works": true,
+    "readFallbackWorks": true,
+    "writeNoAutoFallbackConfirmed": true,
+    "manualWriteRollbackWorks": true,
+    "gatewayMetricsCoverComplete": true,
+    "pointsObservabilityCoverReward": true
+  }
+}

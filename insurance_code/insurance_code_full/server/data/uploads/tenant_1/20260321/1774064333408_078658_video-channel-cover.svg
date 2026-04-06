@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECFDF5"/>
+      <stop offset="1" stop-color="#D1FAE5"/>
+    </linearGradient>
+    <linearGradient id="card" x1="180" y1="120" x2="980" y2="555" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#065F46"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#bg)"/>
+  <rect x="88" y="88" width="1024" height="499" rx="36" fill="url(#card)"/>
+  <circle cx="274" cy="250" r="96" fill="#A7F3D0" fill-opacity="0.22"/>
+  <circle cx="922" cy="438" r="132" fill="#D1FAE5" fill-opacity="0.16"/>
+  <rect x="182" y="178" width="180" height="42" rx="21" fill="#D1FAE5" fill-opacity="0.88"/>
+  <text x="272" y="206" text-anchor="middle" fill="#065F46" font-size="24" font-family="Arial, sans-serif" font-weight="700">WECHAT CHANNELS</text>
+  <text x="182" y="314" fill="#FFFFFF" font-size="76" font-family="Arial, sans-serif" font-weight="800">Video Channel Course</text>
+  <text x="182" y="378" fill="#D1FAE5" font-size="30" font-family="Arial, sans-serif" font-weight="500">Launch from H5 and play inside Mini Program</text>
+  <rect x="182" y="442" width="320" height="68" rx="34" fill="#FFFFFF" fill-opacity="0.16"/>
+  <text x="342" y="485" text-anchor="middle" fill="#FFFFFF" font-size="28" font-family="Arial, sans-serif" font-weight="700">Tap to Open in Mini Program</text>
+  <rect x="818" y="200" width="180" height="240" rx="28" fill="#ECFDF5" fill-opacity="0.94"/>
+  <rect x="850" y="232" width="116" height="116" rx="58" fill="#10B981"/>
+  <polygon points="896,262 896,318 942,290" fill="#FFFFFF"/>
+  <rect x="848" y="378" width="120" height="14" rx="7" fill="#A7F3D0"/>
+  <rect x="848" y="404" width="88" height="14" rx="7" fill="#D1FAE5"/>
+  <text x="182" y="566" fill="#065F46" font-size="22" font-family="Arial, sans-serif" font-weight="700">feed-token embedded playback preview</text>
+</svg>

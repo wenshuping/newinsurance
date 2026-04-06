@@ -1,0 +1,622 @@
+openapi: 3.0.3
+info:
+  title: P Learning Ops Import API
+  version: 1.0.0
+  description: >
+    P 端知识学习运营导入接口契约。该契约面向运营系统与第三方导入方，
+    仅覆盖 x-ops-api-key 直连模式下的单条导入与批量导入能力。
+servers:
+  - url: http://127.0.0.1:4100
+    description: Local gateway entry
+  - url: http://127.0.0.1:4000
+    description: Local api-v1 direct entry
+tags:
+  - name: Ops Import
+    description: 运营系统导入 P 端学习资料
+paths:
+  /api/p/learning/courses:
+    post:
+      tags:
+        - Ops Import
+      summary: 导入单条学习资料
+      description: >
+        创建一条学习资料。支持直接传 media，也支持通过 uploadItems[].dataUrl
+        内联上传文件。相同 idempotencyKey 重试时会返回第一次创建结果，并返回
+        idempotent=true。
+      operationId: createPLearningCourse
+      security:
+        - OpsApiKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLearningCourseRequest'
+            examples:
+              article_with_inline_upload:
+                summary: 文章资料 + 内联封面图
+                value:
+                  title: 家庭资产配置课
+                  category: 运营导入
+                  contentType: article
+                  level: 中级
+                  content: 课程正文
+                  rewardPoints: 12
+                  status: published
+                  idempotencyKey: ops-learning-001
+                  uploadItems:
+                    - name: cover.png
+                      type: image/png
+                      dataUrl: data:image/png;base64,ZmFrZQ==
+      responses:
+        '200':
+          description: 导入成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateLearningCourseResponse'
+              examples:
+                created:
+                  summary: 首次创建
+                  value:
+                    ok: true
+                    course:
+                      id: 101
+                      tenantId: 1
+                      title: 家庭资产配置课
+                      category: 运营导入
+                      rewardPoints: 12
+                      points: 12
+                      contentType: article
+                      status: published
+                      level: 中级
+                      content: 课程正文
+                      coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                      image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                      media:
+                        - name: cover.png
+                          type: image/png
+                          preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                          url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                          path: /uploads/tenant_1/20260318/cover.png
+                      createdAt: '2026-03-18T06:00:00.000Z'
+                      updatedAt: '2026-03-18T06:00:00.000Z'
+                    idempotent: false
+                replayed:
+                  summary: 幂等重放
+                  value:
+                    ok: true
+                    course:
+                      id: 101
+                      tenantId: 1
+                      title: 家庭资产配置课
+                      category: 运营导入
+                      rewardPoints: 12
+                      points: 12
+                      contentType: article
+                      status: published
+                      level: 中级
+                      content: 课程正文
+                      coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                      image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                      media:
+                        - name: cover.png
+                          type: image/png
+                          preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                          url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover.png
+                          path: /uploads/tenant_1/20260318/cover.png
+                      createdAt: '2026-03-18T06:00:00.000Z'
+                      updatedAt: '2026-03-18T06:00:00.000Z'
+                    idempotent: true
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '413':
+          $ref: '#/components/responses/FileTooLarge'
+  /api/p/learning/courses/batch:
+    post:
+      tags:
+        - Ops Import
+      summary: 批量导入学习资料
+      description: >
+        单批最多 20 条。顶层 idempotencyKey 控制整批幂等。任一条数据非法时整批失败并回滚，
+        错误响应会返回 itemIndex 标记失败条目索引。
+      operationId: createPLearningCourseBatch
+      security:
+        - OpsApiKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLearningCourseBatchRequest'
+            examples:
+              batch_import:
+                summary: 批量导入两条资料
+                value:
+                  idempotencyKey: ops-learning-batch-001
+                  items:
+                    - title: 批量课程 A
+                      category: 运营导入
+                      contentType: article
+                      level: 初级
+                      content: 课程正文 A
+                      rewardPoints: 10
+                      status: published
+                      uploadItems:
+                        - name: cover-a.png
+                          type: image/png
+                          dataUrl: data:image/png;base64,ZmFrZQ==
+                    - title: 批量课程 B
+                      category: 运营导入
+                      contentType: article
+                      level: 中级
+                      content: 课程正文 B
+                      rewardPoints: 20
+                      status: published
+      responses:
+        '200':
+          description: 整批导入成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateLearningCourseBatchResponse'
+              examples:
+                created:
+                  summary: 首次整批创建
+                  value:
+                    ok: true
+                    total: 2
+                    createdCount: 2
+                    items:
+                      - index: 0
+                        ok: true
+                        idempotent: false
+                        course:
+                          id: 201
+                          tenantId: 1
+                          title: 批量课程 A
+                          category: 运营导入
+                          rewardPoints: 10
+                          points: 10
+                          contentType: article
+                          status: published
+                          level: 初级
+                          content: 课程正文 A
+                          coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                          image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                          media:
+                            - name: cover-a.png
+                              type: image/png
+                              preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                              url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                              path: /uploads/tenant_1/20260318/cover-a.png
+                          createdAt: '2026-03-18T06:00:00.000Z'
+                          updatedAt: '2026-03-18T06:00:00.000Z'
+                      - index: 1
+                        ok: true
+                        idempotent: false
+                        course:
+                          id: 202
+                          tenantId: 1
+                          title: 批量课程 B
+                          category: 运营导入
+                          rewardPoints: 20
+                          points: 20
+                          contentType: article
+                          status: published
+                          level: 中级
+                          content: 课程正文 B
+                          coverUrl: ''
+                          image: ''
+                          media: []
+                          createdAt: '2026-03-18T06:00:00.000Z'
+                          updatedAt: '2026-03-18T06:00:00.000Z'
+                    courses:
+                      - id: 201
+                        tenantId: 1
+                        title: 批量课程 A
+                        category: 运营导入
+                        rewardPoints: 10
+                        points: 10
+                        contentType: article
+                        status: published
+                        level: 初级
+                        content: 课程正文 A
+                        coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                        image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                        media:
+                          - name: cover-a.png
+                            type: image/png
+                            preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                            url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                            path: /uploads/tenant_1/20260318/cover-a.png
+                        createdAt: '2026-03-18T06:00:00.000Z'
+                        updatedAt: '2026-03-18T06:00:00.000Z'
+                      - id: 202
+                        tenantId: 1
+                        title: 批量课程 B
+                        category: 运营导入
+                        rewardPoints: 20
+                        points: 20
+                        contentType: article
+                        status: published
+                        level: 中级
+                        content: 课程正文 B
+                        coverUrl: ''
+                        image: ''
+                        media: []
+                        createdAt: '2026-03-18T06:00:00.000Z'
+                        updatedAt: '2026-03-18T06:00:00.000Z'
+                    idempotent: false
+                replayed:
+                  summary: 幂等重放整包结果
+                  value:
+                    ok: true
+                    total: 2
+                    createdCount: 2
+                    items:
+                      - index: 0
+                        ok: true
+                        idempotent: false
+                        course:
+                          id: 201
+                          tenantId: 1
+                          title: 批量课程 A
+                          category: 运营导入
+                          rewardPoints: 10
+                          points: 10
+                          contentType: article
+                          status: published
+                          level: 初级
+                          content: 课程正文 A
+                          coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                          image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                          media:
+                            - name: cover-a.png
+                              type: image/png
+                              preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                              url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                              path: /uploads/tenant_1/20260318/cover-a.png
+                          createdAt: '2026-03-18T06:00:00.000Z'
+                          updatedAt: '2026-03-18T06:00:00.000Z'
+                      - index: 1
+                        ok: true
+                        idempotent: false
+                        course:
+                          id: 202
+                          tenantId: 1
+                          title: 批量课程 B
+                          category: 运营导入
+                          rewardPoints: 20
+                          points: 20
+                          contentType: article
+                          status: published
+                          level: 中级
+                          content: 课程正文 B
+                          coverUrl: ''
+                          image: ''
+                          media: []
+                          createdAt: '2026-03-18T06:00:00.000Z'
+                          updatedAt: '2026-03-18T06:00:00.000Z'
+                    courses:
+                      - id: 201
+                        tenantId: 1
+                        title: 批量课程 A
+                        category: 运营导入
+                        rewardPoints: 10
+                        points: 10
+                        contentType: article
+                        status: published
+                        level: 初级
+                        content: 课程正文 A
+                        coverUrl: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                        image: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                        media:
+                          - name: cover-a.png
+                            type: image/png
+                            preview: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                            url: http://127.0.0.1:4100/uploads/tenant_1/20260318/cover-a.png
+                            path: /uploads/tenant_1/20260318/cover-a.png
+                        createdAt: '2026-03-18T06:00:00.000Z'
+                        updatedAt: '2026-03-18T06:00:00.000Z'
+                      - id: 202
+                        tenantId: 1
+                        title: 批量课程 B
+                        category: 运营导入
+                        rewardPoints: 20
+                        points: 20
+                        contentType: article
+                        status: published
+                        level: 中级
+                        content: 课程正文 B
+                        coverUrl: ''
+                        image: ''
+                        media: []
+                        createdAt: '2026-03-18T06:00:00.000Z'
+                        updatedAt: '2026-03-18T06:00:00.000Z'
+                    idempotent: true
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '413':
+          $ref: '#/components/responses/FileTooLarge'
+components:
+  securitySchemes:
+    OpsApiKey:
+      type: apiKey
+      in: header
+      name: x-ops-api-key
+      description: 运营系统导入专用 API key
+  responses:
+    BadRequest:
+      description: 请求参数错误
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          examples:
+            title_required:
+              summary: 标题不能为空
+              value:
+                code: COURSE_TITLE_REQUIRED
+                message: 资料标题不能为空
+            batch_items_required:
+              summary: 批量 items 为空
+              value:
+                code: COURSE_BATCH_ITEMS_REQUIRED
+                message: 请至少提交一条学习资料
+            batch_limit_exceeded:
+              summary: 批量条数超限
+              value:
+                code: COURSE_BATCH_ITEMS_LIMIT_EXCEEDED
+                message: 单次最多导入 20 条学习资料
+            invalid_data_url:
+              summary: 上传内容格式错误
+              value:
+                code: INVALID_DATA_URL
+                message: 上传内容格式错误
+                itemIndex: 0
+    Unauthorized:
+      description: API key 错误
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            code: OPS_API_KEY_INVALID
+            message: invalid ops api key
+    FileTooLarge:
+      description: 上传文件过大
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            code: FILE_TOO_LARGE
+            message: 文件过大，单文件最大 12MB
+            itemIndex: 0
+  schemas:
+    UploadItem:
+      type: object
+      properties:
+        name:
+          type: string
+          description: 原始文件名
+        type:
+          type: string
+          description: MIME 类型
+        dataUrl:
+          type: string
+          description: >
+            采用 data:[mime];base64,... 结构的 Data URL。单文件最大 12MB。
+      required:
+        - name
+        - type
+        - dataUrl
+    MediaItem:
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+        preview:
+          type: string
+        url:
+          type: string
+        path:
+          type: string
+      required:
+        - name
+        - type
+        - preview
+        - url
+        - path
+    CreateLearningCourseRequest:
+      type: object
+      properties:
+        title:
+          type: string
+          description: 课程标题，必填
+        category:
+          type: string
+          description: 课程分类，默认 通用培训
+        contentType:
+          type: string
+          description: 内容类型，默认 article
+          example: article
+        level:
+          type: string
+          description: 难度分级，默认 中级
+          example: 中级
+        content:
+          type: string
+          description: 课程正文
+        rewardPoints:
+          type: integer
+          description: 奖励积分，和 points 二选一即可
+        points:
+          type: integer
+          description: 奖励积分别名，和 rewardPoints 二选一即可
+        status:
+          type: string
+          description: 课程状态，默认 published
+          example: published
+        idempotencyKey:
+          type: string
+          description: 幂等键，建议始终传
+        coverUrl:
+          type: string
+          description: 手动指定封面地址；如果省略且传了图片媒体，自动取第一张
+        media:
+          type: array
+          description: 已经上传完成的媒体列表
+          maxItems: 6
+          items:
+            $ref: '#/components/schemas/MediaItem'
+        uploadItems:
+          type: array
+          description: 内联上传文件，服务端会先上传再写课程
+          maxItems: 6
+          items:
+            $ref: '#/components/schemas/UploadItem'
+      required:
+        - title
+    CreateLearningCourseBatchRequest:
+      type: object
+      properties:
+        idempotencyKey:
+          type: string
+          description: 顶层幂等键，控制整批重放
+        items:
+          type: array
+          minItems: 1
+          maxItems: 20
+          items:
+            $ref: '#/components/schemas/CreateLearningCourseRequest'
+      required:
+        - items
+    LearningCourse:
+      type: object
+      properties:
+        id:
+          type: integer
+        tenantId:
+          type: integer
+        title:
+          type: string
+        category:
+          type: string
+        rewardPoints:
+          type: integer
+        points:
+          type: integer
+        contentType:
+          type: string
+        status:
+          type: string
+        level:
+          type: string
+        content:
+          type: string
+        sortOrder:
+          type: integer
+        coverUrl:
+          type: string
+        image:
+          type: string
+        media:
+          type: array
+          items:
+            $ref: '#/components/schemas/MediaItem'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - tenantId
+        - title
+        - category
+        - rewardPoints
+        - points
+        - contentType
+        - status
+        - level
+        - content
+        - coverUrl
+        - image
+        - media
+    CreateLearningCourseResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+        course:
+          $ref: '#/components/schemas/LearningCourse'
+        idempotent:
+          type: boolean
+      required:
+        - ok
+        - course
+        - idempotent
+    CreateLearningCourseBatchItemResponse:
+      type: object
+      properties:
+        index:
+          type: integer
+        ok:
+          type: boolean
+        idempotent:
+          type: boolean
+        course:
+          $ref: '#/components/schemas/LearningCourse'
+      required:
+        - index
+        - ok
+        - idempotent
+        - course
+    CreateLearningCourseBatchResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+        total:
+          type: integer
+        createdCount:
+          type: integer
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CreateLearningCourseBatchItemResponse'
+        courses:
+          type: array
+          items:
+            $ref: '#/components/schemas/LearningCourse'
+        idempotent:
+          type: boolean
+      required:
+        - ok
+        - total
+        - createdCount
+        - items
+        - courses
+        - idempotent
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        itemIndex:
+          type: integer
+          description: 批量导入失败时，定位到失败的 items 索引
+      required:
+        - code
+        - message

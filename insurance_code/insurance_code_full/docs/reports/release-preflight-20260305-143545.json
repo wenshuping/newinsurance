@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "totalMs": 9161,
+  "hasDatabaseUrl": false,
+  "results": [
+    {
+      "label": "test:smoke:frontend-governance",
+      "ok": true,
+      "code": 0,
+      "signal": "",
+      "durationMs": 2907
+    },
+    {
+      "label": "ci:gate:core",
+      "ok": true,
+      "code": 0,
+      "signal": "",
+      "durationMs": 6249
+    }
+  ],
+  "reportFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260305-143545.json",
+  "persistSyncStats": null
+}

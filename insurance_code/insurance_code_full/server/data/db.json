@@ -1,0 +1,1391 @@
+{
+  "users": [
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 1,
+      "id": 1,
+      "name": "张三",
+      "mobile": "13800000000",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T10:18:49.852Z",
+      "createdAt": "2026-02-22T15:18:13.014Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 2,
+      "id": 2,
+      "name": "张三",
+      "mobile": "13800000002",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T00:04:36.355Z",
+      "createdAt": "2026-02-23T00:04:36.355Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 3,
+      "id": 3,
+      "name": "张三",
+      "mobile": "13800000003",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T00:05:09.924Z",
+      "createdAt": "2026-02-23T00:05:09.924Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 4,
+      "id": 4,
+      "name": "张三",
+      "mobile": "13800000009",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T00:06:43.094Z",
+      "createdAt": "2026-02-23T00:06:43.094Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 5,
+      "id": 5,
+      "name": "哈哈",
+      "mobile": "18616135811",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T07:14:32.997Z",
+      "createdAt": "2026-02-23T00:19:34.375Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 6,
+      "id": 6,
+      "name": "张三",
+      "mobile": "13800000124",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T02:49:01.541Z",
+      "createdAt": "2026-02-23T02:49:01.541Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 7,
+      "id": 7,
+      "name": "张三",
+      "mobile": "13900000003",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T03:45:22.330Z",
+      "createdAt": "2026-02-23T03:45:22.330Z"
+    },
+    {
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "ownerUserId": 8,
+      "id": 8,
+      "name": "张三",
+      "mobile": "13800000125",
+      "isVerifiedBasic": true,
+      "verifiedAt": "2026-02-23T03:58:12.540Z",
+      "createdAt": "2026-02-23T03:58:12.540Z"
+    }
+  ],
+  "tenants": [
+    {
+      "id": 1,
+      "name": "默认租户",
+      "status": "active",
+      "type": "company",
+      "createdAt": "2026-02-25T13:06:04.940Z"
+    }
+  ],
+  "orgUnits": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "name": "默认机构",
+      "createdAt": "2026-02-25T13:06:04.945Z"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "orgId": 1,
+      "name": "默认团队",
+      "createdAt": "2026-02-25T13:06:04.945Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": 8001,
+      "tenantId": 1,
+      "orgId": 1,
+      "teamId": 1,
+      "name": "默认业务员",
+      "status": "active",
+      "createdAt": "2026-02-25T13:06:04.945Z"
+    },
+    {
+      "id": 8203,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "新华保险管理员",
+      "status": "active",
+      "role": "manager",
+      "account": "xinhua_admin",
+      "email": "xinhua@126.com",
+      "mobile": "18610000001",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-11T12:35:57.766Z"
+    },
+    {
+      "id": 8204,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "方雨晴",
+      "status": "active",
+      "role": "support",
+      "account": "fangyuqing",
+      "email": "fangyuqing@126.com",
+      "mobile": "18610000002",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-11T12:35:57.771Z"
+    },
+    {
+      "id": 8205,
+      "tenantId": 2,
+      "orgId": 2,
+      "teamId": 2,
+      "name": "小英",
+      "status": "active",
+      "role": "agent",
+      "account": "xiaoying",
+      "email": "xiaoying@126.com",
+      "mobile": "18610000003",
+      "password": "123456",
+      "initialPassword": "123456",
+      "createdAt": "2026-03-11T12:35:57.771Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "key": "platform_admin",
+      "name": "平台管理员"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "key": "company_admin",
+      "name": "公司管理员"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "key": "team_lead",
+      "name": "团队主管"
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "key": "agent",
+      "name": "业务员"
+    },
+    {
+      "id": 5,
+      "tenantId": 1,
+      "key": "customer",
+      "name": "客户"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "key": "tenant:read",
+      "name": "查看租户"
+    },
+    {
+      "id": 2,
+      "key": "tenant:write",
+      "name": "管理租户"
+    },
+    {
+      "id": 3,
+      "key": "customer:read",
+      "name": "查看客户"
+    },
+    {
+      "id": 4,
+      "key": "customer:write",
+      "name": "编辑客户"
+    },
+    {
+      "id": 5,
+      "key": "order:writeoff",
+      "name": "核销订单"
+    },
+    {
+      "id": 6,
+      "key": "order:refund",
+      "name": "退款订单"
+    },
+    {
+      "id": 7,
+      "key": "stats:read",
+      "name": "查看统计"
+    },
+    {
+      "id": 8,
+      "key": "approval:write",
+      "name": "审批处理"
+    },
+    {
+      "id": 9,
+      "key": "scope:tenant:all",
+      "name": "租户全量数据范围"
+    },
+    {
+      "id": 10,
+      "key": "scope:team:all",
+      "name": "团队数据范围"
+    }
+  ],
+  "rolePermissions": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 1
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 2
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 3
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 4
+    },
+    {
+      "id": 5,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 5
+    },
+    {
+      "id": 6,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 6
+    },
+    {
+      "id": 7,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 7
+    },
+    {
+      "id": 8,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 8
+    },
+    {
+      "id": 9,
+      "tenantId": 1,
+      "roleId": 1,
+      "permissionId": 9
+    },
+    {
+      "id": 10,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 1
+    },
+    {
+      "id": 11,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 3
+    },
+    {
+      "id": 12,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 4
+    },
+    {
+      "id": 13,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 5
+    },
+    {
+      "id": 14,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 7
+    },
+    {
+      "id": 15,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 8
+    },
+    {
+      "id": 16,
+      "tenantId": 1,
+      "roleId": 2,
+      "permissionId": 10
+    },
+    {
+      "id": 17,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 3
+    },
+    {
+      "id": 18,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 4
+    },
+    {
+      "id": 19,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 5
+    },
+    {
+      "id": 20,
+      "tenantId": 1,
+      "roleId": 3,
+      "permissionId": 10
+    },
+    {
+      "id": 21,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 3
+    },
+    {
+      "id": 22,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 4
+    },
+    {
+      "id": 23,
+      "tenantId": 1,
+      "roleId": 4,
+      "permissionId": 5
+    }
+  ],
+  "userRoles": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "userType": "employee",
+      "userId": 9001,
+      "roleId": 1
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "userType": "employee",
+      "userId": 9002,
+      "roleId": 2
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "userType": "agent",
+      "userId": 8001,
+      "roleId": 4
+    },
+    {
+      "id": 4,
+      "tenantId": 2,
+      "userType": "employee",
+      "userId": 8203,
+      "roleId": 2
+    },
+    {
+      "id": 5,
+      "tenantId": 2,
+      "userType": "employee",
+      "userId": 8204,
+      "roleId": 3
+    },
+    {
+      "id": 6,
+      "tenantId": 2,
+      "userType": "agent",
+      "userId": 8205,
+      "roleId": 4
+    }
+  ],
+  "approvals": [],
+  "auditLogs": [],
+  "trackEvents": [],
+  "idempotencyRecords": [],
+  "domainEvents": [],
+  "outboxEvents": [],
+  "smsCodes": [],
+  "sessions": [],
+  "activities": [
+    {
+      "id": 1,
+      "title": "连续签到7天领鸡蛋",
+      "category": "sign",
+      "rewardPoints": 10,
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "title": "保险知识王者赛",
+      "category": "competition",
+      "rewardPoints": 50,
+      "sortOrder": 2
+    },
+    {
+      "id": 3,
+      "title": "完善保障信息",
+      "category": "task",
+      "rewardPoints": 100,
+      "sortOrder": 3
+    },
+    {
+      "id": 4,
+      "title": "推荐好友加入",
+      "category": "invite",
+      "rewardPoints": 500,
+      "sortOrder": 4
+    }
+  ],
+  "activityCompletions": [],
+  "signIns": [],
+  "pointAccounts": [],
+  "pointTransactions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "1",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-22T15:18:13.014Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-22",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-22T15:18:24.829Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "2",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T00:04:36.355Z"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T00:04:36.426Z"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "type": "earn",
+      "amount": 100,
+      "source": "activity_task",
+      "sourceId": "3",
+      "balance": 310,
+      "description": "完成活动 完善保障信息",
+      "createdAt": "2026-02-23T00:04:36.593Z"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "type": "earn",
+      "amount": 50,
+      "source": "course_complete",
+      "sourceId": "1",
+      "balance": 360,
+      "description": "完成课程 如何使用手机申领医保报销",
+      "createdAt": "2026-02-23T00:04:36.645Z"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "3",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T00:05:09.924Z"
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T00:05:09.962Z"
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "type": "earn",
+      "amount": 100,
+      "source": "activity_task",
+      "sourceId": "3",
+      "balance": 310,
+      "description": "完成活动 完善保障信息",
+      "createdAt": "2026-02-23T00:05:09.970Z"
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "type": "earn",
+      "amount": 50,
+      "source": "course_complete",
+      "sourceId": "1",
+      "balance": 360,
+      "description": "完成课程 如何使用手机申领医保报销",
+      "createdAt": "2026-02-23T00:05:09.977Z"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "type": "consume",
+      "amount": 300,
+      "source": "redeem",
+      "sourceId": "1",
+      "balance": 60,
+      "description": "兑换 健康管理咨询券",
+      "createdAt": "2026-02-23T00:05:10.019Z"
+    },
+    {
+      "id": 12,
+      "userId": 4,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "4",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T00:06:43.094Z"
+    },
+    {
+      "id": 13,
+      "userId": 4,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 210,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T00:06:43.162Z"
+    },
+    {
+      "id": 14,
+      "userId": 4,
+      "type": "earn",
+      "amount": 100,
+      "source": "activity_task",
+      "sourceId": "3",
+      "balance": 310,
+      "description": "完成活动 完善保障信息",
+      "createdAt": "2026-02-23T00:06:43.170Z"
+    },
+    {
+      "id": 15,
+      "userId": 4,
+      "type": "earn",
+      "amount": 50,
+      "source": "course_complete",
+      "sourceId": "1",
+      "balance": 360,
+      "description": "完成课程 如何使用手机申领医保报销",
+      "createdAt": "2026-02-23T00:06:43.178Z"
+    },
+    {
+      "id": 16,
+      "userId": 4,
+      "type": "consume",
+      "amount": 300,
+      "source": "redeem",
+      "sourceId": "2",
+      "balance": 60,
+      "description": "兑换 健康管理咨询券",
+      "createdAt": "2026-02-23T00:06:43.310Z"
+    },
+    {
+      "id": 17,
+      "userId": 5,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "5",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T00:19:34.375Z"
+    },
+    {
+      "id": 18,
+      "userId": 6,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "6",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T02:49:01.541Z"
+    },
+    {
+      "id": 19,
+      "userId": 6,
+      "type": "earn",
+      "amount": 500,
+      "source": "activity_task",
+      "sourceId": "4",
+      "balance": 700,
+      "description": "完成活动 推荐好友加入",
+      "createdAt": "2026-02-23T02:49:01.715Z"
+    },
+    {
+      "id": 20,
+      "userId": 6,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 710,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T02:49:01.746Z"
+    },
+    {
+      "id": 21,
+      "userId": 2,
+      "type": "consume",
+      "amount": 300,
+      "source": "redeem",
+      "sourceId": "3",
+      "balance": 60,
+      "description": "兑换 健康管理咨询券",
+      "createdAt": "2026-02-23T02:50:59.291Z"
+    },
+    {
+      "id": 22,
+      "userId": 7,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "7",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T03:45:22.330Z"
+    },
+    {
+      "id": 23,
+      "userId": 7,
+      "type": "earn",
+      "amount": 20,
+      "source": "course_complete",
+      "sourceId": "3",
+      "balance": 220,
+      "description": "完成课程 2024养老金调整政策解读",
+      "createdAt": "2026-02-23T03:45:22.442Z"
+    },
+    {
+      "id": 24,
+      "userId": 8,
+      "type": "earn",
+      "amount": 200,
+      "source": "onboard",
+      "sourceId": "8",
+      "balance": 200,
+      "description": "新用户基础积分",
+      "createdAt": "2026-02-23T03:58:12.540Z"
+    },
+    {
+      "id": 25,
+      "userId": 8,
+      "type": "earn",
+      "amount": 50,
+      "source": "course_complete",
+      "sourceId": "1",
+      "balance": 250,
+      "description": "完成课程 如何使用手机申领医保报销",
+      "createdAt": "2026-02-23T03:58:12.625Z"
+    },
+    {
+      "id": 26,
+      "userId": 5,
+      "type": "earn",
+      "amount": 50,
+      "source": "course_complete",
+      "sourceId": "1",
+      "balance": 250,
+      "description": "完成课程 如何使用手机申领医保报销",
+      "createdAt": "2026-02-23T07:34:17.496Z"
+    },
+    {
+      "id": 27,
+      "userId": 5,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 260,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T09:57:20.623Z"
+    },
+    {
+      "id": 28,
+      "userId": 1,
+      "type": "earn",
+      "amount": 10,
+      "source": "daily_sign_in",
+      "sourceId": "2026-02-23",
+      "balance": 220,
+      "description": "每日签到奖励",
+      "createdAt": "2026-02-23T10:03:01.430Z"
+    }
+  ],
+  "mallItems": [
+    {
+      "id": 1,
+      "name": "智能低糖电饭煲",
+      "pointsCost": 99,
+      "stock": 50,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "家庭体检套餐",
+      "pointsCost": 79,
+      "stock": 80,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "健康管理咨询券",
+      "pointsCost": 59,
+      "stock": 996,
+      "isActive": true
+    }
+  ],
+  "redemptions": [
+    {
+      "id": 1,
+      "userId": 3,
+      "itemId": 3,
+      "pointsCost": 300,
+      "status": "written_off",
+      "writeoffToken": "EX1771805110019263",
+      "expiresAt": "2026-03-25T00:05:10.019Z",
+      "createdAt": "2026-02-23T00:05:10.019Z",
+      "writtenOffAt": "2026-02-23T00:05:10.114Z"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "itemId": 3,
+      "pointsCost": 300,
+      "status": "written_off",
+      "writeoffToken": "EX1771805203310618",
+      "expiresAt": "2026-03-25T00:06:43.310Z",
+      "createdAt": "2026-02-23T00:06:43.310Z",
+      "writtenOffAt": "2026-02-23T00:06:43.456Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "itemId": 3,
+      "pointsCost": 300,
+      "status": "written_off",
+      "writeoffToken": "EX1771815059291576",
+      "expiresAt": "2026-03-25T02:50:59.291Z",
+      "createdAt": "2026-02-23T02:50:59.291Z",
+      "writtenOffAt": "2026-02-23T02:50:59.419Z"
+    }
+  ],
+  "orders": [],
+  "orderPayments": [],
+  "orderFulfillments": [],
+  "orderRefunds": [],
+  "bCustomerTags": [],
+  "bCustomerTagRels": [],
+  "bCustomerActivities": [],
+  "bWriteOffRecords": [],
+  "pLearningMaterials": [],
+  "pProducts": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "name": "智能低糖电饭煲",
+      "pointsCost": 99,
+      "stock": 50,
+      "shelfStatus": "on",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "name": "家庭体检套餐",
+      "pointsCost": 79,
+      "stock": 80,
+      "shelfStatus": "on",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "name": "健康管理咨询券",
+      "pointsCost": 59,
+      "stock": 996,
+      "shelfStatus": "on",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    }
+  ],
+  "pActivities": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "title": "连续签到7天领鸡蛋",
+      "category": "sign",
+      "rewardPoints": 10,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "title": "保险知识王者赛",
+      "category": "competition",
+      "rewardPoints": 50,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "title": "完善保障信息",
+      "category": "task",
+      "rewardPoints": 100,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "title": "推荐好友加入",
+      "category": "invite",
+      "rewardPoints": 500,
+      "status": "published",
+      "createdBy": null,
+      "creatorRole": "",
+      "templateScope": "tenant",
+      "createdAt": "2026-02-26T07:11:01.722Z"
+    }
+  ],
+  "mallActivities": [],
+  "statsWarehouse": [],
+  "reconciliationReports": [],
+  "learningCourses": [
+    {
+      "id": 1,
+      "title": "如何使用手机申领医保报销",
+      "desc": "手把手教您在手机上操作，简单又省时",
+      "type": "video",
+      "typeLabel": "视频课",
+      "progress": 80,
+      "timeLeft": "2 分钟",
+      "image": "https://picsum.photos/seed/course1/800/400",
+      "action": "继续学习",
+      "color": "bg-black/60",
+      "btnColor": "bg-blue-500 text-white",
+      "points": 50,
+      "category": "医疗",
+      "content": "本节课程将详细演示如何通过官方APP或微信小程序，在线提交医疗报销凭证。无需线下排队，只需准备好发票、病历等材料的照片，跟着视频一步步操作即可完成申领。"
+    },
+    {
+      "id": 2,
+      "title": "三分钟看懂您的保单保障",
+      "desc": "用通俗易懂的漫画带您理清保障范围",
+      "type": "comic",
+      "typeLabel": "趣味漫画",
+      "progress": 0,
+      "timeLeft": "约 3 分钟",
+      "image": "https://picsum.photos/seed/course2/800/400",
+      "action": "开始学习",
+      "color": "bg-blue-500",
+      "btnColor": "bg-blue-50 text-blue-600",
+      "points": 30,
+      "category": "理赔",
+      "content": "买完保险却不知道保什么？这篇漫画用生动的场景和比喻，帮您快速看懂保单中的核心条款：重疾险保哪些病？医疗险怎么报销？意外险包含哪些意外？让您的保单不再是天书。"
+    },
+    {
+      "id": 3,
+      "title": "2024养老金调整政策解读",
+      "desc": "为您划重点，看看每月能多领多少钱",
+      "type": "article",
+      "typeLabel": "实用图文",
+      "progress": 45,
+      "timeLeft": "剩 5 分钟",
+      "image": "https://picsum.photos/seed/course3/800/400",
+      "action": "继续阅读",
+      "color": "bg-slate-800",
+      "btnColor": "bg-blue-500 text-white",
+      "points": 20,
+      "category": "养老",
+      "content": "2024年国家基本养老金上调政策正式发布。本次调整采取定额调整、挂钩调整与适当倾斜相结合的办法。本文将为您详细解读调整比例、计算方法以及高龄退休人员的特殊倾斜政策。"
+    }
+  ],
+  "courseCompletions": [],
+  "learningGames": [
+    {
+      "id": 1,
+      "title": "风险大作战",
+      "desc": "识别生活中的潜在风险，保护你的小家",
+      "category": "风险认知",
+      "difficulty": 2,
+      "bestScore": "2500分",
+      "color": "bg-orange-500",
+      "lightColor": "bg-orange-50",
+      "textColor": "text-orange-600"
+    },
+    {
+      "id": 2,
+      "title": "条款连连看",
+      "desc": "消除晦涩难懂的保险术语，轻松学知识",
+      "category": "产品理解",
+      "difficulty": 3,
+      "bestScore": "通关第5关",
+      "color": "bg-indigo-500",
+      "lightColor": "bg-indigo-50",
+      "textColor": "text-indigo-600"
+    }
+  ],
+  "learningTools": [
+    {
+      "id": 1,
+      "title": "养老金计算器",
+      "desc": "输入参数，可视化未来养老资金缺口",
+      "color": "text-emerald-500",
+      "bg": "bg-emerald-50"
+    },
+    {
+      "id": 2,
+      "title": "保障缺口分析",
+      "desc": "问答式引导，生成家庭风险矩阵报告",
+      "color": "text-blue-500",
+      "bg": "bg-blue-50"
+    },
+    {
+      "id": 3,
+      "title": "理赔进度查询",
+      "desc": "关联已托管保单，实时查询理赔状态",
+      "color": "text-purple-500",
+      "bg": "bg-purple-50"
+    }
+  ],
+  "insuranceSummary": {
+    "totalCoverage": 6500000,
+    "healthScore": 85,
+    "activePolicies": 7,
+    "annualPremium": 61565
+  },
+  "familyMembers": [
+    {
+      "id": 1,
+      "name": "本人",
+      "avatar": "https://picsum.photos/seed/self/100/100",
+      "score": 85,
+      "coveredTypes": [
+        "医疗",
+        "重疾"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "妻子",
+      "avatar": "https://picsum.photos/seed/wife/100/100",
+      "score": 72,
+      "coveredTypes": [
+        "医疗",
+        "重疾"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "儿子",
+      "avatar": "https://picsum.photos/seed/son/100/100",
+      "score": 92,
+      "coveredTypes": [
+        "少儿",
+        "医疗",
+        "教育"
+      ]
+    }
+  ],
+  "insuranceReminders": [
+    {
+      "id": 1,
+      "title": "车险续保提醒",
+      "desc": "您的沪A·*****保单即将到期",
+      "tag": "剩 5 天",
+      "actionText": "立即续保",
+      "kind": "renewal"
+    },
+    {
+      "id": 2,
+      "title": "儿子生日提醒",
+      "desc": "别忘了为他准备生日礼物哦",
+      "tag": "明天",
+      "actionText": "查看福利",
+      "kind": "birthday"
+    },
+    {
+      "id": 3,
+      "title": "体检报告已生成",
+      "desc": "年度健康体检结果已更新",
+      "tag": "3天前",
+      "actionText": "已读",
+      "kind": "report"
+    }
+  ],
+  "policies": [
+    {
+      "id": 1,
+      "company": "平安健康保险股份有限公司",
+      "name": "尊享e生2024",
+      "type": "医疗",
+      "amount": 3000000,
+      "nextPayment": "2025-01-01",
+      "status": "保障中",
+      "applicant": "张*三",
+      "insured": "张*三",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "annualPremium": 365,
+      "paymentPeriod": "1年交",
+      "coveragePeriod": "1年",
+      "responsibilities": [
+        {
+          "name": "一般医疗保险金",
+          "desc": "含住院/门诊手术/住院前后门诊",
+          "limit": 3000000
+        },
+        {
+          "name": "重疾医疗保险金",
+          "desc": "120种特定重大疾病",
+          "limit": 6000000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2024-01-01",
+          "amount": 365,
+          "note": "年度首缴",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "812345678901"
+    },
+    {
+      "id": 2,
+      "company": "中国人寿保险",
+      "name": "国寿福重疾险",
+      "type": "重疾",
+      "amount": 500000,
+      "nextPayment": "2024-08-15",
+      "status": "保障中",
+      "applicant": "张*三",
+      "insured": "张*三",
+      "periodStart": "2023-08-15",
+      "periodEnd": "2043-08-14",
+      "annualPremium": 12000,
+      "paymentPeriod": "20年交",
+      "coveragePeriod": "终身",
+      "responsibilities": [
+        {
+          "name": "重大疾病保险金",
+          "desc": "120种重大疾病",
+          "limit": 500000
+        },
+        {
+          "name": "轻症疾病保险金",
+          "desc": "40种轻症，最高6次",
+          "limit": 150000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2024-08-15",
+          "amount": 12000,
+          "note": "年度缴费",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "812345678902"
+    },
+    {
+      "id": 3,
+      "company": "太平洋保险",
+      "name": "太保意外伤害险",
+      "type": "意外",
+      "amount": 1000000,
+      "nextPayment": "2024-11-20",
+      "status": "保障中",
+      "applicant": "张*三",
+      "insured": "张*三",
+      "periodStart": "2023-11-20",
+      "periodEnd": "2024-11-19",
+      "annualPremium": 1200,
+      "paymentPeriod": "1年交",
+      "coveragePeriod": "1年",
+      "responsibilities": [
+        {
+          "name": "意外身故/伤残",
+          "desc": "按伤残等级给付",
+          "limit": 1000000
+        },
+        {
+          "name": "意外医疗",
+          "desc": "门急诊及住院医疗费用",
+          "limit": 100000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2023-11-20",
+          "amount": 1200,
+          "note": "年度首缴",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "812345678903"
+    },
+    {
+      "id": 4,
+      "company": "中国平安保险",
+      "name": "平安福21重疾险",
+      "type": "重疾",
+      "amount": 500000,
+      "nextPayment": "2025-02-20",
+      "status": "保障中",
+      "applicant": "张三",
+      "insured": "张三",
+      "periodStart": "2024-02-20",
+      "periodEnd": "终身",
+      "annualPremium": 12000,
+      "paymentPeriod": "20年交",
+      "coveragePeriod": "终身",
+      "responsibilities": [
+        {
+          "name": "重大疾病保险金",
+          "desc": "覆盖常见重大疾病",
+          "limit": 500000
+        },
+        {
+          "name": "轻症疾病保险金",
+          "desc": "轻症多次赔付",
+          "limit": 150000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2024-02-20",
+          "amount": 12000,
+          "note": "首期缴费",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "PL1771805076719678",
+      "createdBy": 2,
+      "createdAt": "2026-02-23T00:04:36.719Z"
+    },
+    {
+      "id": 5,
+      "company": "中国平安保险",
+      "name": "平安福21重疾险",
+      "type": "重疾",
+      "amount": 500000,
+      "nextPayment": "2025-02-20",
+      "status": "保障中",
+      "applicant": "张三",
+      "insured": "张三",
+      "periodStart": "2024-02-20",
+      "periodEnd": "终身",
+      "annualPremium": 12000,
+      "paymentPeriod": "20年交",
+      "coveragePeriod": "终身",
+      "responsibilities": [
+        {
+          "name": "重大疾病保险金",
+          "desc": "覆盖常见重大疾病",
+          "limit": 500000
+        },
+        {
+          "name": "轻症疾病保险金",
+          "desc": "轻症多次赔付",
+          "limit": 150000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2024-02-20",
+          "amount": 12000,
+          "note": "首期缴费",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "PL1771805203244981",
+      "createdBy": 4,
+      "createdAt": "2026-02-23T00:06:43.244Z"
+    },
+    {
+      "id": 6,
+      "company": "中国平安保险",
+      "name": "平安医疗升级版",
+      "type": "医疗",
+      "amount": 500000,
+      "nextPayment": "2027-02-23",
+      "status": "保障中",
+      "applicant": "张三",
+      "insured": "张三",
+      "periodStart": "2026-02-23",
+      "periodEnd": "2046-02-22",
+      "annualPremium": 12000,
+      "paymentPeriod": "20年交",
+      "coveragePeriod": "20年",
+      "responsibilities": [
+        {
+          "name": "一般医疗保险金",
+          "desc": "住院及门急诊保障",
+          "limit": 500000
+        },
+        {
+          "name": "重疾医疗保险金",
+          "desc": "重大疾病医疗额外保障",
+          "limit": 1000000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2026-02-23",
+          "amount": 12000,
+          "note": "首期缴费",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "PL177181832256455",
+      "createdBy": 7,
+      "createdAt": "2026-02-23T03:45:22.564Z"
+    },
+    {
+      "id": 7,
+      "company": "中国平安保险",
+      "name": "平安福21重疾险",
+      "type": "重疾",
+      "amount": 500000,
+      "nextPayment": "2025-02-20",
+      "status": "保障中",
+      "applicant": "张三",
+      "insured": "张三",
+      "periodStart": "2024-02-20",
+      "periodEnd": "终身",
+      "annualPremium": 12000,
+      "paymentPeriod": "20年交",
+      "coveragePeriod": "终身",
+      "responsibilities": [
+        {
+          "name": "重大疾病保险金",
+          "desc": "覆盖常见重大疾病",
+          "limit": 500000
+        },
+        {
+          "name": "轻症疾病保险金",
+          "desc": "轻症多次赔付",
+          "limit": 150000
+        }
+      ],
+      "paymentHistory": [
+        {
+          "date": "2024-02-20",
+          "amount": 12000,
+          "note": "首期缴费",
+          "status": "支付成功"
+        }
+      ],
+      "policyNo": "PL1771819092726607",
+      "createdBy": 8,
+      "createdAt": "2026-02-23T03:58:12.726Z"
+    }
+  ]
+}

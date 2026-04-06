@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">WECHAT CHANNELS</view>
+    <view class="title">视频号课程</view>
+    <view class="desc">当前内容通过小程序内嵌组件播放，不在 H5 页面内直接播放。</view>
+  </view>
+
+  <view wx:if="{{feedToken}}" class="player-card">
+    <channel-video feed-token="{{feedToken}}" />
+  </view>
+
+  <view wx:else class="empty-card">
+    <view class="empty-title">无法加载视频号内容</view>
+    <view class="empty-desc">{{errorText}}</view>
+    <button class="retry-btn" bindtap="handleRetry">重新检查参数</button>
+  </view>
+</view>

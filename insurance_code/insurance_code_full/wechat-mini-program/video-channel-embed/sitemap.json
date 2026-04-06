@@ -1,0 +1,9 @@
+{
+  "desc": "video-channel-embed sitemap",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}

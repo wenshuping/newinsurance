@@ -1,0 +1,172 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-09T01:55:13.678Z",
+  "gatewayBase": "http://127.0.0.1:55708",
+  "learningServiceBase": "http://127.0.0.1:55707",
+  "userServiceBase": "http://127.0.0.1:55705",
+  "pointsServiceBase": "http://127.0.0.1:55706",
+  "checks": [
+    {
+      "name": "learning.routes.registered.week14",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "d38d1659-6611-4e29-b22d-7f8356bc651a",
+      "routeCount": 5
+    },
+    {
+      "name": "learning.default.read.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-default-read-v1"
+    },
+    {
+      "name": "learning.cutover.read.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-cutover-read-v2"
+    },
+    {
+      "name": "learning.customer.list.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-user-list",
+      "visibleCourseCount": 65,
+      "courseId": 117
+    },
+    {
+      "name": "learning.customer.detail.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-user-detail",
+      "courseId": 117
+    },
+    {
+      "name": "learning.complete.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-v2",
+      "courseId": 117
+    },
+    {
+      "name": "learning.reward.points-summary-updated",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week14-learning-points-after",
+      "rewardDelta": 12
+    },
+    {
+      "name": "learning.reward.points-observability",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773021313394_876181fa-8ec4-4e61-ab51-8e73ccd066a9",
+      "learningRewardSuccess": 1
+    },
+    {
+      "name": "learning.complete.gateway-metrics.v2",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "a6626588-d705-4445-bcd5-4ed49b181339",
+      "fallbackCount": 0
+    },
+    {
+      "name": "learning.complete.force-v1.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-complete-force-v1",
+      "courseId": 118
+    },
+    {
+      "name": "learning.reward.points-observability.force-v1",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773021313490_815ae0fd-8c04-40df-b914-70062d7b72bd"
+    },
+    {
+      "name": "learning.complete.back-to-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-back-v2",
+      "courseId": 119
+    },
+    {
+      "name": "learning.read.fallback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-read-fallback"
+    },
+    {
+      "name": "learning.complete.no-auto-fallback",
+      "ok": true,
+      "status": 502,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week14-learning-complete-no-auto-fallback",
+      "courseId": 120
+    },
+    {
+      "name": "learning.complete.manual-rollback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week14-learning-complete-manual-rollback",
+      "courseId": 120
+    },
+    {
+      "name": "learning.reward.points-observability.manual-rollback",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773021313677_e8c37073-4d82-4fad-81ec-51962790e005"
+    },
+    {
+      "name": "learning.complete.gateway-metrics.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "e888d2b2-a52e-441b-8838-c19aee903fd2",
+      "readFallbackCount": 1,
+      "manualRollbackTarget": "v1-monolith"
+    }
+  ],
+  "criteria": {
+    "defaultLearningTrafficOnV1": true,
+    "completeCutoverToV2": true,
+    "completeRewardChainWorks": true,
+    "forceV1RollbackWorks": true,
+    "backToV2Works": true,
+    "readFallbackWorks": true,
+    "writeNoAutoFallbackConfirmed": true,
+    "manualWriteRollbackWorks": true,
+    "gatewayMetricsCoverComplete": true,
+    "pointsObservabilityCoverReward": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "ok": false,
+  "stage": "db:mall:backfill-source-product-id",
+  "finishedAt": "2026-03-06T05:00:51.925Z",
+  "totalMs": 276,
+  "hasDatabaseUrl": false,
+  "categories": [
+    {
+      "category": "persist",
+      "ok": false,
+      "total": 1,
+      "failed": 1,
+      "skipped": 0
+    }
+  ],
+  "results": [
+    {
+      "label": "db:mall:backfill-source-product-id",
+      "category": "persist",
+      "ok": false,
+      "skipped": false,
+      "code": 1,
+      "signal": "",
+      "durationMs": 275
+    }
+  ],
+  "reportFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260306-130051.json",
+  "persistSyncStats": null
+}

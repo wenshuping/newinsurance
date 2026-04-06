@@ -1,0 +1,123 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: insurance
+      POSTGRES_PASSWORD: insurance
+      POSTGRES_DB: insurance_runtime_dev
+    ports:
+      - '5432:5432'
+    volumes:
+      - runtime_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U insurance -d insurance_runtime_dev']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  v1-monolith:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "npm run dev:api:skeleton"
+    environment:
+      API_HOST: 0.0.0.0
+      API_PORT: 4000
+      STORAGE_BACKEND: postgres
+      DATABASE_URL: postgresql://insurance:insurance@postgres:5432/insurance_runtime_dev
+      PGSSL: disable
+      CSRF_PROTECTION: 'true'
+      REQUIRE_SENSITIVE_CONFIRM: 'true'
+    ports:
+      - '4000:4000'
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:4000/api/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  user-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "node server/microservices/user-service.mjs"
+    environment:
+      API_HOST: 0.0.0.0
+      API_USER_SERVICE_PORT: 4101
+      STORAGE_BACKEND: postgres
+      DATABASE_URL: postgresql://insurance:insurance@postgres:5432/insurance_runtime_dev
+      PGSSL: disable
+      CSRF_PROTECTION: 'true'
+      REQUIRE_SENSITIVE_CONFIRM: 'true'
+    ports:
+      - '4101:4101'
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:4101/ready').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  points-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "node server/microservices/points-service.mjs"
+    environment:
+      API_HOST: 0.0.0.0
+      API_POINTS_SERVICE_PORT: 4102
+      STORAGE_BACKEND: postgres
+      DATABASE_URL: postgresql://insurance:insurance@postgres:5432/insurance_runtime_dev
+      PGSSL: disable
+      CSRF_PROTECTION: 'true'
+      REQUIRE_SENSITIVE_CONFIRM: 'true'
+    ports:
+      - '4102:4102'
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:4102/ready').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "node server/microservices/gateway.mjs"
+    environment:
+      API_HOST: 0.0.0.0
+      API_GATEWAY_PORT: 4100
+      STORAGE_BACKEND: postgres
+      DATABASE_URL: postgresql://insurance:insurance@postgres:5432/insurance_runtime_dev
+      PGSSL: disable
+      GATEWAY_V1_BASE_URL: http://v1-monolith:4000
+      GATEWAY_USER_SERVICE_URL: http://user-service:4101
+      GATEWAY_POINTS_SERVICE_URL: http://points-service:4102
+      GATEWAY_ENABLE_V2: 'true'
+      GATEWAY_ENABLE_V1_FALLBACK: 'true'
+      GATEWAY_FORCE_V1: 'false'
+    ports:
+      - '4100:4100'
+    depends_on:
+      v1-monolith:
+        condition: service_healthy
+      user-service:
+        condition: service_healthy
+      points-service:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:4100/ready').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  runtime_pgdata:

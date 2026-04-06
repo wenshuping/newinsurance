@@ -1,0 +1,72 @@
+{
+  "api-v1": {
+    "pid": 38202,
+    "port": 4000,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:22:29.551Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/api-v1.log"
+  },
+  "user-service": {
+    "pid": 38340,
+    "port": 4101,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:22:38.530Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/user-service.log"
+  },
+  "points-service": {
+    "pid": 38453,
+    "port": 4102,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:22:45.248Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/points-service.log"
+  },
+  "learning-service": {
+    "pid": 38474,
+    "port": 4103,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:22:50.921Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/learning-service.log"
+  },
+  "activity-service": {
+    "pid": 38579,
+    "port": 4104,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:22:56.649Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/activity-service.log"
+  },
+  "ocr-service": {
+    "pid": 38624,
+    "port": 4105,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:23:02.576Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/ocr-service.log"
+  },
+  "gateway": {
+    "pid": 38705,
+    "port": 4100,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:23:03.236Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/gateway.log"
+  },
+  "c": {
+    "pid": 38830,
+    "port": 3003,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full",
+    "startedAt": "2026-04-06T12:23:09.179Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/c.log"
+  },
+  "b": {
+    "pid": 38872,
+    "port": 3004,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code_B",
+    "startedAt": "2026-04-06T12:23:15.236Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/b.log"
+  },
+  "p": {
+    "pid": 38978,
+    "port": 3005,
+    "cwd": "/Users/wenshuping/Documents/insurace3/insurance_code_P",
+    "startedAt": "2026-04-06T12:23:20.540Z",
+    "logFile": "/Users/wenshuping/Documents/insurace3/insurance_code/insurance_code_full/.runtime/logs/p.log"
+  }
+}

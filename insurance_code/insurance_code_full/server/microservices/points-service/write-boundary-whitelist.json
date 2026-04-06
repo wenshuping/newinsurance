@@ -1,0 +1,100 @@
+{
+  "mainWriteTables": [
+    "c_point_accounts",
+    "c_point_transactions",
+    "p_products",
+    "p_orders",
+    "c_redeem_records",
+    "c_sign_ins"
+  ],
+  "tableStateCollections": {
+    "c_point_accounts": "pointAccounts",
+    "c_point_transactions": "pointTransactions",
+    "p_products": "pProducts",
+    "p_orders": "orders",
+    "c_redeem_records": "redemptions",
+    "c_sign_ins": "signIns"
+  },
+  "routeWhitelist": [
+    "server/microservices/points-service/router.mjs",
+    "server/microservices/points-service/sign-in.route.mjs",
+    "server/skeleton-c-v1/routes/points.routes.mjs",
+    "server/skeleton-c-v1/routes/mall.routes.mjs",
+    "server/skeleton-c-v1/routes/orders.routes.mjs",
+    "server/skeleton-c-v1/routes/redemptions.routes.mjs",
+    "server/skeleton-c-v1/routes/p-admin-mall.routes.mjs",
+    "server/skeleton-c-v1/routes/b-admin-mall.routes.mjs",
+    "server/skeleton-c-v1/routes/b-admin-orders.routes.mjs"
+  ],
+  "usecaseWhitelist": [
+    "server/skeleton-c-v1/usecases/signin.usecase.mjs",
+    "server/skeleton-c-v1/usecases/redeem.usecase.mjs",
+    "server/skeleton-c-v1/usecases/redemption-writeoff.usecase.mjs",
+    "server/skeleton-c-v1/usecases/order-create.usecase.mjs",
+    "server/skeleton-c-v1/usecases/order-pay.usecase.mjs",
+    "server/skeleton-c-v1/usecases/order-cancel.usecase.mjs",
+    "server/skeleton-c-v1/usecases/order-refund.usecase.mjs",
+    "server/skeleton-c-v1/usecases/mall-join-activity.usecase.mjs",
+    "server/skeleton-c-v1/usecases/mall-query.usecase.mjs",
+    "server/skeleton-c-v1/usecases/p-mall-write.usecase.mjs",
+    "server/skeleton-c-v1/usecases/b-mall-config-write.usecase.mjs",
+    "server/skeleton-c-v1/usecases/b-order-writeoff.usecase.mjs"
+  ],
+  "repositoryWhitelist": [
+    "server/skeleton-c-v1/repositories/points.repository.mjs",
+    "server/skeleton-c-v1/repositories/commerce.repository.mjs",
+    "server/skeleton-c-v1/repositories/signin-write.repository.mjs",
+    "server/skeleton-c-v1/repositories/redemption-write.repository.mjs",
+    "server/skeleton-c-v1/repositories/p-mall-write.repository.mjs",
+    "server/skeleton-c-v1/repositories/b-mall-config-write.repository.mjs",
+    "server/skeleton-c-v1/repositories/b-order-writeoff.repository.mjs"
+  ],
+  "internalServiceFiles": [
+    "server/microservices/points-service/activity-reward.contract.mjs",
+    "server/microservices/points-service/learning-reward.contract.mjs",
+    "server/skeleton-c-v1/services/points.service.mjs",
+    "server/skeleton-c-v1/services/commerce.service.mjs"
+  ],
+  "ignoreFiles": [
+    "server/skeleton-c-v1/common/state.mjs"
+  ],
+  "forbiddenScopes": [
+    {
+      "name": "gateway-service",
+      "paths": [
+        "server/microservices/gateway"
+      ]
+    },
+    {
+      "name": "user-service",
+      "paths": [
+        "server/microservices/user-service"
+      ]
+    }
+  ],
+  "indirectCrossDomainCallers": [
+    {
+      "file": "server/skeleton-c-v1/usecases/auth-write.usecase.mjs",
+      "pattern": "recordPoints(",
+      "reason": "new-user onboarding reward uses points service API, not direct table writes"
+    },
+    {
+      "file": "server/skeleton-c-v1/usecases/activity-complete.usecase.mjs",
+      "patterns": [
+        "resolveSettleReward(",
+        "deps?.settleReward",
+        "await settleReward("
+      ],
+      "reason": "activity completion reward uses injected points settlement dependency instead of direct points table writes"
+    },
+    {
+      "file": "server/skeleton-c-v1/usecases/learning-complete.usecase.mjs",
+      "patterns": [
+        "resolveSettleReward(",
+        "deps?.settleReward",
+        "await settleReward("
+      ],
+      "reason": "learning completion reward uses injected points settlement dependency instead of direct points table writes"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/video-channel-profile/index",
+    "pages/video-channel/index",
+    "pages/video-channel-embed/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "视频号课程",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f3fbf7",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

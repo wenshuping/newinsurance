@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "finishedAt": "2026-03-06T05:02:57.470Z",
+  "base": "http://127.0.0.1:4000",
+  "thresholds": {
+    "p95Ms": 1200,
+    "avgMs": 600,
+    "maxErrorRate": 0,
+    "timeoutMs": 5000,
+    "iterations": 10
+  },
+  "endpointMetrics": [
+    {
+      "endpoint": "/api/health",
+      "total": 10,
+      "okCount": 10,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 3.87,
+      "p95Ms": 28.19,
+      "minMs": 0.56,
+      "maxMs": 28.19,
+      "sampleStatuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/mall/items",
+      "total": 10,
+      "okCount": 10,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 1.8,
+      "p95Ms": 4.82,
+      "minMs": 1.06,
+      "maxMs": 4.82,
+      "sampleStatuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/activities",
+      "total": 10,
+      "okCount": 10,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 0.53,
+      "p95Ms": 1.15,
+      "minMs": 0.33,
+      "maxMs": 1.15,
+      "sampleStatuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/learning/courses",
+      "total": 10,
+      "okCount": 10,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 0.58,
+      "p95Ms": 0.99,
+      "minMs": 0.36,
+      "maxMs": 0.99,
+      "sampleStatuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  ],
+  "failures": {
+    "statusFailures": [],
+    "p95Exceeded": [],
+    "avgExceeded": [],
+    "errorRateExceeded": []
+  },
+  "totalMs": 71,
+  "reportJsonFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-130257.json",
+  "reportMdFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-130257.md"
+}

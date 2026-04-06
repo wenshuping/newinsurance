@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-08T10:11:52.288Z",
+  "gatewayBase": "http://127.0.0.1:57775",
+  "learningServiceBase": "http://127.0.0.1:57774",
+  "userServiceBase": "http://127.0.0.1:57772",
+  "pointsServiceBase": "http://127.0.0.1:57773",
+  "checks": [
+    {
+      "name": "learning.routes.registered",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "a415589e-de89-41c7-8b25-3869f816dfd7"
+    },
+    {
+      "name": "learning.disabled.default-v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week13-learning-disabled"
+    },
+    {
+      "name": "learning.enabled.cutover-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-enabled"
+    },
+    {
+      "name": "learning.tenant-blocked.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week13-learning-blocked"
+    },
+    {
+      "name": "learning.force-v1.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week13-learning-force-v1"
+    },
+    {
+      "name": "learning.back-to-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-back-v2"
+    },
+    {
+      "name": "learning.admin.list.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-admin-list"
+    },
+    {
+      "name": "learning.admin.create.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-admin-create",
+      "createdId": 59
+    },
+    {
+      "name": "learning.customer.list.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-user-list",
+      "visibleCourseCount": 7,
+      "createdId": 59
+    },
+    {
+      "name": "learning.customer.detail.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-user-detail",
+      "visibleCourseId": 59,
+      "createdId": 59
+    },
+    {
+      "name": "learning.complete.stays-on-v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week13-learning-complete-v1"
+    },
+    {
+      "name": "learning.admin.update.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-admin-update"
+    },
+    {
+      "name": "learning.ops.overview",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "0b2bd16c-a86b-4ffd-b9ee-76fc49000472",
+      "learningObservabilitySkipped": true
+    },
+    {
+      "name": "learning.read-fallback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week13-learning-fallback-read"
+    },
+    {
+      "name": "learning.admin.delete.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week13-learning-admin-delete"
+    }
+  ],
+  "criteria": {
+    "enabledByDefault": false,
+    "cutoverWorks": true,
+    "forceV1Works": true,
+    "readFallbackWorks": true,
+    "completeStaysOnV1": true
+  }
+}

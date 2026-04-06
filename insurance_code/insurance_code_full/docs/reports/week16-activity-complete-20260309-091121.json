@@ -1,0 +1,157 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-09T01:11:21.795Z",
+  "gatewayBase": "http://127.0.0.1:50647",
+  "activityServiceBase": "http://127.0.0.1:50646",
+  "userServiceBase": "http://127.0.0.1:50644",
+  "pointsServiceBase": "http://127.0.0.1:50645",
+  "checks": [
+    {
+      "name": "activity.routes.registered.week16",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "a944bfeb-0217-438d-9f70-93ed5e8e6ec2",
+      "routeCount": 6
+    },
+    {
+      "name": "activity.default.read.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week16-activity-default-read-v1"
+    },
+    {
+      "name": "activity.default.complete.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week16-activity-complete-v1",
+      "activityId": 110
+    },
+    {
+      "name": "activity.cutover.admin.create.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "activity-service",
+      "traceId": "week16-activity-admin-create-v2",
+      "activityId": 111
+    },
+    {
+      "name": "activity.cutover.read.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "activity-service",
+      "traceId": "week16-activity-cutover-read-v2",
+      "activityId": 111,
+      "visibleCount": 59
+    },
+    {
+      "name": "activity.complete.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "activity-service",
+      "traceId": "week16-activity-complete-v2",
+      "activityId": 111
+    },
+    {
+      "name": "activity.reward.points-summary-updated",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week16-activity-points-after-v2",
+      "rewardDelta": 9,
+      "expectedReward": 9
+    },
+    {
+      "name": "activity.reward.points-observability",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773018681450_487ae730-48e9-401b-bd95-4768bcca342b",
+      "activityRewardSuccess": 2
+    },
+    {
+      "name": "activity.complete.gateway-metrics.v2",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "9a9f17e7-f379-417a-bfe2-0dc9d1589721",
+      "fallbackCount": 0
+    },
+    {
+      "name": "activity.complete.force-v1.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week16-activity-complete-force-v1",
+      "activityId": 112
+    },
+    {
+      "name": "activity.complete.back-to-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "activity-service",
+      "traceId": "week16-activity-complete-back-v2",
+      "activityId": 113
+    },
+    {
+      "name": "activity.read.fallback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week16-activity-read-fallback"
+    },
+    {
+      "name": "activity.complete.no-auto-fallback",
+      "ok": true,
+      "status": 502,
+      "mode": "v2",
+      "target": "activity-service",
+      "traceId": "week16-activity-complete-no-auto-fallback",
+      "activityId": 114
+    },
+    {
+      "name": "activity.complete.manual-rollback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week16-activity-complete-manual-rollback",
+      "activityId": 114
+    },
+    {
+      "name": "activity.gateway-metrics.read-fallback",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "5af81b15-04c4-4cf8-8661-e59a594f8cd9",
+      "fallbackCount": 1
+    }
+  ],
+  "criteria": {
+    "defaultActivityTrafficOnV1": true,
+    "activityCutoverToV2": true,
+    "activityRewardChainWorks": true,
+    "forceV1RollbackWorks": true,
+    "backToV2Works": true,
+    "readFallbackWorks": true,
+    "writeNoAutoFallbackConfirmed": true,
+    "manualWriteRollbackWorks": true,
+    "gatewayMetricsCoverComplete": true,
+    "pointsObservabilityCoverReward": true
+  }
+}

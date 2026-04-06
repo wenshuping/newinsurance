@@ -1,0 +1,134 @@
+{
+  "ok": false,
+  "stage": "slo:guard",
+  "finishedAt": "2026-03-06T09:52:28.665Z",
+  "totalMs": 19024,
+  "hasDatabaseUrl": false,
+  "categories": [
+    {
+      "category": "persist",
+      "ok": true,
+      "total": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "risk",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "docs",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "smoke",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "perf",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "gate",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "slo",
+      "ok": false,
+      "total": 1,
+      "failed": 1,
+      "skipped": 0
+    }
+  ],
+  "results": [
+    {
+      "label": "db:mall:backfill-source-product-id",
+      "category": "persist",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 284
+    },
+    {
+      "label": "risk:check-tenant-fallback",
+      "category": "risk",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 169
+    },
+    {
+      "label": "docs:check-links:all",
+      "category": "docs",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 180
+    },
+    {
+      "label": "test:smoke:api-core",
+      "category": "smoke",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 4100
+    },
+    {
+      "label": "test:perf:baseline",
+      "category": "perf",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 274
+    },
+    {
+      "label": "lint:persistence:incremental-writepaths",
+      "category": "persist",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 176
+    },
+    {
+      "label": "ci:gate:core:report",
+      "category": "gate",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 13365
+    },
+    {
+      "label": "slo:guard",
+      "category": "slo",
+      "ok": false,
+      "skipped": false,
+      "code": 1,
+      "signal": "",
+      "durationMs": 473
+    }
+  ],
+  "reportFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260306-175209.json",
+  "persistSyncStats": null
+}

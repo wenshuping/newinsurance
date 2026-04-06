@@ -1,0 +1,81 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e12]:
+          - heading "您，晚上好！" [level=1] [ref=e13]
+          - paragraph [ref=e14]: 今天也要记得领鸡蛋哦
+      - button [ref=e15]:
+        - img [ref=e16]
+    - generic [ref=e20]:
+      - button "顾问服务 当前环境未接入真实顾问资料与联系方式 查看状态" [ref=e21]:
+        - generic [ref=e22]:
+          - img [ref=e24]
+          - generic [ref=e27]:
+            - heading "顾问服务" [level=3] [ref=e28]
+            - paragraph [ref=e29]: 当前环境未接入真实顾问资料与联系方式
+        - generic [ref=e30]:
+          - img [ref=e31]
+          - text: 查看状态
+      - generic [ref=e33]:
+        - button "保障管理" [ref=e34]:
+          - img [ref=e36]
+          - generic [ref=e39]: 保障管理
+        - button "保险课堂" [ref=e40]:
+          - img [ref=e42]
+          - generic [ref=e44]: 保险课堂
+        - button "每日签到" [ref=e45]:
+          - img [ref=e47]
+          - generic [ref=e50]: 每日签到
+        - button "分享有礼" [ref=e51]:
+          - img [ref=e53]
+          - generic [ref=e57]: 分享有礼
+      - generic [ref=e59]:
+        - heading "进行中活动" [level=2] [ref=e60]
+        - button "查看全部" [ref=e61]
+      - generic [ref=e64] [cursor=pointer]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: Hot Reward
+          - heading "去兑换积分" [level=3] [ref=e67]
+          - paragraph [ref=e68]: 超值好礼随心兑，鸡蛋、话费等你拿
+          - button "去积分商城" [ref=e69]
+        - img [ref=e72]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "最新资讯" [level=2] [ref=e80]
+          - button "换一批" [disabled] [ref=e81]
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - img [ref=e85]
+            - generic [ref=e87]: 资讯
+          - generic [ref=e88]:
+            - heading "暂无最新资讯" [level=3] [ref=e89]
+            - paragraph [ref=e90]: 当前环境还没有可展示的真实资讯内容。
+      - generic [ref=e91]:
+        - heading "热门游戏" [level=2] [ref=e93]
+        - generic [ref=e94]:
+          - button "幸运大转盘 100%中奖 赢积分" [ref=e95]:
+            - img [ref=e97]
+            - heading "幸运大转盘" [level=4] [ref=e99]
+            - paragraph [ref=e100]: 100%中奖 赢积分
+          - button "知识小考场 答对5题 翻倍奖励" [ref=e101]:
+            - img [ref=e103]
+            - heading "知识小考场" [level=4] [ref=e106]
+            - paragraph [ref=e107]: 答对5题 翻倍奖励
+  - navigation [ref=e108]:
+    - button "首页" [ref=e109]:
+      - img [ref=e110]
+      - generic [ref=e113]: 首页
+    - button "知识学习" [ref=e114]:
+      - img [ref=e115]
+      - generic [ref=e117]: 知识学习
+    - button "活动中心" [ref=e118]:
+      - img [ref=e119]
+      - generic [ref=e121]: 活动中心
+    - button "保障管理" [ref=e122]:
+      - img [ref=e123]
+      - generic [ref=e126]: 保障管理
+    - button "我的" [ref=e127]:
+      - img [ref=e128]
+      - generic [ref=e131]: 我的

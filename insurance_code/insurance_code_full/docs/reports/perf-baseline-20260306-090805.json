@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "finishedAt": "2026-03-06T01:08:05.286Z",
+  "base": "http://127.0.0.1:4000",
+  "thresholds": {
+    "p95Ms": 1200,
+    "avgMs": 600,
+    "maxErrorRate": 0,
+    "timeoutMs": 5000,
+    "iterations": 3
+  },
+  "endpointMetrics": [
+    {
+      "endpoint": "/api/health",
+      "total": 3,
+      "okCount": 3,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 15.53,
+      "p95Ms": 43.81,
+      "minMs": 0.92,
+      "maxMs": 43.81,
+      "sampleStatuses": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/mall/items",
+      "total": 3,
+      "okCount": 3,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 12.09,
+      "p95Ms": 27.72,
+      "minMs": 4.28,
+      "maxMs": 27.72,
+      "sampleStatuses": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/activities",
+      "total": 3,
+      "okCount": 3,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 3.62,
+      "p95Ms": 10,
+      "minMs": 0.42,
+      "maxMs": 10,
+      "sampleStatuses": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "endpoint": "/api/learning/courses",
+      "total": 3,
+      "okCount": 3,
+      "failCount": 0,
+      "errorRate": 0,
+      "avgMs": 1.84,
+      "p95Ms": 3.54,
+      "minMs": 0.68,
+      "maxMs": 3.54,
+      "sampleStatuses": [
+        200,
+        200,
+        200
+      ]
+    }
+  ],
+  "failures": {
+    "statusFailures": [],
+    "p95Exceeded": [],
+    "avgExceeded": [],
+    "errorRateExceeded": []
+  },
+  "totalMs": 100,
+  "reportJsonFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-090805.json",
+  "reportMdFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-090805.md"
+}

@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "generatedAt": "2026-03-06T10:02:41.473Z",
+  "thresholds": {
+    "apiUptime24hMin": 99,
+    "apiErrorRate1hMax": 1,
+    "apiP95MsMax": 1200
+  },
+  "inputs": {
+    "backend": "dbjson",
+    "total24": 749,
+    "success24": 744,
+    "fail24": 0,
+    "total1h": 38,
+    "fail1h": 0,
+    "perfReport": "docs/reports/perf-baseline-20260306-180230.json"
+  },
+  "sliResults": [
+    {
+      "key": "api_uptime_24h",
+      "name": "API可用性（24h）",
+      "value": 99.3324,
+      "target": 99,
+      "operator": ">=",
+      "unit": "%",
+      "status": "PASS",
+      "note": "来源 metricHourlyCounters(api_total/api_success)，无聚合时回退 auditLogs"
+    },
+    {
+      "key": "api_error_rate_1h",
+      "name": "API错误率（1h）",
+      "value": 0,
+      "target": 1,
+      "operator": "<=",
+      "unit": "%",
+      "status": "PASS",
+      "note": "来源 metricHourlyCounters(api_total/api_fail)，无聚合时回退 auditLogs"
+    },
+    {
+      "key": "api_perf_p95_ms",
+      "name": "核心接口P95（ms）",
+      "value": 24.6,
+      "target": 1200,
+      "operator": "<=",
+      "unit": "ms",
+      "status": "PASS",
+      "note": "来源 /Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-180230.json 的 endpointMetrics.p95Ms"
+    }
+  ],
+  "alerts": [],
+  "files": {
+    "json": "docs/reports/slo-guard-20260306-180241.json",
+    "markdown": "docs/reports/slo-guard-20260306-180241.md",
+    "latestJson": "docs/reports/slo-guard-latest.json",
+    "latestMarkdown": "docs/reports/slo-guard-latest.md"
+  }
+}

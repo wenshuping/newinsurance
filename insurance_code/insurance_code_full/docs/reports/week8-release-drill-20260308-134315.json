@@ -1,0 +1,119 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-08T05:43:15.098Z",
+  "gatewayBase": "http://127.0.0.1:58949",
+  "userServiceBase": "http://127.0.0.1:58947",
+  "pointsServiceBase": "http://127.0.0.1:58948",
+  "checks": [
+    {
+      "name": "release.v2.send-code",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "user-service",
+      "traceId": "week8-release-v2-send-code"
+    },
+    {
+      "name": "release.v2.verify-basic",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "user-service",
+      "traceId": "week8-release-v2-verify-basic"
+    },
+    {
+      "name": "release.v2.mall-items",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week8-release-v2-mall-items"
+    },
+    {
+      "name": "rollback.force-v1.send-code",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week8-release-force-v1-send-code"
+    },
+    {
+      "name": "rollback.force-v1.mall-items",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week8-release-force-v1-mall-items"
+    },
+    {
+      "name": "release.back-to-v2.me",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "user-service",
+      "traceId": "week8-release-back-to-v2-me"
+    },
+    {
+      "name": "release.back-to-v2.points-summary",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week8-release-back-to-v2-points-summary"
+    },
+    {
+      "name": "fallback.read.mall-items",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week8-release-read-fallback"
+    },
+    {
+      "name": "fallback.metrics.visible",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "week8-release-read-fallback"
+    }
+  ],
+  "gatewayMetrics": {
+    "requestTotal": 9,
+    "errorTotal": 0,
+    "errorRate": 0,
+    "avgLatencyMs": 49.11,
+    "maxLatencyMs": 150,
+    "inFlight": 0,
+    "fallbackTotal": 1,
+    "statusBuckets": {
+      "2xx": 9,
+      "3xx": 0,
+      "4xx": 0,
+      "5xx": 0,
+      "other": 0
+    }
+  },
+  "goLiveCriteria": [
+    {
+      "name": "v2-default-paths-healthy",
+      "ok": true
+    },
+    {
+      "name": "force-v1-rollback-works",
+      "ok": true
+    },
+    {
+      "name": "back-to-v2-recovers",
+      "ok": true
+    },
+    {
+      "name": "read-fallback-works-on-upstream-failure",
+      "ok": true
+    },
+    {
+      "name": "gateway-error-rate-acceptable",
+      "ok": true
+    }
+  ]
+}

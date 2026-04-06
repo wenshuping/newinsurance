@@ -1,0 +1,306 @@
+{
+  "ok": true,
+  "generatedAt": "2026-03-06T05:46:47.219Z",
+  "stamp": "20260306-134647",
+  "maxAgeHours": 72,
+  "latest": {
+    "releasePreflight": {
+      "label": "release-preflight",
+      "prefix": "release-preflight",
+      "exists": true,
+      "status": "PASS",
+      "ok": true,
+      "ageMinutes": 43.7,
+      "stale": false,
+      "file": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260306-130253.json",
+      "stamp": "20260306-130253",
+      "report": {
+        "ok": true,
+        "stage": "",
+        "finishedAt": "2026-03-06T05:03:05.571Z",
+        "totalMs": 11621,
+        "hasDatabaseUrl": false,
+        "categories": [
+          {
+            "category": "persist",
+            "ok": true,
+            "total": 2,
+            "failed": 0,
+            "skipped": 0
+          },
+          {
+            "category": "risk",
+            "ok": true,
+            "total": 1,
+            "failed": 0,
+            "skipped": 0
+          },
+          {
+            "category": "docs",
+            "ok": true,
+            "total": 1,
+            "failed": 0,
+            "skipped": 0
+          },
+          {
+            "category": "smoke",
+            "ok": true,
+            "total": 1,
+            "failed": 0,
+            "skipped": 0
+          },
+          {
+            "category": "perf",
+            "ok": true,
+            "total": 1,
+            "failed": 0,
+            "skipped": 0
+          },
+          {
+            "category": "gate",
+            "ok": true,
+            "total": 1,
+            "failed": 0,
+            "skipped": 0
+          }
+        ],
+        "results": [
+          {
+            "label": "db:mall:backfill-source-product-id",
+            "category": "persist",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 265
+          },
+          {
+            "label": "risk:check-tenant-fallback",
+            "category": "risk",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 154
+          },
+          {
+            "label": "docs:check-links:all",
+            "category": "docs",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 194
+          },
+          {
+            "label": "test:smoke:api-core",
+            "category": "smoke",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 2620
+          },
+          {
+            "label": "test:perf:baseline",
+            "category": "perf",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 296
+          },
+          {
+            "label": "lint:persistence:incremental-writepaths",
+            "category": "persist",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 182
+          },
+          {
+            "label": "ci:gate:core",
+            "category": "gate",
+            "ok": true,
+            "skipped": false,
+            "code": 0,
+            "signal": "",
+            "durationMs": 7908
+          }
+        ],
+        "reportFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260306-130253.json",
+        "persistSyncStats": null
+      }
+    },
+    "perfBaseline": {
+      "label": "perf-baseline",
+      "prefix": "perf-baseline",
+      "exists": true,
+      "status": "PASS",
+      "ok": true,
+      "ageMinutes": 43.8,
+      "stale": false,
+      "file": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-130257.json",
+      "stamp": "20260306-130257",
+      "report": {
+        "ok": true,
+        "finishedAt": "2026-03-06T05:02:57.470Z",
+        "base": "http://127.0.0.1:4000",
+        "thresholds": {
+          "p95Ms": 1200,
+          "avgMs": 600,
+          "maxErrorRate": 0,
+          "timeoutMs": 5000,
+          "iterations": 10
+        },
+        "endpointMetrics": [
+          {
+            "endpoint": "/api/health",
+            "total": 10,
+            "okCount": 10,
+            "failCount": 0,
+            "errorRate": 0,
+            "avgMs": 3.87,
+            "p95Ms": 28.19,
+            "minMs": 0.56,
+            "maxMs": 28.19,
+            "sampleStatuses": [
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200
+            ]
+          },
+          {
+            "endpoint": "/api/mall/items",
+            "total": 10,
+            "okCount": 10,
+            "failCount": 0,
+            "errorRate": 0,
+            "avgMs": 1.8,
+            "p95Ms": 4.82,
+            "minMs": 1.06,
+            "maxMs": 4.82,
+            "sampleStatuses": [
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200
+            ]
+          },
+          {
+            "endpoint": "/api/activities",
+            "total": 10,
+            "okCount": 10,
+            "failCount": 0,
+            "errorRate": 0,
+            "avgMs": 0.53,
+            "p95Ms": 1.15,
+            "minMs": 0.33,
+            "maxMs": 1.15,
+            "sampleStatuses": [
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200
+            ]
+          },
+          {
+            "endpoint": "/api/learning/courses",
+            "total": 10,
+            "okCount": 10,
+            "failCount": 0,
+            "errorRate": 0,
+            "avgMs": 0.58,
+            "p95Ms": 0.99,
+            "minMs": 0.36,
+            "maxMs": 0.99,
+            "sampleStatuses": [
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200,
+              200
+            ]
+          }
+        ],
+        "failures": {
+          "statusFailures": [],
+          "p95Exceeded": [],
+          "avgExceeded": [],
+          "errorRateExceeded": []
+        },
+        "totalMs": 71,
+        "reportJsonFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-130257.json",
+        "reportMdFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/perf-baseline-20260306-130257.md"
+      }
+    },
+    "ciGateCore": {
+      "label": "ci-gate-core",
+      "prefix": "ci-gate-core",
+      "exists": true,
+      "status": "PASS",
+      "ok": true,
+      "ageMinutes": 903.8,
+      "stale": false,
+      "file": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/ci-gate-core-20260305-224253.json",
+      "stamp": "20260305-224253",
+      "report": {
+        "ok": true,
+        "cwd": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full",
+        "startedAt": "2026-03-05T14:42:53.237Z",
+        "finishedAt": "2026-03-05T14:42:56.968Z",
+        "result": {
+          "command": "npm",
+          "args": [
+            "run",
+            "typecheck"
+          ],
+          "ok": true,
+          "code": 0,
+          "signal": "",
+          "durationMs": 3730
+        },
+        "jsonFile": "docs/reports/ci-gate-core-20260305-224253.json",
+        "markdownFile": "docs/reports/ci-gate-core-20260305-224253.md"
+      }
+    }
+  },
+  "summary": {
+    "ok": true,
+    "missing": [],
+    "invalid": [],
+    "failed": [],
+    "stale": []
+  },
+  "files": {
+    "stampedJson": "docs/reports/release-dashboard-20260306-134647.json",
+    "stampedMarkdown": "docs/reports/release-dashboard-20260306-134647.md",
+    "latestJson": "docs/reports/release-dashboard-latest.json",
+    "latestMarkdown": "docs/reports/release-dashboard-latest.md"
+  }
+}

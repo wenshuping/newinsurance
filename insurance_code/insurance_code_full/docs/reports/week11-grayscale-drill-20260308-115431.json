@@ -1,0 +1,124 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-08T03:54:29.457Z",
+  "gatewayBase": "http://127.0.0.1:55790",
+  "userServiceBase": "http://127.0.0.1:55788",
+  "pointsServiceBase": "http://127.0.0.1:55789",
+  "grayConfig": {
+    "tenantAllowlistKey": "GATEWAY_V2_TENANTS",
+    "forceV1PathsKey": "GATEWAY_FORCE_V1_PATHS",
+    "forceV2PathsKey": "GATEWAY_FORCE_V2_PATHS"
+  },
+  "checks": [
+    {
+      "name": "tenant.allowlist.send-code.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "user-service",
+      "traceId": "week11-tenant-allow-send-code"
+    },
+    {
+      "name": "tenant.blocked.send-code.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week11-tenant-block-send-code"
+    },
+    {
+      "name": "tenant.blocked.verify-basic.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week11-tenant-block-verify-basic"
+    },
+    {
+      "name": "path.force-v2.me",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "user-service",
+      "traceId": "week11-force-v2-me"
+    },
+    {
+      "name": "path.force-v2.points-summary",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week11-force-v2-points-summary"
+    },
+    {
+      "name": "path.force-v1.mall-items",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week11-force-v1-mall-items"
+    },
+    {
+      "name": "fallback.read.mall-items",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week11-read-fallback-mall-items"
+    },
+    {
+      "name": "fallback.metrics.visible",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "week11-read-fallback-mall-items"
+    },
+    {
+      "name": "ops.overview.available",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": null
+    }
+  ],
+  "gatewayMetrics": {
+    "requestTotal": 8,
+    "errorTotal": 0,
+    "errorRate": 0,
+    "avgLatencyMs": 189.13,
+    "maxLatencyMs": 1180,
+    "inFlight": 0,
+    "fallbackTotal": 1,
+    "statusBuckets": {
+      "2xx": 8,
+      "3xx": 0,
+      "4xx": 0,
+      "5xx": 0,
+      "other": 0
+    }
+  },
+  "goLiveCriteria": [
+    {
+      "name": "tenant-level-gray-switch-works",
+      "ok": true
+    },
+    {
+      "name": "path-level-force-v2-works",
+      "ok": true
+    },
+    {
+      "name": "path-level-force-v1-works",
+      "ok": true
+    },
+    {
+      "name": "fallback-visible-for-read-paths",
+      "ok": true
+    },
+    {
+      "name": "gateway-dashboard-signals-available",
+      "ok": true
+    }
+  ]
+}

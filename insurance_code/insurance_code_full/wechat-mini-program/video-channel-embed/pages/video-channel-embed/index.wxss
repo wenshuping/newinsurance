@@ -1,0 +1,78 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 36%),
+    linear-gradient(180deg, #f3fbf7 0%, #e8fff5 100%);
+  padding: 32rpx 24rpx 48rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+  border-radius: 32rpx;
+  padding: 36rpx 32rpx;
+  color: #ffffff;
+  box-shadow: 0 24rpx 60rpx rgba(6, 95, 70, 0.18);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 8rpx 20rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 22rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.title {
+  margin-top: 20rpx;
+  font-size: 44rpx;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.desc {
+  margin-top: 16rpx;
+  font-size: 26rpx;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.player-card,
+.empty-card {
+  margin-top: 28rpx;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1rpx solid rgba(16, 185, 129, 0.18);
+  border-radius: 32rpx;
+  padding: 24rpx;
+  box-shadow: 0 20rpx 48rpx rgba(15, 23, 42, 0.08);
+}
+
+.empty-card {
+  padding: 48rpx 32rpx;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 34rpx;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.empty-desc {
+  margin-top: 16rpx;
+  font-size: 26rpx;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.retry-btn {
+  margin-top: 28rpx;
+  border-radius: 999rpx;
+  background: #10b981;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 700;
+}

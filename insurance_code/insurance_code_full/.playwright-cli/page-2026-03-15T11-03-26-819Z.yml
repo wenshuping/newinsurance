@@ -1,0 +1,425 @@
+- generic [ref=e3]:
+  - button "分享当前页面" [active] [ref=e4]:
+    - img [ref=e5]
+  - button "退出登录" [ref=e11]
+  - generic [ref=e12]:
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - button [ref=e15]:
+          - img [ref=e16]
+        - heading "知识学习" [level=1] [ref=e18]
+        - button [ref=e19]:
+          - img [ref=e20]
+      - generic [ref=e23]:
+        - button "保险课堂" [ref=e24]
+        - button "趣味游戏" [ref=e25]
+        - button "实用工具" [ref=e26]
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - button "全部" [ref=e30]
+          - button "通用培训" [ref=e59]
+          - button "保险课堂" [ref=e60]
+        - generic [ref=e31]:
+          - heading "我的课程进度" [level=2] [ref=e32]: 我的课程进度
+          - generic [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]:
+              - img "放放放" [ref=e63]
+              - generic [ref=e64]:
+                - img [ref=e65]
+                - text: 视频
+              - button [ref=e68]:
+                - img [ref=e69]
+            - generic [ref=e71]:
+              - heading "放放放" [level=3] [ref=e72]
+              - paragraph [ref=e73]: 大幅度发
+              - generic [ref=e75]:
+                - generic [ref=e76]: 学习进度 0%
+                - generic [ref=e77]: 约 10 分钟
+              - button "开始学习" [ref=e79]
+          - generic [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]:
+              - img "B端测试" [ref=e82]
+              - generic [ref=e83]:
+                - img [ref=e84]
+                - text: 视频
+              - button [ref=e87]:
+                - img [ref=e88]
+            - generic [ref=e90]:
+              - heading "B端测试" [level=3] [ref=e91]
+              - paragraph [ref=e92]: 大发发
+              - generic [ref=e94]:
+                - generic [ref=e95]: 学习进度 0%
+                - generic [ref=e96]: 约 10 分钟
+              - button "开始学习" [ref=e98]
+          - generic [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]:
+              - img [ref=e102]
+              - generic [ref=e105]:
+                - img [ref=e106]
+                - text: 文章
+              - button [ref=e109]:
+                - img [ref=e110]
+            - generic [ref=e112]:
+              - heading "链路课程_1772790494517" [level=3] [ref=e113]
+              - paragraph [ref=e114]: 链路课程详情
+              - generic [ref=e116]:
+                - generic [ref=e117]: 学习进度 0%
+                - generic [ref=e118]: 约 5 分钟
+              - button "开始学习" [ref=e120]
+          - generic [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]:
+              - img [ref=e124]
+              - generic [ref=e127]:
+                - img [ref=e128]
+                - text: 文章
+              - button [ref=e131]:
+                - img [ref=e132]
+            - generic [ref=e134]:
+              - heading "链路课程_1772790682162" [level=3] [ref=e135]
+              - paragraph [ref=e136]: 链路课程详情
+              - generic [ref=e138]:
+                - generic [ref=e139]: 学习进度 0%
+                - generic [ref=e140]: 约 5 分钟
+              - button "开始学习" [ref=e142]
+          - generic [ref=e143] [cursor=pointer]:
+            - generic [ref=e144]:
+              - img [ref=e146]
+              - generic [ref=e149]:
+                - img [ref=e150]
+                - text: 文章
+              - button [ref=e153]:
+                - img [ref=e154]
+            - generic [ref=e156]:
+              - heading "链路课程_1772790730854" [level=3] [ref=e157]
+              - paragraph [ref=e158]: 链路课程详情
+              - generic [ref=e160]:
+                - generic [ref=e161]: 学习进度 0%
+                - generic [ref=e162]: 约 5 分钟
+              - button "开始学习" [ref=e164]
+          - generic [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]:
+              - img [ref=e168]
+              - generic [ref=e171]:
+                - img [ref=e172]
+                - text: 文章
+              - button [ref=e175]:
+                - img [ref=e176]
+            - generic [ref=e178]:
+              - heading "链路课程_1772790744027" [level=3] [ref=e179]
+              - paragraph [ref=e180]: 链路课程详情
+              - generic [ref=e182]:
+                - generic [ref=e183]: 学习进度 0%
+                - generic [ref=e184]: 约 5 分钟
+              - button "开始学习" [ref=e186]
+          - generic [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]:
+              - img [ref=e190]
+              - generic [ref=e193]:
+                - img [ref=e194]
+                - text: 文章
+              - button [ref=e197]:
+                - img [ref=e198]
+            - generic [ref=e200]:
+              - heading "链路课程_1772791347874" [level=3] [ref=e201]
+              - paragraph [ref=e202]: 链路课程详情
+              - generic [ref=e204]:
+                - generic [ref=e205]: 学习进度 0%
+                - generic [ref=e206]: 约 5 分钟
+              - button "开始学习" [ref=e208]
+          - generic [ref=e209] [cursor=pointer]:
+            - generic [ref=e210]:
+              - img [ref=e212]
+              - generic [ref=e215]:
+                - img [ref=e216]
+                - text: 文章
+              - button [ref=e219]:
+                - img [ref=e220]
+            - generic [ref=e222]:
+              - heading "链路课程_1772791358515" [level=3] [ref=e223]
+              - paragraph [ref=e224]: 链路课程详情
+              - generic [ref=e226]:
+                - generic [ref=e227]: 学习进度 0%
+                - generic [ref=e228]: 约 5 分钟
+              - button "开始学习" [ref=e230]
+          - generic [ref=e231] [cursor=pointer]:
+            - generic [ref=e232]:
+              - img [ref=e234]
+              - generic [ref=e237]:
+                - img [ref=e238]
+                - text: 文章
+              - button [ref=e241]:
+                - img [ref=e242]
+            - generic [ref=e244]:
+              - heading "链路课程_1772791788519" [level=3] [ref=e245]
+              - paragraph [ref=e246]: 链路课程详情
+              - generic [ref=e248]:
+                - generic [ref=e249]: 学习进度 0%
+                - generic [ref=e250]: 约 5 分钟
+              - button "开始学习" [ref=e252]
+          - generic [ref=e253] [cursor=pointer]:
+            - generic [ref=e254]:
+              - img [ref=e256]
+              - generic [ref=e259]:
+                - img [ref=e260]
+                - text: 文章
+              - button [ref=e263]:
+                - img [ref=e264]
+            - generic [ref=e266]:
+              - heading "链路课程_1772792641237" [level=3] [ref=e267]
+              - paragraph [ref=e268]: 链路课程详情
+              - generic [ref=e270]:
+                - generic [ref=e271]: 学习进度 0%
+                - generic [ref=e272]: 约 5 分钟
+              - button "开始学习" [ref=e274]
+          - generic [ref=e275] [cursor=pointer]:
+            - generic [ref=e276]:
+              - img [ref=e278]
+              - generic [ref=e281]:
+                - img [ref=e282]
+                - text: 文章
+              - button [ref=e285]:
+                - img [ref=e286]
+            - generic [ref=e288]:
+              - heading "链路课程_1772795794030" [level=3] [ref=e289]
+              - paragraph [ref=e290]: 链路课程详情
+              - generic [ref=e292]:
+                - generic [ref=e293]: 学习进度 0%
+                - generic [ref=e294]: 约 5 分钟
+              - button "开始学习" [ref=e296]
+          - generic [ref=e297] [cursor=pointer]:
+            - generic [ref=e298]:
+              - img [ref=e300]
+              - generic [ref=e303]:
+                - img [ref=e304]
+                - text: 文章
+              - button [ref=e307]:
+                - img [ref=e308]
+            - generic [ref=e310]:
+              - heading "链路课程_1772795958614" [level=3] [ref=e311]
+              - paragraph [ref=e312]: 链路课程详情
+              - generic [ref=e314]:
+                - generic [ref=e315]: 学习进度 0%
+                - generic [ref=e316]: 约 5 分钟
+              - button "开始学习" [ref=e318]
+          - generic [ref=e319] [cursor=pointer]:
+            - generic [ref=e320]:
+              - img [ref=e322]
+              - generic [ref=e325]:
+                - img [ref=e326]
+                - text: 文章
+              - button [ref=e329]:
+                - img [ref=e330]
+            - generic [ref=e332]:
+              - heading "链路课程_1772860073162" [level=3] [ref=e333]
+              - paragraph [ref=e334]: 链路课程详情
+              - generic [ref=e336]:
+                - generic [ref=e337]: 学习进度 0%
+                - generic [ref=e338]: 约 5 分钟
+              - button "开始学习" [ref=e340]
+          - generic [ref=e341] [cursor=pointer]:
+            - generic [ref=e342]:
+              - img [ref=e344]
+              - generic [ref=e347]:
+                - img [ref=e348]
+                - text: 文章
+              - button [ref=e351]:
+                - img [ref=e352]
+            - generic [ref=e354]:
+              - heading "链路课程_1772860143407" [level=3] [ref=e355]
+              - paragraph [ref=e356]: 链路课程详情
+              - generic [ref=e358]:
+                - generic [ref=e359]: 学习进度 0%
+                - generic [ref=e360]: 约 5 分钟
+              - button "开始学习" [ref=e362]
+          - generic [ref=e363] [cursor=pointer]:
+            - generic [ref=e364]:
+              - img [ref=e366]
+              - generic [ref=e369]:
+                - img [ref=e370]
+                - text: 文章
+              - button [ref=e373]:
+                - img [ref=e374]
+            - generic [ref=e376]:
+              - heading "浏览器链路课程_1772888972580" [level=3] [ref=e377]
+              - paragraph [ref=e378]: 浏览器链路课程详情
+              - generic [ref=e380]:
+                - generic [ref=e381]: 学习进度 0%
+                - generic [ref=e382]: 约 5 分钟
+              - button "开始学习" [ref=e384]
+          - generic [ref=e385] [cursor=pointer]:
+            - generic [ref=e386]:
+              - img [ref=e388]
+              - generic [ref=e391]:
+                - img [ref=e392]
+                - text: 文章
+              - button [ref=e395]:
+                - img [ref=e396]
+            - generic [ref=e398]:
+              - heading "链路课程_1772889064705" [level=3] [ref=e399]
+              - paragraph [ref=e400]: 链路课程详情
+              - generic [ref=e402]:
+                - generic [ref=e403]: 学习进度 0%
+                - generic [ref=e404]: 约 5 分钟
+              - button "开始学习" [ref=e406]
+          - generic [ref=e407] [cursor=pointer]:
+            - generic [ref=e408]:
+              - img [ref=e410]
+              - generic [ref=e413]:
+                - img [ref=e414]
+                - text: 文章
+              - button [ref=e417]:
+                - img [ref=e418]
+            - generic [ref=e420]:
+              - heading "浏览器链路课程_1772889161143" [level=3] [ref=e421]
+              - paragraph [ref=e422]: 浏览器链路课程详情
+              - generic [ref=e424]:
+                - generic [ref=e425]: 学习进度 0%
+                - generic [ref=e426]: 约 5 分钟
+              - button "开始学习" [ref=e428]
+          - generic [ref=e429] [cursor=pointer]:
+            - generic [ref=e430]:
+              - img [ref=e432]
+              - generic [ref=e435]:
+                - img [ref=e436]
+                - text: 文章
+              - button [ref=e439]:
+                - img [ref=e440]
+            - generic [ref=e442]:
+              - heading "浏览器链路课程_1772889180535" [level=3] [ref=e443]
+              - paragraph [ref=e444]: 浏览器链路课程详情
+              - generic [ref=e446]:
+                - generic [ref=e447]: 学习进度 0%
+                - generic [ref=e448]: 约 5 分钟
+              - button "开始学习" [ref=e450]
+          - generic [ref=e451] [cursor=pointer]:
+            - generic [ref=e452]:
+              - img [ref=e454]
+              - generic [ref=e457]:
+                - img [ref=e458]
+                - text: 文章
+              - button [ref=e461]:
+                - img [ref=e462]
+            - generic [ref=e464]:
+              - heading "链路课程_1773486445372" [level=3] [ref=e465]
+              - paragraph [ref=e466]: 链路课程详情
+              - generic [ref=e468]:
+                - generic [ref=e469]: 学习进度 0%
+                - generic [ref=e470]: 约 5 分钟
+              - button "开始学习" [ref=e472]
+          - generic [ref=e473] [cursor=pointer]:
+            - generic [ref=e474]:
+              - img [ref=e476]
+              - generic [ref=e479]:
+                - img [ref=e480]
+                - text: 文章
+              - button [ref=e483]:
+                - img [ref=e484]
+            - generic [ref=e486]:
+              - heading "owner_course_1773486644882" [level=3] [ref=e487]
+              - paragraph [ref=e488]: owner course
+              - generic [ref=e490]:
+                - generic [ref=e491]: 学习进度 0%
+                - generic [ref=e492]: 约 5 分钟
+              - button "开始学习" [ref=e494]
+          - generic [ref=e495] [cursor=pointer]:
+            - generic [ref=e496]:
+              - img [ref=e498]
+              - generic [ref=e501]:
+                - img [ref=e502]
+                - text: 文章
+              - button [ref=e505]:
+                - img [ref=e506]
+            - generic [ref=e508]:
+              - heading "other_course_1773486644882" [level=3] [ref=e509]
+              - paragraph [ref=e510]: other course
+              - generic [ref=e512]:
+                - generic [ref=e513]: 学习进度 0%
+                - generic [ref=e514]: 约 5 分钟
+              - button "开始学习" [ref=e516]
+          - generic [ref=e517] [cursor=pointer]:
+            - generic [ref=e518]:
+              - img [ref=e520]
+              - generic [ref=e523]:
+                - img [ref=e524]
+                - text: 文章
+              - button [ref=e527]:
+                - img [ref=e528]
+            - generic [ref=e530]:
+              - heading "owner_1773486699514_course" [level=3] [ref=e531]
+              - paragraph [ref=e532]: owner course
+              - generic [ref=e534]:
+                - generic [ref=e535]: 学习进度 0%
+                - generic [ref=e536]: 约 5 分钟
+              - button "开始学习" [ref=e538]
+          - generic [ref=e539] [cursor=pointer]:
+            - generic [ref=e540]:
+              - img [ref=e542]
+              - generic [ref=e545]:
+                - img [ref=e546]
+                - text: 文章
+              - button [ref=e549]:
+                - img [ref=e550]
+            - generic [ref=e552]:
+              - heading "other_1773486699514_course" [level=3] [ref=e553]
+              - paragraph [ref=e554]: other course
+              - generic [ref=e556]:
+                - generic [ref=e557]: 学习进度 0%
+                - generic [ref=e558]: 约 5 分钟
+              - button "开始学习" [ref=e560]
+    - generic [ref=e561]:
+      - banner [ref=e562]:
+        - button [ref=e563]:
+          - img [ref=e564]
+        - heading "课程详情" [level=1] [ref=e566]
+        - button [ref=e567]:
+          - img [ref=e568]
+      - main [ref=e574]:
+        - img "放放放" [ref=e576]
+        - generic [ref=e577]:
+          - heading "放放放" [level=2] [ref=e579]
+          - generic [ref=e580]:
+            - img [ref=e581]
+            - generic [ref=e584]: 学习可得 50 积分
+          - generic [ref=e585]:
+            - heading "知识文案" [level=3] [ref=e586]: 知识文案
+            - generic [ref=e588]:
+              - paragraph [ref=e589]: 大幅度发
+              - paragraph [ref=e590]: 本课程将为您详细解读相关政策与条款，帮助您更好地理解保险产品，为您的家庭提供更全面的保障。
+              - generic [ref=e591]:
+                - heading "学习建议：" [level=4] [ref=e592]
+                - list [ref=e593]:
+                  - listitem [ref=e594]: 建议在安静的环境下观看
+                  - listitem [ref=e595]: 结合自身实际情况进行思考
+                  - listitem [ref=e596]: 如有疑问可随时联系您的专属顾问
+      - button "完成学习领积分" [ref=e598]
+  - navigation [ref=e35]:
+    - button "首页" [ref=e36]:
+      - img [ref=e37]
+      - generic [ref=e40]: 首页
+    - button "知识学习" [ref=e41]:
+      - img [ref=e42]
+      - generic [ref=e44]: 知识学习
+    - button "活动中心" [ref=e45]:
+      - img [ref=e46]
+      - generic [ref=e48]: 活动中心
+    - button "保障管理" [ref=e49]:
+      - img [ref=e50]
+      - generic [ref=e53]: 保障管理
+    - button "我的" [ref=e54]:
+      - img [ref=e55]
+      - generic [ref=e58]: 我的
+  - generic [ref=e600]:
+    - generic [ref=e601]:
+      - generic [ref=e602]:
+        - paragraph [ref=e603]: Share H5
+        - heading "已生成课程分享链接" [level=3] [ref=e604]
+        - paragraph [ref=e605]: 放放放
+      - button "关闭" [ref=e606]
+    - generic [ref=e607]:
+      - paragraph [ref=e608]: 分享链接
+      - paragraph [ref=e609]: http://127.0.0.1:3003/share/sh1.eyJ2IjoxLCJzaGFyZVR5cGUiOiJsZWFybmluZ19jb3Vyc2UiLCJ0YXJnZXRJZCI6NCwidGVuYW50SWQiOjIsInNhbGVzSWQiOjgwMDMsImNoYW5uZWwiOiJjdXN0b21lcl9mb3J3YXJkIiwic2hhcmVQYXRoIjoiL2xlYXJuaW5nP3RlbmFudElkPTImY291cnNlSWQ9NCIsImV4cCI6MTc3NjE2NDYwNTE0OX0.Zq2R4IveDoM8EjoQqT0bLgEg-eyNPfzBUiikanCVeWs?tenantId=2
+    - generic [ref=e610]:
+      - button "预览 H5" [ref=e611]
+      - button "复制链接" [ref=e612]
+    - button "系统分享" [ref=e613]

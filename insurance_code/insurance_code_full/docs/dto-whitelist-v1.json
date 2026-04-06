@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "version": "v1",
+    "updatedAt": "2026-03-04",
+    "note": "C端核心读取接口 DTO 字段白名单。allowExtra=false 表示禁止新增未登记字段。"
+  },
+  "endpoints": [
+    {
+      "name": "health",
+      "method": "GET",
+      "path": "/api/health",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["ok", "service"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "service": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "bootstrap",
+      "method": "GET",
+      "path": "/api/bootstrap",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["user", "balance", "csrfToken", "tabs"],
+        "properties": {
+          "user": {
+            "type": "object",
+            "nullable": true,
+            "allowExtra": false,
+            "required": ["id", "name", "mobile", "nick_name", "avatar_url", "is_verified_basic", "verified_at"],
+            "properties": {
+              "id": { "type": "number" },
+              "name": { "type": "string" },
+              "mobile": { "type": "string" },
+              "nick_name": { "type": "string" },
+              "avatar_url": { "type": "string" },
+              "is_verified_basic": { "type": "boolean" },
+              "verified_at": { "type": "string", "nullable": true }
+            }
+          },
+          "balance": { "type": "number" },
+          "csrfToken": { "type": "string", "nullable": true },
+          "tabs": { "type": "array", "item": { "type": "string" } }
+        }
+      }
+    },
+    {
+      "name": "verify-basic",
+      "method": "POST",
+      "path": "/api/auth/verify-basic",
+      "auth": false,
+      "bodyFromContext": "verifyBasicBody",
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["token", "csrfToken", "user"],
+        "properties": {
+          "token": { "type": "string" },
+          "csrfToken": { "type": "string" },
+          "user": {
+            "type": "object",
+            "allowExtra": false,
+            "required": ["id", "name", "mobile", "nick_name", "avatar_url", "is_verified_basic", "verified_at"],
+            "properties": {
+              "id": { "type": "number" },
+              "name": { "type": "string" },
+              "mobile": { "type": "string" },
+              "nick_name": { "type": "string" },
+              "avatar_url": { "type": "string" },
+              "is_verified_basic": { "type": "boolean" },
+              "verified_at": { "type": "string", "nullable": true }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "me",
+      "method": "GET",
+      "path": "/api/me",
+      "auth": true,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["user", "balance", "csrfToken"],
+        "properties": {
+          "user": {
+            "type": "object",
+            "allowExtra": false,
+            "required": ["id", "name", "mobile", "nick_name", "avatar_url", "is_verified_basic", "verified_at"],
+            "properties": {
+              "id": { "type": "number" },
+              "name": { "type": "string" },
+              "mobile": { "type": "string" },
+              "nick_name": { "type": "string" },
+              "avatar_url": { "type": "string" },
+              "is_verified_basic": { "type": "boolean" },
+              "verified_at": { "type": "string", "nullable": true }
+            }
+          },
+          "balance": { "type": "number" },
+          "csrfToken": { "type": "string", "nullable": true }
+        }
+      }
+    },
+    {
+      "name": "activities",
+      "method": "GET",
+      "path": "/api/activities",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["activities", "balance", "taskProgress"],
+        "properties": {
+          "activities": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "allowExtra": false,
+              "required": ["id", "title", "category", "rewardPoints", "sortOrder", "participants", "completed", "canComplete"],
+              "properties": {
+                "id": { "type": "number" },
+                "title": { "type": "string" },
+                "category": { "type": "string" },
+                "rewardPoints": { "type": "number" },
+                "sortOrder": { "type": "number" },
+                "participants": { "type": "number" },
+                "completed": { "type": "boolean" },
+                "canComplete": { "type": "boolean" },
+                "image": { "type": "string", "optional": true },
+                "cover": { "type": "string", "optional": true },
+                "media": { "type": "array", "optional": true, "item": { "any": true } },
+                "description": { "type": "string", "optional": true },
+                "status": { "type": "string", "optional": true }
+              }
+            }
+          },
+          "balance": { "type": "number" },
+          "taskProgress": {
+            "type": "object",
+            "allowExtra": false,
+            "required": ["total", "completed"],
+            "properties": {
+              "total": { "type": "number" },
+              "completed": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "points-summary",
+      "method": "GET",
+      "path": "/api/points/summary",
+      "auth": true,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["balance"],
+        "properties": {
+          "balance": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "points-detail",
+      "method": "GET",
+      "path": "/api/points/detail",
+      "auth": true,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["balance", "groups"],
+        "properties": {
+          "balance": { "type": "number" },
+          "groups": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "allowExtra": false,
+              "required": ["key", "label", "items"],
+              "properties": {
+                "key": { "type": "string" },
+                "label": { "type": "string" },
+                "items": {
+                  "type": "array",
+                  "item": {
+                    "type": "object",
+                    "allowExtra": false,
+                    "required": ["id", "title", "amount", "direction", "source", "createdAt"],
+                    "properties": {
+                      "id": { "type": "number" },
+                      "title": { "type": "string" },
+                      "amount": { "type": "number" },
+                      "balance": { "type": "number", "optional": true },
+                      "direction": { "type": "string" },
+                      "source": { "type": "string" },
+                      "createdAt": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mall-items",
+      "method": "GET",
+      "path": "/api/mall/items",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["items"],
+        "properties": {
+          "items": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "allowExtra": false,
+              "required": ["id", "name", "pointsCost", "stock", "image", "media", "description"],
+              "properties": {
+                "id": { "type": "number" },
+                "name": { "type": "string" },
+                "pointsCost": { "type": "number" },
+                "stock": { "type": "number" },
+                "image": { "type": "string" },
+                "media": { "type": "array", "item": { "any": true } },
+                "description": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "learning-courses",
+      "method": "GET",
+      "path": "/api/learning/courses",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["categories", "courses"],
+        "properties": {
+          "categories": { "type": "array", "item": { "type": "string" } },
+          "courses": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "allowExtra": false,
+              "required": ["id", "title", "desc", "type", "typeLabel", "progress", "timeLeft", "image", "action", "color", "btnColor", "points", "category", "content", "media", "videoUrl"],
+              "properties": {
+                "id": { "type": "number" },
+                "title": { "type": "string" },
+                "desc": { "type": "string" },
+                "type": { "type": "string" },
+                "typeLabel": { "type": "string" },
+                "progress": { "type": "number" },
+                "timeLeft": { "type": "string" },
+                "image": { "type": "string" },
+                "action": { "type": "string" },
+                "color": { "type": "string" },
+                "btnColor": { "type": "string" },
+                "points": { "type": "number" },
+                "category": { "type": "string" },
+                "content": { "type": "string" },
+                "media": { "type": "array", "item": { "any": true } },
+                "videoUrl": { "type": "string" },
+                "status": { "type": "string", "optional": true },
+                "isPlatformTemplate": { "type": "boolean", "optional": true },
+                "templateTag": { "type": "string", "optional": true }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "learning-games",
+      "method": "GET",
+      "path": "/api/learning/games",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["games"],
+        "properties": {
+          "games": { "type": "array", "item": { "type": "object", "allowExtra": true } }
+        }
+      }
+    },
+    {
+      "name": "learning-tools",
+      "method": "GET",
+      "path": "/api/learning/tools",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["tools"],
+        "properties": {
+          "tools": { "type": "array", "item": { "type": "object", "allowExtra": true } }
+        }
+      }
+    },
+    {
+      "name": "mall-activities",
+      "method": "GET",
+      "path": "/api/mall/activities",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["list"],
+        "properties": {
+          "list": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "allowExtra": false,
+              "required": ["id", "title", "subtitle", "badge", "rewardPoints", "status", "image", "media"],
+              "properties": {
+                "id": { "type": "number" },
+                "title": { "type": "string" },
+                "subtitle": { "type": "string" },
+                "badge": { "type": "string" },
+                "rewardPoints": { "type": "number" },
+                "status": { "type": "string" },
+                "image": { "type": "string" },
+                "media": { "type": "array", "item": { "any": true } }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "orders",
+      "method": "GET",
+      "path": "/api/orders",
+      "auth": true,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["list"],
+        "properties": {
+          "list": { "type": "array", "item": { "type": "object", "allowExtra": true } }
+        }
+      }
+    },
+    {
+      "name": "insurance-overview",
+      "method": "GET",
+      "path": "/api/insurance/overview",
+      "auth": false,
+      "schema": {
+        "type": "object",
+        "allowExtra": false,
+        "required": ["summary", "familyMembers", "reminders"],
+        "properties": {
+          "summary": { "type": "object", "allowExtra": true },
+          "familyMembers": { "type": "array", "item": { "type": "object", "allowExtra": true } },
+          "reminders": { "type": "array", "item": { "type": "object", "allowExtra": true } }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "ok": false,
+  "stage": "ci:gate:core",
+  "finishedAt": "2026-03-06T01:18:01.280Z",
+  "totalMs": 2335,
+  "hasDatabaseUrl": false,
+  "categories": [
+    {
+      "category": "risk",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "docs",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "smoke",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "perf",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 1
+    },
+    {
+      "category": "persist",
+      "ok": true,
+      "total": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "category": "gate",
+      "ok": false,
+      "total": 1,
+      "failed": 1,
+      "skipped": 0
+    }
+  ],
+  "results": [
+    {
+      "label": "risk:check-tenant-fallback",
+      "category": "risk",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 176
+    },
+    {
+      "label": "docs:check-links:all",
+      "category": "docs",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 181
+    },
+    {
+      "label": "test:smoke:api-core",
+      "category": "smoke",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 1291
+    },
+    {
+      "label": "test:perf:baseline",
+      "category": "perf",
+      "ok": true,
+      "skipped": true,
+      "code": 0,
+      "signal": "",
+      "durationMs": 0
+    },
+    {
+      "label": "lint:persistence:incremental-writepaths",
+      "category": "persist",
+      "ok": true,
+      "skipped": false,
+      "code": 0,
+      "signal": "",
+      "durationMs": 272
+    },
+    {
+      "label": "ci:gate:core",
+      "category": "gate",
+      "ok": false,
+      "skipped": false,
+      "code": 1,
+      "signal": "",
+      "durationMs": 410
+    }
+  ],
+  "reportFile": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/release-preflight-20260306-091758.json",
+  "persistSyncStats": null
+}

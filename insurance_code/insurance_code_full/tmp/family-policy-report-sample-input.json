@@ -1,0 +1,118 @@
+{
+  "report_name": "家庭保障体检报告",
+  "report_date": "2026-03-22",
+  "generator_name": "家庭保障顾问视角分析",
+  "family_profile": {
+    "family_name": "林先生家庭",
+    "city": "杭州",
+    "annual_income": 420000,
+    "annual_premium": 46800,
+    "mortgage_balance": 980000,
+    "children_count": 1,
+    "elder_support": true
+  },
+  "score_summary": {
+    "total_score": 68,
+    "score_band": "存在明显缺口",
+    "premium_ratio": 0.1114,
+    "premium_pressure_level": "提醒",
+    "structure_balance": "偏失衡"
+  },
+  "analysis_facts": {
+    "strengths": [
+      "孩子已经有基础医疗和意外保障",
+      "家庭已经开始配置长期储蓄型保单，说明对未来有准备意识"
+    ],
+    "urgent_priorities": [
+      "主经济支柱身故保障偏弱",
+      "妈妈缺少稳定重疾保障",
+      "家庭大额医疗兜底不够稳"
+    ],
+    "possible_waste": [
+      "林先生名下两份意外险责任高度重叠",
+      "家庭储蓄型保费占比较高，但基础医疗和寿险仍有缺口"
+    ]
+  },
+  "member_diagnosis": [
+    {
+      "name": "林先生",
+      "role": "主经济支柱",
+      "age": 38,
+      "annual_income_contribution": 300000,
+      "current_protection": {
+        "death_disability": "黄色",
+        "critical_illness": "黄色",
+        "medical": "红色",
+        "accident": "绿色",
+        "savings_pension": "有"
+      },
+      "facts": [
+        "有一份增额终身寿险，具备一定身故责任",
+        "有一份重疾险，保额 100000",
+        "没有识别到稳定的大额医疗报销型保障",
+        "有两份意外险，责任存在重叠"
+      ],
+      "priority_hint": "家庭主要收入和房贷责任更多压在他身上"
+    },
+    {
+      "name": "陈女士",
+      "role": "配偶",
+      "age": 35,
+      "annual_income_contribution": 120000,
+      "current_protection": {
+        "death_disability": "黄色",
+        "critical_illness": "红色",
+        "medical": "黄色",
+        "accident": "绿色",
+        "savings_pension": "无"
+      },
+      "facts": [
+        "有住院医疗类保障，但续保稳定性一般",
+        "有基础意外保障",
+        "没有识别到明确有效的重疾责任"
+      ],
+      "priority_hint": "既有收入贡献，也承担家庭照护角色"
+    },
+    {
+      "name": "林小朋友",
+      "role": "子女",
+      "age": 6,
+      "annual_income_contribution": 0,
+      "current_protection": {
+        "death_disability": "不作为核心判断",
+        "critical_illness": "黄色",
+        "medical": "绿色",
+        "accident": "绿色",
+        "savings_pension": "有"
+      },
+      "facts": [
+        "有儿童医疗保障",
+        "有学平险和意外责任",
+        "有教育金类保单",
+        "重疾保障额度偏基础"
+      ],
+      "priority_hint": "基础已经有了，但大病保护还可以再厚一点"
+    }
+  ],
+  "recommendation_candidates": [
+    {
+      "priority": 1,
+      "theme": "先补家庭主要收入承担者的大额医疗与身故保障",
+      "reason": "这部分一旦出问题，对房贷和家庭日常支出影响最大"
+    },
+    {
+      "priority": 2,
+      "theme": "为陈女士补上清晰稳定的重疾保障",
+      "reason": "她既有收入贡献，也承担家庭照护责任"
+    },
+    {
+      "priority": 3,
+      "theme": "梳理林先生重复意外险，给基础保障腾空间",
+      "reason": "当前部分保费花在重复责任上，优化后更有利于补薄弱环节"
+    }
+  ],
+  "boundary_notes": [
+    "当前缺少更细的负债期限与家庭可动用资产信息，因此寿险缺口只能做方向性判断",
+    "部分保单条款由 OCR 抽取，若责任识别不完整，应以原保单条款为准"
+  ]
+}

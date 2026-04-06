@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">WECHAT CHANNELS</view>
+    <view class="title">视频号主页承接</view>
+    <view class="desc">当前课程将通过小程序承接页直接打开对应视频号主页，避免单条视频参数缺失导致无法浏览。</view>
+  </view>
+
+  <view class="card">
+    <view class="meta-row">
+      <view class="meta-label">视频号ID</view>
+      <view class="meta-value">{{finderUserName || '-'}}</view>
+    </view>
+
+    <button class="open-btn" bindtap="handleOpenProfile" loading="{{pending}}">
+      {{pending ? '正在打开...' : '进入视频号主页'}}
+    </button>
+
+    <view wx:if="{{errorText}}" class="error-box">
+      <view class="error-title">当前无法直接打开</view>
+      <view class="error-desc">{{errorText}}</view>
+    </view>
+
+    <view class="helper-box">
+      <view class="helper-title">适用场景</view>
+      <view class="helper-desc">当单条视频缺少稳定的 feedId / nonceId，或者视频页提示“暂不可浏览此动态”时，可退回视频号主页承接，保证链路稳定可用。</view>
+    </view>
+  </view>
+</view>

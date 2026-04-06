@@ -1,0 +1,189 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-09T06:05:35.571Z",
+  "gatewayBase": "http://127.0.0.1:62696",
+  "learningServiceBase": "http://127.0.0.1:62695",
+  "userServiceBase": "http://127.0.0.1:62693",
+  "pointsServiceBase": "http://127.0.0.1:62694",
+  "checks": [
+    {
+      "name": "learning.routes.registered.week18",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "9252e406-5d60-4f93-a504-0f0cab3210a9",
+      "routeCount": 7
+    },
+    {
+      "name": "learning.default.courses.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week18-learning-default-courses-v1"
+    },
+    {
+      "name": "learning.default.games.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week18-learning-default-games-v1"
+    },
+    {
+      "name": "learning.default.tools.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week18-learning-default-tools-v1"
+    },
+    {
+      "name": "learning.cutover.courses.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-cutover-courses-v2"
+    },
+    {
+      "name": "learning.cutover.games.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-cutover-games-v2"
+    },
+    {
+      "name": "learning.cutover.tools.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-cutover-tools-v2"
+    },
+    {
+      "name": "learning.customer.list.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-user-list",
+      "visibleCourseCount": 119,
+      "courseId": 172
+    },
+    {
+      "name": "learning.customer.detail.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-user-detail",
+      "courseId": 172
+    },
+    {
+      "name": "learning.complete.v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-complete-v2",
+      "courseId": 172
+    },
+    {
+      "name": "learning.reward.points-summary-updated",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "points-service",
+      "traceId": "week18-learning-points-after",
+      "rewardDelta": 16
+    },
+    {
+      "name": "learning.reward.points-observability",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773036334867_5b48fd17-269e-491a-9a27-a1e76d3bbfbf",
+      "learningRewardSuccess": 1
+    },
+    {
+      "name": "learning.gateway-metrics.v2",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "477d6723-8eb2-439b-91ad-fc7c74ff0b8d",
+      "completeFallbackCount": 0,
+      "gamesFallbackCount": 0
+    },
+    {
+      "name": "learning.complete.force-v1.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week18-learning-complete-force-v1",
+      "courseId": 173
+    },
+    {
+      "name": "learning.reward.points-observability.force-v1",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "pts_1773036335213_a83e6a7f-eaff-4105-bf49-0423b09cb54e"
+    },
+    {
+      "name": "learning.complete.back-to-v2",
+      "ok": true,
+      "status": 200,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-complete-back-v2",
+      "courseId": 174
+    },
+    {
+      "name": "learning.read.games.fallback.v1",
+      "ok": true,
+      "status": 200,
+      "mode": "v1",
+      "target": "v1-monolith",
+      "traceId": "week18-learning-games-read-fallback"
+    },
+    {
+      "name": "learning.complete.no-auto-fallback",
+      "ok": true,
+      "status": 502,
+      "mode": "v2",
+      "target": "learning-service",
+      "traceId": "week18-learning-complete-no-auto-fallback",
+      "courseId": 175
+    },
+    {
+      "name": "learning.gateway-metrics.rollback",
+      "ok": true,
+      "status": 200,
+      "mode": null,
+      "target": null,
+      "traceId": "0566cd05-c31b-4129-a796-c9fc4d950664",
+      "readFallbackCount": 1,
+      "forceV1Target": "v1-monolith"
+    }
+  ],
+  "criteria": {
+    "defaultLearningReadsOnV1": true,
+    "formalSplitReadsOnV2": true,
+    "completeCutoverToV2": true,
+    "completeRewardChainWorks": true,
+    "forceV1RollbackWorks": true,
+    "backToV2Works": true,
+    "readFallbackWorks": true,
+    "writeNoAutoFallbackConfirmed": true,
+    "manualWriteRollbackWorks": true,
+    "gatewayMetricsCoverLearning": true,
+    "pointsObservabilityCoverReward": true
+  }
+}

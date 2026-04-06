@@ -1,0 +1,1001 @@
+{
+  "ok": true,
+  "executedAt": "2026-03-09T01:55:14.503Z",
+  "totalMs": 1929,
+  "failed": [],
+  "criteria": {
+    "compatibilityResidualScan": true,
+    "routeOwnershipDriftScan": true,
+    "writeFallbackMisuseScan": true,
+    "learningCompleteReleaseCheck": true,
+    "activityCompleteReleaseCheck": true
+  },
+  "results": [
+    {
+      "name": "compatibility-residual-scan",
+      "ok": true,
+      "code": 0,
+      "durationMs": 212,
+      "summary": {
+        "ok": true,
+        "checks": [
+          {
+            "name": "week17.compatibility-only-route-files",
+            "ok": true,
+            "count": 9,
+            "files": [
+              "server/skeleton-c-v1/routes/activities.routes.mjs",
+              "server/skeleton-c-v1/routes/auth.routes.mjs",
+              "server/skeleton-c-v1/routes/b-admin-activity.routes.mjs",
+              "server/skeleton-c-v1/routes/mall.routes.mjs",
+              "server/skeleton-c-v1/routes/orders.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-activities.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-learning.routes.mjs",
+              "server/skeleton-c-v1/routes/points.routes.mjs",
+              "server/skeleton-c-v1/routes/redemptions.routes.mjs"
+            ]
+          },
+          {
+            "name": "week17.must-keep-route-files",
+            "ok": true,
+            "count": 19,
+            "files": [
+              "server/skeleton-c-v1/routes/b-admin-auth.routes.mjs",
+              "server/skeleton-c-v1/routes/b-admin-content.routes.mjs",
+              "server/skeleton-c-v1/routes/b-admin-customers.routes.mjs",
+              "server/skeleton-c-v1/routes/b-admin-mall.routes.mjs",
+              "server/skeleton-c-v1/routes/b-admin-orders.routes.mjs",
+              "server/skeleton-c-v1/routes/health.routes.mjs",
+              "server/skeleton-c-v1/routes/insurance.routes.mjs",
+              "server/skeleton-c-v1/routes/learning.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-auth.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-events.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-governance.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-mall.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-metrics.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-ops.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-tags.routes.mjs",
+              "server/skeleton-c-v1/routes/p-admin-workforce.routes.mjs",
+              "server/skeleton-c-v1/routes/track.routes.mjs",
+              "server/skeleton-c-v1/routes/uploads.routes.mjs",
+              "server/skeleton-c-v1/routes/user.routes.mjs"
+            ]
+          },
+          {
+            "name": "week17.bridge-only-files",
+            "ok": true,
+            "count": 43,
+            "files": [
+              "server/microservices/points-service/activity-reward.contract.mjs",
+              "server/microservices/points-service/learning-reward.contract.mjs",
+              "server/skeleton-c-v1/repositories/activity-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/auth-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/b-activity-config-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/b-mall-config-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/b-order-writeoff.repository.mjs",
+              "server/skeleton-c-v1/repositories/commerce.repository.mjs",
+              "server/skeleton-c-v1/repositories/learning-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/p-activity-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/p-learning-course-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/p-mall-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/points.repository.mjs",
+              "server/skeleton-c-v1/repositories/redemption-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/signin-write.repository.mjs",
+              "server/skeleton-c-v1/repositories/user-write.repository.mjs",
+              "server/skeleton-c-v1/routes/b-admin.deps.mjs",
+              "server/skeleton-c-v1/routes/p-admin.deps.mjs",
+              "server/skeleton-c-v1/services/activity-reward.service.mjs",
+              "server/skeleton-c-v1/services/commerce.service.mjs",
+              "server/skeleton-c-v1/services/learning-reward.service.mjs",
+              "server/skeleton-c-v1/services/points.service.mjs",
+              "server/skeleton-c-v1/usecases/activity-complete.usecase.mjs",
+              "server/skeleton-c-v1/usecases/auth-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/b-activity-config-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/b-mall-config-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/b-order-writeoff.usecase.mjs",
+              "server/skeleton-c-v1/usecases/customer-assignment-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/learning-complete.usecase.mjs",
+              "server/skeleton-c-v1/usecases/learning-query.usecase.mjs",
+              "server/skeleton-c-v1/usecases/mall-join-activity.usecase.mjs",
+              "server/skeleton-c-v1/usecases/mall-query.usecase.mjs",
+              "server/skeleton-c-v1/usecases/order-cancel.usecase.mjs",
+              "server/skeleton-c-v1/usecases/order-create.usecase.mjs",
+              "server/skeleton-c-v1/usecases/order-pay.usecase.mjs",
+              "server/skeleton-c-v1/usecases/order-refund.usecase.mjs",
+              "server/skeleton-c-v1/usecases/p-activity-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/p-learning-course-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/p-mall-write.usecase.mjs",
+              "server/skeleton-c-v1/usecases/redeem.usecase.mjs",
+              "server/skeleton-c-v1/usecases/redemption-writeoff.usecase.mjs",
+              "server/skeleton-c-v1/usecases/signin.usecase.mjs",
+              "server/skeleton-c-v1/usecases/user-write.usecase.mjs"
+            ]
+          },
+          {
+            "name": "week17.retire-now-files",
+            "ok": true,
+            "count": 0,
+            "files": []
+          },
+          {
+            "name": "week17.service-owned-residual-routes",
+            "ok": true,
+            "services": {
+              "user-service": {
+                "count": 3,
+                "routes": [
+                  "/api/auth/send-code",
+                  "/api/auth/verify-basic",
+                  "/api/me"
+                ]
+              },
+              "points-service": {
+                "count": 15,
+                "routes": [
+                  "/api/mall/activities",
+                  "/api/mall/activities/:id/join",
+                  "/api/mall/items",
+                  "/api/mall/redeem",
+                  "/api/orders",
+                  "/api/orders/:id",
+                  "/api/orders/:id/cancel",
+                  "/api/orders/:id/pay",
+                  "/api/orders/:id/refund",
+                  "/api/points/detail",
+                  "/api/points/summary",
+                  "/api/points/transactions",
+                  "/api/redemptions",
+                  "/api/redemptions/:id/writeoff",
+                  "/api/sign-in"
+                ]
+              },
+              "learning-service": {
+                "count": 5,
+                "routes": [
+                  "/api/learning/courses",
+                  "/api/learning/courses/:id",
+                  "/api/learning/courses/:id/complete",
+                  "/api/p/learning/courses",
+                  "/api/p/learning/courses/:id"
+                ]
+              },
+              "activity-service": {
+                "count": 6,
+                "routes": [
+                  "/api/activities",
+                  "/api/activities/:id/complete",
+                  "/api/b/activity-configs",
+                  "/api/b/activity-configs/:id",
+                  "/api/p/activities",
+                  "/api/p/activities/:id"
+                ]
+              }
+            }
+          }
+        ],
+        "routeInventory": [
+          {
+            "file": "server/skeleton-c-v1/routes/health.routes.mjs",
+            "routeCount": 1,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/health"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/auth.routes.mjs",
+            "routeCount": 2,
+            "compatibilityOnly": true,
+            "owners": [
+              "user-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/user.routes.mjs",
+            "routeCount": 2,
+            "compatibilityOnly": false,
+            "owners": [
+              "user-service"
+            ],
+            "unmatchedRoutes": [
+              "GET /api/bootstrap"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/activities.routes.mjs",
+            "routeCount": 3,
+            "compatibilityOnly": true,
+            "owners": [
+              "activity-service",
+              "points-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/points.routes.mjs",
+            "routeCount": 3,
+            "compatibilityOnly": true,
+            "owners": [
+              "points-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/mall.routes.mjs",
+            "routeCount": 4,
+            "compatibilityOnly": true,
+            "owners": [
+              "points-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/redemptions.routes.mjs",
+            "routeCount": 2,
+            "compatibilityOnly": true,
+            "owners": [
+              "points-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/orders.routes.mjs",
+            "routeCount": 6,
+            "compatibilityOnly": true,
+            "owners": [
+              "points-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/learning.routes.mjs",
+            "routeCount": 5,
+            "compatibilityOnly": false,
+            "owners": [
+              "learning-service"
+            ],
+            "unmatchedRoutes": [
+              "GET /api/learning/games",
+              "GET /api/learning/tools"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/insurance.routes.mjs",
+            "routeCount": 5,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/insurance/overview",
+              "GET /api/insurance/policies",
+              "GET /api/insurance/policies/:id",
+              "POST /api/insurance/policies/scan",
+              "POST /api/insurance/policies"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-auth.routes.mjs",
+            "routeCount": 1,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/b/auth/login"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-customers.routes.mjs",
+            "routeCount": 5,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/b/customers",
+              "GET /api/b/customers/:id/profile",
+              "POST /api/b/customers/:id/tags",
+              "GET /api/b/tags/library",
+              "POST /api/b/tags/custom"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-content.routes.mjs",
+            "routeCount": 3,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/b/content/items",
+              "PUT /api/b/content/items/:id",
+              "GET /api/b/content/items"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-activity.routes.mjs",
+            "routeCount": 3,
+            "compatibilityOnly": true,
+            "owners": [
+              "activity-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-mall.routes.mjs",
+            "routeCount": 6,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/b/mall/products",
+              "PUT /api/b/mall/products/:id",
+              "POST /api/b/mall/activities",
+              "PUT /api/b/mall/activities/:id",
+              "GET /api/b/mall/products",
+              "GET /api/b/mall/activities"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/b-admin-orders.routes.mjs",
+            "routeCount": 2,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/b/orders",
+              "POST /api/b/orders/:id/writeoff"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-auth.routes.mjs",
+            "routeCount": 1,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/p/auth/login"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-governance.routes.mjs",
+            "routeCount": 9,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/tenants",
+              "POST /api/p/tenants",
+              "PUT /api/p/tenants/:id",
+              "DELETE /api/p/tenants/:id",
+              "GET /api/p/permissions/matrix",
+              "GET /api/p/permissions/company-admin-pages",
+              "POST /api/p/permissions/company-admin-pages",
+              "POST /api/p/approvals",
+              "POST /api/p/approvals/:id/approve"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-ops.routes.mjs",
+            "routeCount": 10,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/p/orders/:id/refund",
+              "POST /api/p/stats/rebuild",
+              "GET /api/p/stats/overview",
+              "POST /api/p/reconciliation/run",
+              "POST /api/p/ops/jobs",
+              "POST /api/p/ops/jobs/run-pending",
+              "GET /api/p/ops/jobs",
+              "GET /api/p/ops/jobs/:id",
+              "GET /api/p/ops/jobs/:id/logs",
+              "POST /api/p/ops/jobs/:id/retry"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-activities.routes.mjs",
+            "routeCount": 4,
+            "compatibilityOnly": true,
+            "owners": [
+              "activity-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-learning.routes.mjs",
+            "routeCount": 4,
+            "compatibilityOnly": true,
+            "owners": [
+              "learning-service"
+            ],
+            "unmatchedRoutes": []
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-workforce.routes.mjs",
+            "routeCount": 11,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/employees",
+              "GET /api/p/teams",
+              "POST /api/p/teams",
+              "PUT /api/p/teams/:id",
+              "DELETE /api/p/teams/:id",
+              "GET /api/p/customers",
+              "POST /api/p/customers/system-assign",
+              "POST /api/p/customers/assign-by-mobile",
+              "POST /api/p/employees",
+              "PUT /api/p/employees/:id",
+              "DELETE /api/p/employees/:id"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-mall.routes.mjs",
+            "routeCount": 9,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/mall/products",
+              "POST /api/p/mall/products",
+              "PUT /api/p/mall/products/:id",
+              "DELETE /api/p/mall/products/:id",
+              "GET /api/p/mall/activities",
+              "GET /api/p/strategies",
+              "POST /api/p/mall/activities",
+              "PUT /api/p/mall/activities/:id",
+              "DELETE /api/p/mall/activities/:id"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-tags.routes.mjs",
+            "routeCount": 12,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/tags",
+              "POST /api/p/tags",
+              "POST /api/p/tags/:id/status",
+              "DELETE /api/p/tags/:id",
+              "GET /api/p/tag-rules",
+              "POST /api/p/tag-rules",
+              "POST /api/p/tag-rules/:id/status",
+              "DELETE /api/p/tag-rules/:id",
+              "POST /api/p/tag-rule-jobs",
+              "GET /api/p/tag-rule-jobs",
+              "GET /api/p/tag-rule-jobs/:id",
+              "GET /api/p/tag-rule-jobs/:id/logs"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-metrics.routes.mjs",
+            "routeCount": 5,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/metrics/config",
+              "GET /api/p/metrics/share-daily",
+              "POST /api/p/metrics/rules",
+              "PUT /api/p/metrics/rules/:id",
+              "DELETE /api/p/metrics/rules/:id"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/p-admin-events.routes.mjs",
+            "routeCount": 4,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "GET /api/p/events/definitions",
+              "POST /api/p/events/definitions",
+              "POST /api/p/events/definitions/:id/status",
+              "DELETE /api/p/events/definitions/:id"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/track.routes.mjs",
+            "routeCount": 1,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/track/events"
+            ]
+          },
+          {
+            "file": "server/skeleton-c-v1/routes/uploads.routes.mjs",
+            "routeCount": 1,
+            "compatibilityOnly": false,
+            "owners": [],
+            "unmatchedRoutes": [
+              "POST /api/uploads/base64"
+            ]
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "route-ownership-drift-scan",
+      "ok": true,
+      "code": 0,
+      "durationMs": 107,
+      "summary": {
+        "ok": true,
+        "checks": [
+          {
+            "name": "week17.gateway-registry.v1-monolith",
+            "ok": true,
+            "envKey": "GATEWAY_V1_BASE_URL",
+            "flagEnvKey": null,
+            "enabledByDefault": true
+          },
+          {
+            "name": "week17.gateway-registry.user-service",
+            "ok": true,
+            "envKey": "GATEWAY_USER_SERVICE_URL",
+            "flagEnvKey": null,
+            "enabledByDefault": true
+          },
+          {
+            "name": "week17.gateway-registry.points-service",
+            "ok": true,
+            "envKey": "GATEWAY_POINTS_SERVICE_URL",
+            "flagEnvKey": null,
+            "enabledByDefault": true
+          },
+          {
+            "name": "week17.gateway-registry.learning-service",
+            "ok": true,
+            "envKey": "GATEWAY_LEARNING_SERVICE_URL",
+            "flagEnvKey": "GATEWAY_ENABLE_LEARNING_SERVICE",
+            "enabledByDefault": false
+          },
+          {
+            "name": "week17.gateway-registry.activity-service",
+            "ok": true,
+            "envKey": "GATEWAY_ACTIVITY_SERVICE_URL",
+            "flagEnvKey": "GATEWAY_ENABLE_ACTIVITY_SERVICE",
+            "enabledByDefault": false
+          },
+          {
+            "name": "week17.gateway-routes.user-service",
+            "ok": true,
+            "routeCount": 3
+          },
+          {
+            "name": "week17.gateway-routes.points-service",
+            "ok": true,
+            "routeCount": 15
+          },
+          {
+            "name": "week17.gateway-routes.learning-service",
+            "ok": true,
+            "routeCount": 5
+          },
+          {
+            "name": "week17.gateway-routes.activity-service",
+            "ok": true,
+            "routeCount": 6
+          },
+          {
+            "name": "week17.route-overlap.user-service.points-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.route-overlap.user-service.learning-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.route-overlap.user-service.activity-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.route-overlap.points-service.learning-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.route-overlap.points-service.activity-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.route-overlap.learning-service.activity-service",
+            "ok": true,
+            "overlapCount": 0
+          },
+          {
+            "name": "week17.learning.default-off",
+            "ok": true
+          },
+          {
+            "name": "week17.activity.default-off",
+            "ok": true
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "write-fallback-misuse-scan",
+      "ok": true,
+      "code": 0,
+      "durationMs": 31,
+      "summary": {
+        "ok": true,
+        "checks": [
+          {
+            "name": "week17.gateway-write-fallback-guard",
+            "ok": true,
+            "policy": "GET_HEAD_only"
+          },
+          {
+            "name": "week17.gateway-manual-rollback-switch",
+            "ok": true,
+            "env": "GATEWAY_FORCE_V1_PATHS"
+          },
+          {
+            "name": "week17.learning-write-rollback-drill",
+            "ok": true,
+            "source": "scripts/smoke_week14_learning_complete.mjs"
+          },
+          {
+            "name": "week17.activity-write-rollback-drill",
+            "ok": true,
+            "source": "scripts/smoke_week16_activity_complete.mjs"
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "week14-learning-complete-release-check",
+      "ok": true,
+      "code": 0,
+      "durationMs": 762,
+      "summary": {
+        "ok": true,
+        "executedAt": "2026-03-09T01:55:13.678Z",
+        "gatewayBase": "http://127.0.0.1:55708",
+        "learningServiceBase": "http://127.0.0.1:55707",
+        "userServiceBase": "http://127.0.0.1:55705",
+        "pointsServiceBase": "http://127.0.0.1:55706",
+        "checks": [
+          {
+            "name": "learning.routes.registered.week14",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "d38d1659-6611-4e29-b22d-7f8356bc651a",
+            "routeCount": 5
+          },
+          {
+            "name": "learning.default.read.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week14-learning-default-read-v1"
+          },
+          {
+            "name": "learning.cutover.read.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-cutover-read-v2"
+          },
+          {
+            "name": "learning.customer.list.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-user-list",
+            "visibleCourseCount": 65,
+            "courseId": 117
+          },
+          {
+            "name": "learning.customer.detail.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-user-detail",
+            "courseId": 117
+          },
+          {
+            "name": "learning.complete.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-complete-v2",
+            "courseId": 117
+          },
+          {
+            "name": "learning.reward.points-summary-updated",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "points-service",
+            "traceId": "week14-learning-points-after",
+            "rewardDelta": 12
+          },
+          {
+            "name": "learning.reward.points-observability",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "pts_1773021313394_876181fa-8ec4-4e61-ab51-8e73ccd066a9",
+            "learningRewardSuccess": 1
+          },
+          {
+            "name": "learning.complete.gateway-metrics.v2",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "a6626588-d705-4445-bcd5-4ed49b181339",
+            "fallbackCount": 0
+          },
+          {
+            "name": "learning.complete.force-v1.rollback",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week14-learning-complete-force-v1",
+            "courseId": 118
+          },
+          {
+            "name": "learning.reward.points-observability.force-v1",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "pts_1773021313490_815ae0fd-8c04-40df-b914-70062d7b72bd"
+          },
+          {
+            "name": "learning.complete.back-to-v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-complete-back-v2",
+            "courseId": 119
+          },
+          {
+            "name": "learning.read.fallback.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week14-learning-read-fallback"
+          },
+          {
+            "name": "learning.complete.no-auto-fallback",
+            "ok": true,
+            "status": 502,
+            "mode": "v2",
+            "target": "learning-service",
+            "traceId": "week14-learning-complete-no-auto-fallback",
+            "courseId": 120
+          },
+          {
+            "name": "learning.complete.manual-rollback.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week14-learning-complete-manual-rollback",
+            "courseId": 120
+          },
+          {
+            "name": "learning.reward.points-observability.manual-rollback",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "pts_1773021313677_e8c37073-4d82-4fad-81ec-51962790e005"
+          },
+          {
+            "name": "learning.complete.gateway-metrics.rollback",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "e888d2b2-a52e-441b-8838-c19aee903fd2",
+            "readFallbackCount": 1,
+            "manualRollbackTarget": "v1-monolith"
+          }
+        ],
+        "criteria": {
+          "defaultLearningTrafficOnV1": true,
+          "completeCutoverToV2": true,
+          "completeRewardChainWorks": true,
+          "forceV1RollbackWorks": true,
+          "backToV2Works": true,
+          "readFallbackWorks": true,
+          "writeNoAutoFallbackConfirmed": true,
+          "manualWriteRollbackWorks": true,
+          "gatewayMetricsCoverComplete": true,
+          "pointsObservabilityCoverReward": true
+        },
+        "reportPaths": {
+          "jsonPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week14-learning-complete-20260309-095513.json",
+          "mdPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week14-learning-complete-20260309-095513.md",
+          "latestJsonPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week14-learning-complete-latest.json",
+          "latestMdPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week14-learning-complete-latest.md"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "name": "week16-activity-complete-release-check",
+      "ok": true,
+      "code": 0,
+      "durationMs": 814,
+      "summary": {
+        "ok": true,
+        "executedAt": "2026-03-09T01:55:14.492Z",
+        "gatewayBase": "http://127.0.0.1:55719",
+        "activityServiceBase": "http://127.0.0.1:55718",
+        "userServiceBase": "http://127.0.0.1:55716",
+        "pointsServiceBase": "http://127.0.0.1:55717",
+        "checks": [
+          {
+            "name": "activity.routes.registered.week16",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "2a651bc3-dbc4-42e4-a348-94e7127ec0e0",
+            "routeCount": 6
+          },
+          {
+            "name": "activity.default.read.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week16-activity-default-read-v1"
+          },
+          {
+            "name": "activity.default.complete.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week16-activity-complete-v1",
+            "activityId": 150
+          },
+          {
+            "name": "activity.cutover.admin.create.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "activity-service",
+            "traceId": "week16-activity-admin-create-v2",
+            "activityId": 151
+          },
+          {
+            "name": "activity.cutover.read.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "activity-service",
+            "traceId": "week16-activity-cutover-read-v2",
+            "activityId": 151,
+            "visibleCount": 99
+          },
+          {
+            "name": "activity.complete.v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "activity-service",
+            "traceId": "week16-activity-complete-v2",
+            "activityId": 151
+          },
+          {
+            "name": "activity.reward.points-summary-updated",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "points-service",
+            "traceId": "week16-activity-points-after-v2",
+            "rewardDelta": 9,
+            "expectedReward": 9
+          },
+          {
+            "name": "activity.reward.points-observability",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "pts_1773021314206_48b98374-bfa2-4c3d-8212-3881aae3d45b",
+            "activityRewardSuccess": 2
+          },
+          {
+            "name": "activity.complete.gateway-metrics.v2",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "9b39a7f9-4a51-4bfd-9b3f-c3554508d781",
+            "fallbackCount": 0
+          },
+          {
+            "name": "activity.complete.force-v1.rollback",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week16-activity-complete-force-v1",
+            "activityId": 152
+          },
+          {
+            "name": "activity.complete.back-to-v2",
+            "ok": true,
+            "status": 200,
+            "mode": "v2",
+            "target": "activity-service",
+            "traceId": "week16-activity-complete-back-v2",
+            "activityId": 153
+          },
+          {
+            "name": "activity.read.fallback.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week16-activity-read-fallback"
+          },
+          {
+            "name": "activity.complete.no-auto-fallback",
+            "ok": true,
+            "status": 502,
+            "mode": "v2",
+            "target": "activity-service",
+            "traceId": "week16-activity-complete-no-auto-fallback",
+            "activityId": 154
+          },
+          {
+            "name": "activity.complete.manual-rollback.v1",
+            "ok": true,
+            "status": 200,
+            "mode": "v1",
+            "target": "v1-monolith",
+            "traceId": "week16-activity-complete-manual-rollback",
+            "activityId": 154
+          },
+          {
+            "name": "activity.gateway-metrics.read-fallback",
+            "ok": true,
+            "status": 200,
+            "mode": null,
+            "target": null,
+            "traceId": "f7a4edf9-3605-4f31-9f70-2e86f88334cf",
+            "fallbackCount": 1
+          }
+        ],
+        "criteria": {
+          "defaultActivityTrafficOnV1": true,
+          "activityCutoverToV2": true,
+          "activityRewardChainWorks": true,
+          "forceV1RollbackWorks": true,
+          "backToV2Works": true,
+          "readFallbackWorks": true,
+          "writeNoAutoFallbackConfirmed": true,
+          "manualWriteRollbackWorks": true,
+          "gatewayMetricsCoverComplete": true,
+          "pointsObservabilityCoverReward": true
+        },
+        "reports": {
+          "jsonPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week16-activity-complete-20260309-095514.json",
+          "mdPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week16-activity-complete-20260309-095514.md",
+          "latestJsonPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week16-activity-complete-latest.json",
+          "latestMdPath": "/Users/wenshuping/Documents/New project/insurance_code/insurance_code_full/docs/reports/week16-activity-complete-latest.md"
+        }
+      },
+      "stderr": ""
+    }
+  ]
+}

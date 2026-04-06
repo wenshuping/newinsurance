@@ -1,0 +1,328 @@
+# 文档索引（Docs Index）
+
+更新时间：2026-03-16
+
+## 0. 先读（唯一执行入口）
+
+- 架构决策（当前生效）：`./adr-0001-architecture-decision.md`
+- 当前架构执行基线：`./architecture-executable-v2.md`
+- 本周执行进展（Week2）：`./architecture-week2-progress-2026-03-01.md`
+- Week1 微服务边界设计：`./week1-microservices-boundary-design-2026-03-04.md`
+- Week2 写路径事务化进展：`./week2-write-transaction-progress-2026-03-04.md`
+- API v1 契约冻结清单：`./api-v1-contract-freeze-checklist-2026-02-28.md`
+- 微信身份绑定与免二次实名实施方案：`./wechat-identity-binding-skip-verify-implementation-2026-03-16.md`
+- P/B/C 回归基线（v4）：`./pbc-regression-test-plan-v4-unified.md`
+- 本地联调启动与防串环境手册：`./local-stack-runbook-v1.md`
+- 发布前置检查与分支保护：`./release-branch-protection-v1.md`
+- SLO与告警基线：`./slo-alert-baseline-v1.md`
+- Week2 收口与 Week3 进入条件：`./week2-closeout-week3-entry-2026-03-04.md`
+- Week3 P0 路由拆分进展：`./week3-p0-route-split-progress-2026-03-04.md`
+- Week3-Week4 架构收口计划：`./architecture-closeout-plan-week3-week4-2026-03-05.md`
+- 当前架构状态与下一阶段缺口：`./architecture-status-closeout-2026-03-06.md`
+- Week5-Week8 V2 运行时拆分路线图：`./v2-runtime-split-roadmap-week5-week8-2026-03-06.md`
+- Week5 三名全栈并行拆分计划：`./week5-three-fullstack-parallel-plan-2026-03-06.md`
+- Week5 A 号 gateway 运行时交付：`../server/microservices/README.md`
+- Week5 B 号 user-service 交付：`./week5-b-user-service-delivery-note-2026-03-07.md`
+- Week5 C 号 points-service 交付：`../server/microservices/points-service/CONTRACT.md`
+- Week5 运行时拆分最终联调报告：`./week5-runtime-split-integration-report-2026-03-07.md`
+- Week6 运行时拆分门禁说明：`./week6-runtime-split-runbook-2026-03-07.md`
+- Week6 运行时拆分报告模板：`./week6-runtime-split-report-template-2026-03-07.md`
+- Week6 主写表归属总表（Week6 当前生效范围）：`./week6-write-ownership-matrix-2026-03-07.md`
+- Week9-Week12 生产化路线图：`./week9-week12-productionization-roadmap-2026-03-07.md`
+- Week9 部署基线：`./week9-runtime-deployment-baseline-2026-03-07.md`
+- Week9 DATABASE_URL 权威口径：`./week9-runtime-database-url-authority-2026-03-07.md`
+- Week9 seed / runtime snapshot 拆分说明：`./week9-seed-runtime-snapshot-split-2026-03-07.md`
+- Week10 Postgres 实库验证报告：`./week10-user-service-postgres-validation-report-2026-03-07.md`
+- Week7 Trace / Log 规范：`./week7-trace-log-spec-2026-03-07.md`
+- Week7 Gateway 运行指标说明：`./week7-gateway-metrics-2026-03-07.md`
+- Week7 运行时拆分 Runbook：`./week7-runtime-split-runbook-2026-03-07.md`
+- Week8 发布/回退 Runbook：`./week8-runtime-release-rollback-runbook-2026-03-07.md`
+- Week8 发布/回退演练记录：`./week8-runtime-release-drill-record-2026-03-07.md`
+- Week8 上线判定标准：`./week8-runtime-go-live-criteria-2026-03-07.md`
+- Week11 灰度策略：`./week11-runtime-grayscale-strategy-2026-03-08.md`
+- Week11 回退判定：`./week11-runtime-rollback-decision-2026-03-08.md`
+- Week11 上线观测看板口径：`./week11-runtime-observability-dashboard-2026-03-08.md`
+- Week11 灰度 Runbook：`./week11-runtime-grayscale-runbook-2026-03-08.md`
+- Week11 灰度演练总报告：`./week11-runtime-grayscale-drill-report-2026-03-08.md`
+- Week11 B 号 user-service 灰度指标阈值：`./week11-user-service-gray-metrics-thresholds-2026-03-07.md`
+- Week11 B 号 user-service 灰度告警口径：`./week11-user-service-gray-alert-caliber-2026-03-08.md`
+- Week11 B 号 user-service 灰度观察结论：`./week11-user-service-gray-observation-conclusion-2026-03-08.md`
+- Week11 C 号 points-service 灰度指标阈值：`../server/microservices/points-service/WEEK11-GRAYSCALE-METRICS.md`
+- Week11 C 号 points-service 正式灰度演练结论：`../server/microservices/points-service/WEEK11-GRAYSCALE-REHEARSAL.md`
+- Week12 总设计包收口：`./week12-service-design-package-closeout-2026-03-08.md`
+- Week12 activity-service 设计模板：`./week12-activity-service-design-template-2026-03-08.md`
+- Week12 learning-service 设计模板：`./week12-learning-service-design-template-2026-03-08.md`
+- Week12 gate / smoke / release-check 模板：`./week12-gate-smoke-release-check-template-2026-03-08.md`
+- Week12 B 号 learning-service 边界评审输入：`./week12-learning-service-boundary-review-from-user-domain-2026-03-07.md`
+- Week12 C 号 activity-service 边界评审输入：`../server/microservices/points-service/WEEK12-ACTIVITY-SERVICE-REVIEW.md`
+- Week12 Week13+ 执行建议：`./week12-week13-plus-execution-recommendations-2026-03-08.md`
+- Week13 learning-service Phase 1 Runbook（查询 + 管理端 CRUD）：`./week13-learning-service-pilot-runbook-2026-03-08.md`
+- Week13 learning-service Phase 1 总结报告（查询 + 管理端 CRUD）：`./week13-learning-service-pilot-report-2026-03-08.md`
+- Week13 learning -> points 契约化改造总说明：`./week13-learning-points-contractization-closeout-2026-03-08.md`
+- Week13 learning -> points 契约化最终联调报告：`./week13-learning-points-contractization-report-2026-03-08.md`
+- Week13 B 号 learning-service 与 user-service 边界确认：`./week13-learning-service-user-boundary-confirmation-2026-03-08.md`
+- Week13 C 号 learning -> points 奖励链路评审：`../server/microservices/points-service/WEEK13-LEARNING-POINTS-REVIEW.md`
+- Week13 learning-service 最新演练结果：`./reports/week13-learning-pilot-latest.md`
+- Week14 learning complete + reward Runbook：`./week14-learning-complete-runtime-split-runbook-2026-03-08.md`
+- Week14 learning complete + reward 总结报告：`./week14-learning-complete-runtime-split-report-2026-03-08.md`
+- Week14 learning complete + reward 最新演练结果：`./reports/week14-learning-complete-latest.md`
+- Week14 B 号 learning-service 与 user-service 边界确认：`./week14-learning-service-user-boundary-confirmation-2026-03-08.md`
+- Week15 activity-service Phase 1 Runbook：`./week15-activity-service-pilot-runbook-2026-03-09.md`
+- Week15 activity-service Phase 1 总结报告：`./week15-activity-service-pilot-report-2026-03-09.md`
+- Week15 activity -> points 契约化改造总说明：`./week15-activity-points-contractization-closeout-2026-03-09.md`
+- Week15 B 号 activity-service 与 user-service 边界确认：`./week15-activity-service-user-boundary-confirmation-2026-03-08.md`
+- Week15 B 号 activity-service tenant / owner / session 口径：`./week15-activity-service-tenant-owner-session-caliber-2026-03-08.md`
+- Week15 B 号 activity-service 风险清单：`./week15-activity-service-user-risk-register-2026-03-08.md`
+- Week15 activity-service 最新演练结果：`./reports/week15-activity-pilot-latest.md`
+- Week16 activity complete + reward Runbook：`./week16-activity-complete-runtime-split-runbook-2026-03-09.md`
+- Week16 activity complete + reward 总结报告：`./week16-activity-complete-runtime-split-report-2026-03-09.md`
+- Week16 activity complete + reward 最新演练结果：`./reports/week16-activity-complete-latest.md`
+- Week17 兼容层收缩报告：`./week17-compatibility-layer-shrink-report-2026-03-09.md`
+- Week17 最终边界快照：`./week17-runtime-final-boundary-snapshot-2026-03-09.md`
+- Week17 兼容层硬化 Runbook：`./week17-compatibility-hardening-runbook-2026-03-09.md`
+- Week17 兼容层硬化总结报告：`./week17-compatibility-hardening-report-2026-03-09.md`
+- Week17 兼容层硬化最新演练结果：`./reports/week17-compatibility-hardening-latest.md`
+- Week18 learning 域正式拆出 Runbook：`./week18-learning-formal-split-runbook-2026-03-09.md`
+- Week18 learning 域正式拆出总结报告：`./week18-learning-formal-split-report-2026-03-09.md`
+- Week18 learning 域正式拆出最新演练结果：`./reports/week18-learning-formal-split-latest.md`
+- Week8 B 号 user-service 故障排查手册：`./week8-user-service-troubleshooting-runbook-2026-03-07.md`
+- Week8 B 号 user-service 风险清单：`./week8-user-service-risk-register-2026-03-07.md`
+- Week8 B 号 user-service 告警建议：`./week8-user-service-alerting-recommendations-2026-03-07.md`
+- Week8 B 号 user-service 预检清单：`./week8-user-service-preflight-checklist-2026-03-07.md`
+- Week8 B 号 user-service 契约基线：`../server/microservices/user-service/contract.md`
+- Week8 C 号 points-service 故障排查手册：`../server/microservices/points-service/TROUBLESHOOTING.md`
+- Week8 C 号 points-service 风险清单：`../server/microservices/points-service/RISKS.md`
+- Week8 C 号 points-service 告警建议：`../server/microservices/points-service/ALERTING.md`
+- Week8 C 号 points-service 桥接状态说明：`../server/microservices/points-service/BRIDGE-STATUS.md`
+- Week8 C 号 points-service README 索引：`../server/microservices/points-service/README.md`
+- P-Admin 路由依赖治理：`./p-admin-deps-wiring-governance-v1.md`
+- B-Admin 路由依赖治理：`./b-admin-deps-wiring-governance-v1.md`
+- C-App 路由装配治理：`./c-app-wiring-governance-v1.md`
+- C端状态桥接治理：`./c-frontend-status-bridge-governance-v1.md`
+- 前端契约桥接治理（C/B/P）：`./frontend-contract-bridge-governance-v1.md`
+- 前端状态下拉治理（P）：`./frontend-status-options-governance-v1.md`
+- B端状态筛选治理：`./b-frontend-status-filter-options-governance-v1.md`
+- C/B/P 状态口径回归用例：`./status-caliber-regression-cbp-v1.md`
+- B端分享类型治理：`./b-frontend-share-types-governance-v1.md`
+- P端下拉选项治理：`./p-frontend-select-options-governance-v1.md`
+- 持久化增量写路径治理：`./persistence-incremental-writepaths-governance-v1.md`
+- 写接口分层治理（Route/DTO/Usecase/Repository）：`./route-write-layering-governance-v1.md`
+- 报告产物治理（门禁/发布审计）：`./reports-governance-v1.md`
+- P端异步任务框架（对账/重算）：`./ops-async-jobs-framework-v1.md`
+- 指标与事件口径版本化：`./metric-event-versioning-v1.md`
+- 模板可见性层级规则：`./template-visibility-cascade-v1.md`
+
+## 1. 架构
+
+- `./architecture.md`
+- `./architecture-v1-execution.md`
+- `./architecture-gap-closure-v1.md`
+- `./architecture-executable-v2.md`
+- `./architecture-week2-progress-2026-03-01.md`
+- `./week1-microservices-boundary-design-2026-03-04.md`
+- `./week2-write-transaction-progress-2026-03-04.md`
+- `./week3-p0-route-split-progress-2026-03-04.md`
+- `./architecture-closeout-plan-week3-week4-2026-03-05.md`
+- `./architecture-status-closeout-2026-03-06.md`
+- `./v2-runtime-split-roadmap-week5-week8-2026-03-06.md`
+- `./week5-three-fullstack-parallel-plan-2026-03-06.md`
+- `../server/microservices/README.md`
+- `./week5-b-user-service-delivery-note-2026-03-07.md`
+- `../server/microservices/points-service/CONTRACT.md`
+- `./week5-runtime-split-integration-report-2026-03-07.md`
+- `./week6-runtime-split-runbook-2026-03-07.md`
+- `./week6-runtime-split-report-template-2026-03-07.md`
+- `./week6-write-ownership-matrix-2026-03-07.md`
+- `./week9-week12-productionization-roadmap-2026-03-07.md`
+- `./week9-runtime-deployment-baseline-2026-03-07.md`
+- `./week9-runtime-database-url-authority-2026-03-07.md`
+- `./week9-seed-runtime-snapshot-split-2026-03-07.md`
+- `./week10-user-service-postgres-validation-report-2026-03-07.md`
+- `./week7-trace-log-spec-2026-03-07.md`
+- `./week7-gateway-metrics-2026-03-07.md`
+- `./week7-runtime-split-runbook-2026-03-07.md`
+- `./week8-runtime-release-rollback-runbook-2026-03-07.md`
+- `./week8-runtime-release-drill-record-2026-03-07.md`
+- `./week8-runtime-go-live-criteria-2026-03-07.md`
+- `./week11-runtime-grayscale-strategy-2026-03-08.md`
+- `./week11-runtime-rollback-decision-2026-03-08.md`
+- `./week11-runtime-observability-dashboard-2026-03-08.md`
+- `./week11-runtime-grayscale-runbook-2026-03-08.md`
+- `./week11-runtime-grayscale-drill-report-2026-03-08.md`
+- `./week11-user-service-gray-metrics-thresholds-2026-03-07.md`
+- `./week11-user-service-gray-alert-caliber-2026-03-08.md`
+- `./week11-user-service-gray-observation-conclusion-2026-03-08.md`
+- `../server/microservices/points-service/WEEK11-GRAYSCALE-METRICS.md`
+- `../server/microservices/points-service/WEEK11-GRAYSCALE-REHEARSAL.md`
+- `./week12-service-design-package-closeout-2026-03-08.md`
+- `./week12-activity-service-design-template-2026-03-08.md`
+- `./week12-learning-service-design-template-2026-03-08.md`
+- `./week12-gate-smoke-release-check-template-2026-03-08.md`
+- `./week12-learning-service-boundary-review-from-user-domain-2026-03-07.md`
+- `../server/microservices/points-service/WEEK12-ACTIVITY-SERVICE-REVIEW.md`
+- `./week12-week13-plus-execution-recommendations-2026-03-08.md`
+- `./week13-learning-service-pilot-runbook-2026-03-08.md`
+- `./week13-learning-service-pilot-report-2026-03-08.md`
+- `./week13-learning-points-contractization-closeout-2026-03-08.md`
+- `./week13-learning-points-contractization-report-2026-03-08.md`
+- `./week13-learning-service-user-boundary-confirmation-2026-03-08.md`
+- `../server/microservices/points-service/WEEK13-LEARNING-POINTS-REVIEW.md`
+- `./reports/week13-learning-pilot-latest.md`
+- `./week14-learning-complete-runtime-split-runbook-2026-03-08.md`
+- `./week14-learning-complete-runtime-split-report-2026-03-08.md`
+- `./reports/week14-learning-complete-latest.md`
+- `./week14-learning-service-user-boundary-confirmation-2026-03-08.md`
+- `./week15-activity-service-pilot-runbook-2026-03-09.md`
+- `./week15-activity-service-pilot-report-2026-03-09.md`
+- `./week15-activity-points-contractization-closeout-2026-03-09.md`
+- `./week15-activity-service-user-boundary-confirmation-2026-03-08.md`
+- `./week15-activity-service-tenant-owner-session-caliber-2026-03-08.md`
+- `./week15-activity-service-user-risk-register-2026-03-08.md`
+- `./reports/week15-activity-pilot-latest.md`
+- `./week16-activity-complete-runtime-split-runbook-2026-03-09.md`
+- `./week16-activity-complete-runtime-split-report-2026-03-09.md`
+- `./reports/week16-activity-complete-latest.md`
+- `./week17-compatibility-layer-shrink-report-2026-03-09.md`
+- `./week17-runtime-final-boundary-snapshot-2026-03-09.md`
+- `./week17-compatibility-hardening-runbook-2026-03-09.md`
+- `./week17-compatibility-hardening-report-2026-03-09.md`
+- `./reports/week17-compatibility-hardening-latest.md`
+- `./week18-learning-formal-split-runbook-2026-03-09.md`
+- `./week18-learning-formal-split-report-2026-03-09.md`
+- `./reports/week18-learning-formal-split-latest.md`
+- `./week18-learning-formal-split-runbook-2026-03-09.md`
+- `./week18-learning-formal-split-report-2026-03-09.md`
+- `./reports/week18-learning-formal-split-latest.md`
+- `./week9-runtime-deployment-baseline-2026-03-07.md`
+- `./week9-runtime-database-url-authority-2026-03-07.md`
+- `./week8-user-service-troubleshooting-runbook-2026-03-07.md`
+- `./week8-user-service-risk-register-2026-03-07.md`
+- `./week8-user-service-alerting-recommendations-2026-03-07.md`
+- `./week8-user-service-preflight-checklist-2026-03-07.md`
+- `../server/microservices/user-service/contract.md`
+- `../server/microservices/points-service/TROUBLESHOOTING.md`
+- `../server/microservices/points-service/RISKS.md`
+- `../server/microservices/points-service/ALERTING.md`
+- `../server/microservices/points-service/BRIDGE-STATUS.md`
+- `../server/microservices/points-service/README.md`
+- `./p-admin-deps-wiring-governance-v1.md`
+- `./b-admin-deps-wiring-governance-v1.md`
+- `./c-app-wiring-governance-v1.md`
+- `./c-frontend-status-bridge-governance-v1.md`
+- `./frontend-contract-bridge-governance-v1.md`
+- `./frontend-status-options-governance-v1.md`
+- `./b-frontend-status-filter-options-governance-v1.md`
+- `./status-caliber-regression-cbp-v1.md`
+- `./b-frontend-share-types-governance-v1.md`
+- `./p-frontend-select-options-governance-v1.md`
+- `./persistence-incremental-writepaths-governance-v1.md`
+- `./route-write-layering-governance-v1.md`
+- `./template-visibility-cascade-v1.md`
+- `./architecture-java-executable-v1.md`（规划态）
+- `./architecture-v3-java-implementation-breakdown-v1.md`（规划态）
+- `./deployment-topology-v1.md`
+- `./risk-register-v1.md`
+- `./release-branch-protection-v1.md`
+- `./slo-alert-baseline-v1.md`
+- `./ops-async-jobs-framework-v1.md`
+- `./week2-closeout-week3-entry-2026-03-04.md`
+
+## 2. 接口与契约
+
+- `./openapi-c-v1.yaml`
+- `./api-contract-c-v1.md`
+- `./api-contract-bp-v1.md`
+- `./api-contract.md`
+- `./api-governance-v1.md`
+- `./api-v1-contract-freeze-checklist-2026-02-28.md`
+- `./error-code-dictionary-v1.md`
+- `./error-code-endpoint-matrix-v1.md`
+- `./dto-whitelist-v1.json`
+
+## 3. 数据与迁移
+
+- `./db-schema-v1.md`
+- `./db-migration-plan-v1.md`
+- `./dbjson-migration-validation-report-v1.md`
+- `./prd-table-mapping-and-rollout-v1.md`
+
+## 4. 埋点、指标、标签
+
+- `./tracking-events-v1.md`
+- `./tracking-events-v2.md`
+- `./metric-definition-v1.md`
+- `./metric-event-versioning-v1.md`
+- `./tag-system-executable-prd-v1.md`
+
+## 5. 测试与质量
+
+- `./pbc-regression-test-plan-v4-unified.md`（当前基线）
+- `./pbc-regression-test-plan-v2-data-permission.md`
+- `./pbc-regression-test-plan-v1.md`
+- `./pbc-regression-test-cases-v3-executable.md`
+- `./pbc-regression-execution-report-2026-02-28.md`
+- `./engineering-hardening-v1.md`
+- `./reports-governance-v1.md`
+- `./week5-runtime-split-integration-report-2026-03-07.md`
+- `./week6-runtime-split-runbook-2026-03-07.md`
+- `./week6-runtime-split-report-template-2026-03-07.md`
+- `./week7-trace-log-spec-2026-03-07.md`
+- `./week7-gateway-metrics-2026-03-07.md`
+- `./week7-runtime-split-runbook-2026-03-07.md`
+- `./week8-runtime-release-rollback-runbook-2026-03-07.md`
+- `./week8-runtime-release-drill-record-2026-03-07.md`
+- `./week8-runtime-go-live-criteria-2026-03-07.md`
+- `./week11-runtime-grayscale-strategy-2026-03-08.md`
+- `./week11-runtime-rollback-decision-2026-03-08.md`
+- `./week11-runtime-observability-dashboard-2026-03-08.md`
+- `./week11-runtime-grayscale-runbook-2026-03-08.md`
+- `./week11-runtime-grayscale-drill-report-2026-03-08.md`
+- `./week11-user-service-gray-metrics-thresholds-2026-03-07.md`
+- `./week17-compatibility-layer-shrink-report-2026-03-09.md`
+- `./week17-runtime-final-boundary-snapshot-2026-03-09.md`
+- `./week17-compatibility-hardening-runbook-2026-03-09.md`
+- `./week17-compatibility-hardening-report-2026-03-09.md`
+- `./reports/week17-compatibility-hardening-latest.md`
+- `./week11-user-service-gray-alert-caliber-2026-03-08.md`
+- `./week11-user-service-gray-observation-conclusion-2026-03-08.md`
+- `../server/microservices/points-service/WEEK11-GRAYSCALE-METRICS.md`
+- `../server/microservices/points-service/WEEK11-GRAYSCALE-REHEARSAL.md`
+- `./week12-service-design-package-closeout-2026-03-08.md`
+- `./week12-activity-service-design-template-2026-03-08.md`
+- `./week12-learning-service-design-template-2026-03-08.md`
+- `./week12-gate-smoke-release-check-template-2026-03-08.md`
+- `./week12-learning-service-boundary-review-from-user-domain-2026-03-07.md`
+- `../server/microservices/points-service/WEEK12-ACTIVITY-SERVICE-REVIEW.md`
+- `./week12-week13-plus-execution-recommendations-2026-03-08.md`
+- `./week13-learning-service-pilot-runbook-2026-03-08.md`
+- `./week13-learning-service-pilot-report-2026-03-08.md`
+- `./week13-learning-points-contractization-closeout-2026-03-08.md`
+- `./week13-learning-points-contractization-report-2026-03-08.md`
+- `./week13-learning-service-user-boundary-confirmation-2026-03-08.md`
+- `../server/microservices/points-service/WEEK13-LEARNING-POINTS-REVIEW.md`
+- `./reports/week13-learning-pilot-latest.md`
+- `./week14-learning-complete-runtime-split-runbook-2026-03-08.md`
+- `./week14-learning-complete-runtime-split-report-2026-03-08.md`
+- `./reports/week14-learning-complete-latest.md`
+- `./week14-learning-service-user-boundary-confirmation-2026-03-08.md`
+- `./week8-user-service-troubleshooting-runbook-2026-03-07.md`
+- `./week8-user-service-risk-register-2026-03-07.md`
+- `./week8-user-service-alerting-recommendations-2026-03-07.md`
+- `./week8-user-service-preflight-checklist-2026-03-07.md`
+- `../server/microservices/user-service/contract.md`
+- `../server/microservices/points-service/TROUBLESHOOTING.md`
+- `../server/microservices/points-service/RISKS.md`
+- `../server/microservices/points-service/ALERTING.md`
+- `../server/microservices/points-service/BRIDGE-STATUS.md`
+- `../server/microservices/points-service/README.md`
+
+## 6. 历史与补充
+
+- `./local-stack-runbook-v1.md`
+- `./frontend-mock-field-mapping.md`
+- `./ui-review-auth-user-activities-points.md`
+- `./backend-execution-breakdown-v1.md`
+- `./microservices-v2-test-cases.md`
+- `./task-import-readme-v1.md`
+- `./jira-import-backend-v1.csv`
+- `./linear-import-backend-v1.csv`

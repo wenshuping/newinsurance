@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-03-20T09:15:46.216Z",
+  "tenantId": 2,
+  "tenantCode": "tenant-alpha",
+  "ownerAgentId": 8004,
+  "activityId": 70,
+  "activityTitle": "活动中心历史完成回归_agent_1773998251332",
+  "mobile": "13998142741",
+  "customerId": 897,
+  "customerToken": "17f9c36a-0fe3-48bb-8d95-46bc2714f4e5",
+  "customerCsrfToken": "b7019082-663c-4ad6-99cb-963c7bd526b3",
+  "updatedAt": "2026-03-20T09:17:33.183Z",
+  "completionRow": {
+    "customer_id": "897",
+    "activity_id": "70",
+    "completed_at": "2026-03-19 17:18:23.716569+08"
+  },
+  "completedAdjustedAt": "2026-03-20T09:18:23.733Z"
+}

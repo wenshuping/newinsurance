@@ -1,0 +1,54 @@
+{
+  "report_name": "家庭保障体检报告",
+  "report_date": "2026-03-22",
+  "customer_name": "张三",
+  "id_card": "310101199001011234",
+  "mobile": "13800138000",
+  "family_profile": {
+    "family_name": "张三家庭",
+    "annual_income": 300000,
+    "annual_premium": 15000,
+    "monthly_expense": 3000,
+    "mortgage_balance": 0,
+    "children_count": 0,
+    "elder_support": true
+  },
+  "member_diagnosis": [
+    {
+      "name": "张三",
+      "role": "本人 / 35岁 / 成人女性",
+      "phone": "13800138000",
+      "identity_number": "310101199001011234",
+      "facts": [
+        "张三名下有一份新华保险多倍重疾",
+        "联系电话 13800138000",
+        "身份证 310101199001011234"
+      ]
+    },
+    {
+      "name": "李四",
+      "role": "配偶 / 36岁 / 成人男性",
+      "mobile_phone": "13900139000",
+      "facts": [
+        "李四名下有一份新华保险畅行万里",
+        "配偶联系电话 13900139000"
+      ]
+    }
+  ],
+  "policy_facts": [
+    {
+      "insured": "张三",
+      "product_name": "多倍保障重大疾病保险",
+      "known_from_user": [
+        "重疾保额 200000"
+      ]
+    },
+    {
+      "insured": "李四",
+      "product_name": "畅行万里两全保险",
+      "known_from_user": [
+        "基本保额 100000"
+      ]
+    }
+  ]
+}

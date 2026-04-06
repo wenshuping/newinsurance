@@ -1,0 +1,131 @@
+{
+  "info": {
+    "name": "P Learning Ops Import API",
+    "_postman_id": "43d9e10f-4f55-4bc4-b2ed-1c0fe2f4d6d8",
+    "description": "P 端知识学习运营导入接口。包含单条导入与批量导入示例，请先配置 baseUrl 与 opsApiKey 变量。",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:4100",
+      "type": "string"
+    },
+    {
+      "key": "opsApiKey",
+      "value": "ops-secret",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "单条导入学习资料",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "const json = pm.response.json();",
+              "pm.test('response ok is true', function () {",
+              "  pm.expect(json.ok).to.eql(true);",
+              "});",
+              "pm.test('course exists', function () {",
+              "  pm.expect(json.course).to.be.an('object');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "x-ops-api-key",
+            "value": "{{opsApiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"家庭资产配置课-{{$timestamp}}\",\n  \"category\": \"运营导入\",\n  \"contentType\": \"article\",\n  \"level\": \"中级\",\n  \"content\": \"课程正文\",\n  \"rewardPoints\": 12,\n  \"status\": \"published\",\n  \"idempotencyKey\": \"ops-learning-single-{{$timestamp}}\",\n  \"uploadItems\": [\n    {\n      \"name\": \"cover.png\",\n      \"type\": \"image/png\",\n      \"dataUrl\": \"data:image/png;base64,ZmFrZQ==\"\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/p/learning/courses",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "p",
+            "learning",
+            "courses"
+          ]
+        },
+        "description": "创建单条知识学习资料。相同 idempotencyKey 重试时会返回第一次创建结果，且 idempotent=true。"
+      },
+      "response": []
+    },
+    {
+      "name": "批量导入学习资料",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "const json = pm.response.json();",
+              "pm.test('response ok is true', function () {",
+              "  pm.expect(json.ok).to.eql(true);",
+              "});",
+              "pm.test('batch items exist', function () {",
+              "  pm.expect(json.items).to.be.an('array');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "x-ops-api-key",
+            "value": "{{opsApiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"idempotencyKey\": \"ops-learning-batch-{{$timestamp}}\",\n  \"items\": [\n    {\n      \"title\": \"批量课程 A-{{$timestamp}}\",\n      \"category\": \"运营导入\",\n      \"contentType\": \"article\",\n      \"level\": \"初级\",\n      \"content\": \"课程正文 A\",\n      \"rewardPoints\": 10,\n      \"status\": \"published\",\n      \"uploadItems\": [\n        {\n          \"name\": \"cover-a.png\",\n          \"type\": \"image/png\",\n          \"dataUrl\": \"data:image/png;base64,ZmFrZQ==\"\n        }\n      ]\n    },\n    {\n      \"title\": \"批量课程 B-{{$timestamp}}\",\n      \"category\": \"运营导入\",\n      \"contentType\": \"article\",\n      \"level\": \"中级\",\n      \"content\": \"课程正文 B\",\n      \"rewardPoints\": 20,\n      \"status\": \"published\"\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/p/learning/courses/batch",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "p",
+            "learning",
+            "courses",
+            "batch"
+          ]
+        },
+        "description": "整批导入学习资料。顶层 idempotencyKey 控制整包重试；任一 item 失败时整批回滚。"
+      },
+      "response": []
+    }
+  ]
+}

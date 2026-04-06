@@ -1,0 +1,46 @@
+- generic [ref=e3]:
+  - button "分享当前页面" [ref=e4]:
+    - img [ref=e5]
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - heading "活动中心" [level=1] [ref=e13]
+      - button [ref=e14]:
+        - img [ref=e15]
+    - main [ref=e18]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: 限时福利
+          - heading "连续签到7天\\n领30枚新鲜鸡蛋" [level=2] [ref=e23]
+          - paragraph [ref=e24]: 健康生活，好礼相送
+          - button "立即签到领奖" [ref=e25]
+        - generic [ref=e27]: 🥚
+      - generic [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: 我的积分
+            - generic [ref=e33]:
+              - generic [ref=e34]: "0"
+              - generic [ref=e35]: 分
+          - button "积分商城" [ref=e36]:
+            - img [ref=e37]
+            - generic [ref=e40]: 积分商城
+        - generic [ref=e42]:
+          - generic [ref=e43]: 今日任务进度
+          - generic [ref=e44]: 0/0 已完成
+      - heading "热门活动" [level=3] [ref=e47]
+  - navigation [ref=e48]:
+    - button "首页" [ref=e49]:
+      - img [ref=e50]
+      - generic [ref=e53]: 首页
+    - button "知识学习" [ref=e54]:
+      - img [ref=e55]
+      - generic [ref=e57]: 知识学习
+    - button "活动中心" [ref=e58]:
+      - img [ref=e59]
+      - generic [ref=e61]: 活动中心
+    - button "保障管理" [ref=e62]:
+      - img [ref=e63]
+      - generic [ref=e66]: 保障管理
+    - button "我的" [ref=e67]:
+      - img [ref=e68]
+      - generic [ref=e71]: 我的

@@ -1,0 +1,48 @@
+- generic [ref=e3]:
+  - button "分享当前页面" [ref=e4]:
+    - img [ref=e5]
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - button [ref=e13]:
+        - img [ref=e14]
+      - heading "我的顾问" [level=1] [ref=e16]
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - img [ref=e20]
+        - heading "顾问服务待接入" [level=2] [ref=e23]
+        - paragraph [ref=e24]: 当前环境未返回真实顾问资料
+      - generic [ref=e26]:
+        - heading "当前状态" [level=3] [ref=e27]:
+          - img [ref=e28]
+          - text: 当前状态
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: 1. 顾问姓名、头像、联系方式还没有接入真实后端数据。
+          - paragraph [ref=e32]: 2. 当前页面只保留顾问模块入口，不再伪造真人、评分和服务时长。
+          - paragraph [ref=e33]: 3. 后续接入真实接口后，这里再展示顾问资料、擅长领域和联系动作。
+        - separator [ref=e34]
+        - heading "可接入字段" [level=3] [ref=e35]:
+          - img [ref=e36]
+          - text: 可接入字段
+        - list [ref=e40]:
+          - listitem [ref=e41]: 顾问姓名、头像、职级
+          - listitem [ref=e42]: 所属机构、服务起始时间
+          - listitem [ref=e43]: 擅长领域、服务标签
+          - listitem [ref=e44]: 电话、企业微信、在线咨询入口
+      - generic [ref=e47]: 联系方式待接入
+      - generic [ref=e48]: 接入真实顾问服务后，这里再展示可用联系渠道
+  - navigation [ref=e49]:
+    - button "首页" [ref=e50]:
+      - img [ref=e51]
+      - generic [ref=e54]: 首页
+    - button "知识学习" [ref=e55]:
+      - img [ref=e56]
+      - generic [ref=e58]: 知识学习
+    - button "活动中心" [ref=e59]:
+      - img [ref=e60]
+      - generic [ref=e62]: 活动中心
+    - button "保障管理" [ref=e63]:
+      - img [ref=e64]
+      - generic [ref=e67]: 保障管理
+    - button "我的" [ref=e68]:
+      - img [ref=e69]
+      - generic [ref=e72]: 我的
