@@ -11,9 +11,25 @@ async function clickText(page, text) {
 async function clickMenu(page, text) {
   await page.locator(`a:has-text("${text}")`).first().click();
 }
+async function clickViewOrDetail(page) {
+  const viewBtn = page.getByText('查看', { exact: true }).first();
+  if ((await viewBtn.count()) > 0) {
+    await viewBtn.click();
+    return;
+  }
+  await page.getByText('详情', { exact: true }).first().click();
+}
 
 async function ensureText(page, text) {
   await page.getByText(text, { exact: true }).first().waitFor();
+}
+
+async function ensureLogin(page) {
+  if ((await page.getByText('P端管理后台登录', { exact: true }).count()) === 0) return;
+  await page.getByPlaceholder('company001').fill(process.env.P_ACCOUNT || 'company001');
+  await page.getByPlaceholder('123456').fill(process.env.P_PASSWORD || '123456');
+  await clickText(page, '登录');
+  await ensureText(page, '租户列表');
 }
 
 async function run() {
@@ -26,6 +42,7 @@ async function run() {
 
   try {
     await page.goto(BASE_URL, { waitUntil: 'domcontentloaded' });
+    await ensureLogin(page);
 
     await ensureText(page, '租户列表');
     await ensureText(page, '创建租户');
@@ -44,34 +61,44 @@ async function run() {
 
     await clickMenu(page, '活动中心');
     await ensureText(page, '活动中心');
-    await clickText(page, '详情');
+    await clickViewOrDetail(page);
     await ensureText(page, '活动详情');
     await clickText(page, '返回活动中心');
     checks.push('activity detail navigation ok');
 
     await clickMenu(page, '学习资料');
     await ensureText(page, '学习资料');
-    await clickText(page, '详情');
+    await clickViewOrDetail(page);
     await ensureText(page, '学习资料详情');
     await clickText(page, '返回学习资料');
     await clickText(page, '新增');
     await ensureText(page, '新增学习资料');
     await ensureText(page, '返回');
     const titleSize = await page.getByText('新增学习资料', { exact: true }).first().evaluate((el) => Number(getComputedStyle(el).fontSize.replace('px', '')));
-    const uploadSize = await page.getByText('点击上传视频或图文素材', { exact: true }).first().evaluate((el) => Number(getComputedStyle(el).fontSize.replace('px', '')));
+    const uploadLabel = page.getByText('点击上传', { exact: false }).first();
+    const uploadSize = await uploadLabel.evaluate((el) => Number(getComputedStyle(el).fontSize.replace('px', '')));
     if (titleSize > 36 || uploadSize > 30) findings.push(`P2: 新增学习资料页字号过大（title=${titleSize}px, upload=${uploadSize}px）`);
     await clickText(page, '返回');
     checks.push('learning detail/create navigation ok');
 
     await clickMenu(page, '积分商城');
     await ensureText(page, '积分商城');
+    await clickText(page, '查看');
+    await ensureText(page, '商品货架详情');
+    await clickText(page, '返回货架');
     await clickText(page, '新增上架商品');
     await ensureText(page, '新增商城商品');
     await clickText(page, '返回');
     await clickText(page, '活动货架');
-    await clickText(page, '新增上架活动');
+    await ensureText(page, '活动货架管理');
+    await page.locator('button:has-text("新增上架活动")').first().click();
     await ensureText(page, '新增上架活动');
     await clickText(page, '返回');
+    await clickText(page, '活动货架');
+    await ensureText(page, '活动货架管理');
+    await clickText(page, '查看');
+    await ensureText(page, '活动货架详情');
+    await clickText(page, '返回货架');
     checks.push('mall product/activity navigation ok');
 
     await clickMenu(page, '策略引擎');

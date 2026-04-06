@@ -48,7 +48,7 @@ async function run() {
     }
     checks.push('tenants contract ok');
 
-    const employees = await req('/api/p/employees');
+    const employees = await req('/api/p/employees', { headers: { 'x-actor-id': '9002' } });
     assert(Array.isArray(employees.list), 'employees.list 必须是数组');
     for (const row of employees.list.slice(0, 5)) {
       assert(isNum(row.id), 'employee.id 必须是 number');
@@ -83,6 +83,30 @@ async function run() {
     }
     checks.push('mall activities contract ok');
 
+    const strategies = await req('/api/p/strategies');
+    assert(Array.isArray(strategies.list), 'strategies.list 必须是数组');
+    if (strategies.list.length === 0) {
+      warnings.push('strategies.list 为空（当前账号无可见策略）');
+    }
+    for (const row of strategies.list.slice(0, 5)) {
+      assert(isStr(row.id), 'strategy.id 必须是非空字符串');
+      assert(isStr(row.name), 'strategy.name 必须是非空字符串');
+      assert(isStr(row.status), 'strategy.status 必须是非空字符串');
+    }
+    checks.push('strategies contract ok');
+
+    const learning = await req('/api/learning/courses');
+    assert(Array.isArray(learning.courses), 'learning.courses 必须是数组');
+    if (learning.courses.length === 0) {
+      warnings.push('learning.courses 为空（当前账号无可见学习资料）');
+    }
+    for (const row of learning.courses.slice(0, 5)) {
+      assert(isNum(row.id), 'course.id 必须是 number');
+      assert(isStr(row.title), 'course.title 必须是非空字符串');
+      assert(isNum(row.points), 'course.points 必须是 number');
+    }
+    checks.push('learning courses contract ok');
+
     console.log(JSON.stringify({ ok: true, checks, warnings }, null, 2));
   } catch (error) {
     console.error(JSON.stringify({ ok: false, checks, error: error.message }, null, 2));
@@ -91,4 +115,3 @@ async function run() {
 }
 
 run();
-

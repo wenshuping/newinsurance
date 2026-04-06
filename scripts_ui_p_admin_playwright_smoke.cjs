@@ -13,6 +13,14 @@ async function clickByText(page, text) {
   await target.click();
 }
 
+async function ensureLogin(page) {
+  if ((await page.getByText('P端管理后台登录', { exact: true }).count()) === 0) return;
+  await page.getByPlaceholder('company001').fill(process.env.P_ACCOUNT || 'company001');
+  await page.getByPlaceholder('123456').fill(process.env.P_PASSWORD || '123456');
+  await clickByText(page, '登录');
+  await page.getByText('租户列表', { exact: true }).first().waitFor();
+}
+
 async function run() {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
@@ -21,6 +29,7 @@ async function run() {
   const report = [];
   try {
     await page.goto(BASE_URL, { waitUntil: 'domcontentloaded' });
+    await ensureLogin(page);
 
     const employeeName = unique('自动化员工');
     const employeeEmail = `${Date.now()}@example.com`;
